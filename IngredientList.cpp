@@ -9,10 +9,11 @@ std::unordered_map<int, Ingredient> IngredientList::ingredients_list;
 
 // a function of ingredient list to add an ingredient, it takes the new ingredient only
 void IngredientList::add_ingredient(const Ingredient& ingredient) {
-    // insert the new ingredient to ingredients_list, giving key, its uuid, and value the ingredient object
-    // capture the reuslt as an auto variable, which captures result.first as the unordered map object
-    // <unordered_map<int, ingredient>> second as a bool of wether the insertion was succesful. This is an insert
-    // command standard, insert returns firs the value inserted, and second wether it happened.
+
+    // insert the new ingredient to ingredients_list, giving a key, its uuid, and then the value 'ingredient object',
+    // capture the result as an auto variable, which captures result.first as the unordered map object
+    // <unordered_map<int, ingredient>> second as a bool of whether the insertion was successful. This is an insert
+    // command standard, insert returns first the value inserted, and second whether it happened.
     auto result = ingredients_list.insert({ingredient.get_uuid(), ingredient});
     // if the bool, second result DIDN't happen then it must have been becasue the uuid already exists, so throw an error
     if (!result.second) {
