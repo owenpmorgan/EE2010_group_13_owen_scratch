@@ -18,7 +18,7 @@ Ingredient::Ingredient(int uuid,
     set_default_unit();
 }
 
-// calls in the constructor to find the default unit
+// this gets called in the constructor to find the default unit
 void Ingredient::set_default_unit()
 {
     if (unit.empty())
