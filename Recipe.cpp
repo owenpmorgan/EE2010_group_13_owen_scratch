@@ -15,7 +15,7 @@ void Recipe::add_ingredient(const Ingredient &ingredient)
     ingredients.push_back(ingredient);
 }
 
-void Recipe::display_ingredients() const
+void Recipe::display_recipe_ingredients() const
 {
     std::cout << "Ingredients for " << title << ":\n";
     for(const auto& ingredient : ingredients)

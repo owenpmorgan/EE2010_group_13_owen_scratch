@@ -12,7 +12,7 @@ class Recipe
 public:
     Recipe(std::string title);
     void add_ingredient(const Ingredient &ingredient);
-    void display_ingredients() const;
+    void display_recipe_ingredients() const;
 
 private:
     std::string title;
