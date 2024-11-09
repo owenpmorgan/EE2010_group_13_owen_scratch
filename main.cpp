@@ -26,6 +26,8 @@ int main() {
 
     Recipe Rice_Herbs("Rice and Herbs");
     Rice_Herbs.add_ingredient(3, 200);
+    // add ingredient now has a constructor with just one arg that defaults the amount to GENERIC (ie no value) and
+    // assings the nullopt optional int when called
     Rice_Herbs.add_ingredient(2);
 
 

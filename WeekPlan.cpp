@@ -5,7 +5,7 @@
 #include "WeekPlan.h"
 #include "Recipe.h"
 
-
+//  provide a recipe name from the list and which meal of the 21 per week you want to assign it to
 void WeekPlan::add_recipe(const Recipe& recipe, int index) {
 
     if (index < MAX_RECIPES && index > 0) {
@@ -15,6 +15,7 @@ void WeekPlan::add_recipe(const Recipe& recipe, int index) {
     }
 }
 
+// display the currently selected weekly plan of meals
 void WeekPlan::display_weeks_recipes() const {
     std::cout << "Recipes in the WeekPlan:" << std::endl;
     for (int i = 0; i < MAX_RECIPES; ++i)
@@ -23,10 +24,13 @@ void WeekPlan::display_weeks_recipes() const {
     }
 }
 
+// provide an index of one of the weeks meals and get back the ingredients for that meal, was gonna be used in below
+// functions but now just here for some use maybe
 void WeekPlan::get_ingredients_for_index(int index){
     weeks_recipes[index-1].display_recipe_ingredients();
 }
 
+// The main function thats adds the weeks ingredients together and updates total_ingredients member value
 void WeekPlan::sum_total_ingredients() {
     for (int i = 0; i < MAX_RECIPES; ++i)
     {
@@ -75,8 +79,11 @@ void WeekPlan::sum_total_ingredients() {
     }
 }
 
+// this just returned the total ingredients list after it has been summed, in case we need to use the list somewhere else.
+// eg to a shopping list class that formats it as checkboxes etc.
 std::unordered_map<int, std::optional<int>> WeekPlan::get_total_ingredients() {return total_ingredients;};
 
+// display the total_ingredients member variable
 void WeekPlan::display_total_ingredients(){
     // Display the total ingredients
     std::cout << "Total Ingredients for the Week Plan:" << std::endl;
