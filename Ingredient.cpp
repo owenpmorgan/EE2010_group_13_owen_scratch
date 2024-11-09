@@ -7,12 +7,10 @@
 Ingredient::Ingredient(int uuid,
                         std::string name,
                         MeasurementType type,
-                        float quantity,
                         std::string unit)
                         : uuid(uuid),
                         name(name),
                         measurement_type(type),
-                        quantity(quantity),
                         unit(unit)
 {
     set_default_unit();
@@ -25,6 +23,9 @@ void Ingredient::set_default_unit()
     {
         switch (measurement_type)
         {
+            case MeasurementType::SEASONING:
+                unit = "to taste";
+                break;
             case MeasurementType::WEIGHT:
                 unit = "grams";
                 break;
@@ -43,21 +44,13 @@ void Ingredient::set_default_unit()
 
 int Ingredient::get_uuid() const {return uuid;}
 
-std::string Ingredient::get_name() const { return name;}
-
-float Ingredient::get_quantity() const {return quantity;}
+std::string Ingredient::get_name() const {return name;}
 
 std::string Ingredient::get_unit() const {return unit;}
 
 MeasurementType Ingredient::get_measurement_type() const {return measurement_type;}
 
 void Ingredient::display() const {
-    std::cout << name << ": ";
-    if(measurement_type == MeasurementType::GENERIC){
-        std::cout << "to taste";
-    }
-    else {
-        std::cout << quantity << " " << unit;
-    }
-    std::cout << std::endl;
+
+    std::cout << name << ", " << unit << std::endl;
 }
