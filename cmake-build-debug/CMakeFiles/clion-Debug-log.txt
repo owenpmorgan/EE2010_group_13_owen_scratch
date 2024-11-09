@@ -1,4 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S "/Users/owenmorgan/Library/Mobile Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch" -B "/Users/owenmorgan/Library/Mobile Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch/cmake-build-debug"
--- Configuring done (0.0s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/owenmorgan/Library/Mobile Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch/cmake-build-debug
