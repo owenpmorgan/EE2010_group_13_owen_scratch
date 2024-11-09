@@ -38,6 +38,11 @@ int main() {
     myWeek.add_recipe(Eggs_oil, 3);
     myWeek.add_recipe(Eggs_oil, 4);
     myWeek.add_recipe(Eggs_oil, 9);
+    myWeek.add_recipe(Rice_Herbs, 10);
+    myWeek.add_recipe(Rice_Herbs, 13);
+    myWeek.add_recipe(Rice_Herbs, 14);
+    myWeek.add_recipe(Rice_Herbs, 16);
+
 
     myWeek.display_weeks_recipes();
 

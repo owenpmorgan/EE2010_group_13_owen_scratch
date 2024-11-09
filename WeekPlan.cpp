@@ -60,6 +60,7 @@ void WeekPlan::display_total_ingredients(){
         auto it = ingredients_list.find(ingredient.first);
         if (it != ingredients_list.end())
         {
+
             std::cout << "- " << it->second.get_name() << ": " << ingredient.second << " " << it->second.get_unit()
                       << std::endl;
         } else

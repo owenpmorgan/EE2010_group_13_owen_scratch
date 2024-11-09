@@ -25,6 +25,16 @@ void Recipe::add_ingredient(const int uuid, int amount)
     }
 }
 
+// the same but support being able to make one without an amount for herbs etc.
+void Recipe::add_ingredient(const int uuid) {
+    auto result = recipe_ingredients.insert({uuid, -1000000});
+    // if the bool, second result DIDN't happen then it must have been becasue the uuid already exists, so throw an error
+    if (!result.second)
+    {
+        throw std::runtime_error("Ingredient with this UUID already exists.");
+    }
+}
+
 std::string Recipe::get_title() const{
     return title;
 }
@@ -34,7 +44,7 @@ int Recipe::get_amount(int uuid){
     auto it = recipe_ingredients.find(uuid);
     // if the uuid of the inredient is in recipe ingredients, and its type is generic or 'to taste' just return 0 - maybe late fix this
     if (it != recipe_ingredients.end() && get_ingredient(it->second).get_measurement_type() == MeasurementType::GENERIC) {
-        return 0;
+        return -1000000;
     }
     // otherwise, normal ingredient, return the second element of the unordered map, the amount.
     else {
