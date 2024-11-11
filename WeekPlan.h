@@ -8,7 +8,7 @@
 #define EE2010_GROUP_MY_SCRATCH_WEEKPLAN_H
 
 
-class WeekPlan : public IngredientList
+class WeekPlan : public Organiser
 {
 
 private:
@@ -19,14 +19,14 @@ private:
 public:
     // Add a recipe and the index, from 0-21 of when that meal will come
     void add_recipe(const Recipe&, int);
-    void display_weeks_recipes() const;
-    void get_ingredients_for_index(int);
-    void sum_total_ingredients();
-    std::unordered_map<int, std::optional<int>> get_total_ingredients();
-    void display_total_ingredients();
 
+//    void get_ingredients_for_index(int);
+    std::unordered_map<int, std::optional<int>> get_total_ingredients();
+
+    void sum_total_weeks_ingredients();
+    void display_weeks_recipes() const;
+    void display_total_weeks_ingredients(std::unordered_map<int, Ingredient>);
 
 };
-
 
 #endif //EE2010_GROUP_MY_SCRATCH_WEEKPLAN_H

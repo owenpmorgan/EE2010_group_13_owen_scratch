@@ -5,17 +5,22 @@
 #ifndef EE2010_GROUP_MY_SCRATCH_INGREDIENTLIST_H
 #define EE2010_GROUP_MY_SCRATCH_INGREDIENTLIST_H
 
+#include "Organiser.h"
 #include "Ingredient.h"
 
-class IngredientList
+class IngredientList : public Organiser
 {
-
-protected:
-    static std::unordered_map<int, Ingredient> ingredients_list;
+    // todo maybe instead use a get ingredient list rather than opening up the whole list
+private:
+    std::unordered_map<int, Ingredient> ingredients_list;
 
 public:
-    static void add_ingredient(const Ingredient& ingredient);
-    static Ingredient get_ingredient(int uuid);
+
+    void add_ingredient(const Ingredient& ingredient);
+
+    Ingredient get_ingredient(int uuid);
+    std::unordered_map<int, Ingredient> get_ingredients_list();
+
     void display_total_ingredients_list() const;
 
 };
