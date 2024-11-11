@@ -10,6 +10,8 @@ int main() {
 
     IngredientList ingredientList;
 
+    // check I am in main
+
 //     ingredient(uuid, name, measurementtype, amount, unit)
     ingredientList.add_ingredient(Ingredient(1, "Oil", MeasurementType::VOLUME));
     ingredientList.add_ingredient(Ingredient(2, "Herbs", MeasurementType::GENERIC));
