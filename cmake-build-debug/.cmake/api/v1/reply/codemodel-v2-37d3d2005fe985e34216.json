@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "EE2010_group_my_scratch",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "EE2010_group_my_scratch::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EE2010_group_my_scratch-Debug-8fbefac8225a52928771.json",
+					"name" : "EE2010_group_my_scratch",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/owenmorgan/Library/Mobile Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch/cmake-build-debug",
+		"source" : "/Users/owenmorgan/Library/Mobile Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
