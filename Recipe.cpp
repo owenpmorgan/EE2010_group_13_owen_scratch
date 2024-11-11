@@ -39,6 +39,7 @@ std::string Recipe::get_title() const{
     return title;
 }
 
+// get the amount a recipe needs of a SPECIFIC ingredient, via it's uuid
 std::optional<int> Recipe::get_amount(int uuid){
 
     //
@@ -58,12 +59,15 @@ std::unordered_map<int, std::optional<int>> Recipe::get_recipe_ingredients() {re
 void Recipe::display_recipe_ingredients(std::unordered_map<int, Ingredient> ingredients_list) const
 {
     std::cout << "Ingredients for " << title << ":\n";
+    // iterate over the ingredients needed for the recipe, the current iteration is called ingredient
     for(const auto& ingredient : recipe_ingredients)
     {
-        // it = the item on ingredients list with at the first value of 'ingredient', that is the uuid
+        // scan the master ingredients list for ingredients in the recipe
+        // it = the item on master ingredients list with at the first value of local iteration 'ingredient', which is the uuid
         auto it = ingredients_list.find(ingredient.first);
+        //the second value of ingredient is from recipe_ingredients, and is the amount, check it's a countable value
         if(ingredient.second.has_value()){
-            // the second value of it is the Ingredient object, the second value of ingredient is the amount
+            // the second value of it (the iterator) is the Ingredient object, the second value of ingredient is the amount
             std::cout << it->second.get_name() << ": " << ingredient.second.value() << " " << it->second.get_unit() << std::endl;
         }
         else{

@@ -20,7 +20,8 @@ public:
     // Add a recipe and the index, from 0-21 of when that meal will come
     void add_recipe(const Recipe&, int);
 
-//    void get_ingredients_for_index(int);
+//    void get_ingredients_for_index(int); // I dont think needed
+
     std::unordered_map<int, std::optional<int>> get_total_ingredients();
 
     void sum_total_weeks_ingredients();
