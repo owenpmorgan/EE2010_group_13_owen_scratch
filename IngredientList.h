@@ -9,13 +9,15 @@
 
 class IngredientList
 {
+
+protected:
+    static std::unordered_map<int, Ingredient> ingredients_list;
+
 public:
     static void add_ingredient(const Ingredient& ingredient);
     static Ingredient get_ingredient(int uuid);
     void display_total_ingredients_list() const;
 
-private:
-    static std::unordered_map<int, Ingredient> ingredients_list;
 };
 
 

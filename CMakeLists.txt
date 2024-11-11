@@ -10,4 +10,6 @@ add_executable(EE2010_group_my_scratch main.cpp
         Recipe.cpp
         Recipe.h
         IngredientList.cpp
-        IngredientList.h)
+        IngredientList.h
+        WeekPlan.cpp
+        WeekPlan.h)
