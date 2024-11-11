@@ -3,12 +3,11 @@
 //
 
 #include "Recipe.h"
-#include "IngredientList.h"
-#include "MeasurementType.h"
+
 #include <optional>
 
-Recipe::Recipe(std::string title)
-              : title(title)
+Recipe::Recipe(std::string title, int portions)
+              : title(title), portions(portions)
 {
 }
 
@@ -56,7 +55,7 @@ std::optional<int> Recipe::get_amount(int uuid){
 
 std::unordered_map<int, std::optional<int>> Recipe::get_recipe_ingredients() {return recipe_ingredients;}
 
-void Recipe::display_recipe_ingredients() const
+void Recipe::display_recipe_ingredients(std::unordered_map<int, Ingredient> ingredients_list) const
 {
     std::cout << "Ingredients for " << title << ":\n";
     for(const auto& ingredient : recipe_ingredients)

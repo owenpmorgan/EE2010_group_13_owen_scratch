@@ -12,4 +12,6 @@ add_executable(EE2010_group_my_scratch main.cpp
         IngredientList.cpp
         IngredientList.h
         WeekPlan.cpp
-        WeekPlan.h)
+        WeekPlan.h
+        Organiser.cpp
+        Organiser.h)

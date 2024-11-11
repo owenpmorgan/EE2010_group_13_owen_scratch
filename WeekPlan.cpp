@@ -26,12 +26,12 @@ void WeekPlan::display_weeks_recipes() const {
 
 // provide an index of one of the weeks meals and get back the ingredients for that meal, was gonna be used in below
 // functions but now just here for some use maybe
-void WeekPlan::get_ingredients_for_index(int index){
-    weeks_recipes[index-1].display_recipe_ingredients();
-}
+//void WeekPlan::get_ingredients_for_index(int index){
+//    weeks_recipes[index-1].display_recipe_ingredients();
+//}
 
 // The main function thats adds the weeks ingredients together and updates total_ingredients member value
-void WeekPlan::sum_total_ingredients() {
+void WeekPlan::sum_total_weeks_ingredients() {
     for (int i = 0; i < MAX_RECIPES; ++i)
     {
         // New variable recipe Ingredients = the meal at the current index we have got to in the iteration, which
@@ -84,12 +84,13 @@ void WeekPlan::sum_total_ingredients() {
 std::unordered_map<int, std::optional<int>> WeekPlan::get_total_ingredients() {return total_ingredients;};
 
 // display the total_ingredients member variable
-void WeekPlan::display_total_ingredients(){
+void WeekPlan::display_total_weeks_ingredients(std::unordered_map<int, Ingredient> ingredients_list) {
     // Display the total ingredients
     std::cout << "Total Ingredients for the Week Plan:" << std::endl;
     // new temp variable ingredient loops over total ingredients, it's value will be a key value pair (uuid, amount)
     for (const auto ingredient: total_ingredients)
     {
+
         // this iterator goes over the master ingredient list in the ingredient list class until it finds the uuid (first)
         // of the temp ingredient variable, it then stores this as a pointer to the unordered_map ingredient list where it
         // found the key value, so the first field is the uuid and the second field the ingredient object

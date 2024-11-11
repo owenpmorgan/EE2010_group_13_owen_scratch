@@ -5,7 +5,7 @@
 #include "IngredientList.h"
 #include "Ingredient.h"
 
-std::unordered_map<int, Ingredient> IngredientList::ingredients_list;
+//std::unordered_map<int, Ingredient> IngredientList::ingredients_list;
 
 // a function of ingredient list to add an ingredient, it takes the new ingredient only
 void IngredientList::add_ingredient(const Ingredient& ingredient) {
@@ -43,3 +43,5 @@ void IngredientList::display_total_ingredients_list() const
         pair.second.display();
     }
 }
+
+std::unordered_map<int, Ingredient> IngredientList::get_ingredients_list() {return ingredients_list;}
