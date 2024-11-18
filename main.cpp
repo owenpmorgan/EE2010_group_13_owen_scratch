@@ -12,7 +12,7 @@
  * todo add input sanitising in the organiser class that can be used in all inherited functions
  * todo maybe do the same for clear individual recipes considering portions, eg, you want to delete a 4 portion meal, when you delet the
  * first it asks you to 'clear 4 more of the same recipe'
- * todo maybe be able to manually add a recipe
+ * todo maybe be able to manually add a recipe to a database
  * todo implement being able to replace recipes, or saying a recipe already exists there
  * todo
 */
@@ -20,7 +20,7 @@ int main() {
 
     IngredientList ingredientList;
 
-//     ingredient(uuid, name, measurementtype, amount, unit)
+//     ingredient(uuid, name, measurementtype)
     ingredientList.add_ingredient(Ingredient(1, "Oil", MeasurementType::VOLUME));
     ingredientList.add_ingredient(Ingredient(2, "Herbs", MeasurementType::GENERIC));
     ingredientList.add_ingredient(Ingredient(3, "Rice", MeasurementType::WEIGHT));
@@ -48,12 +48,12 @@ int main() {
     // bool to exit loop when program quits
     bool run = true;
 
-    while(run){
+//    while(run){
+//
+//        std::cout << "Pick an option: " << std::endl;
+//
+//    }
 
-        std::cout << "Pick an option: " << std::endl;
-
-
-    }
     myWeek.add_recipe(Eggs_oil);
 
     myWeek.add_recipe(Rice_Herbs);

@@ -42,19 +42,19 @@ std::string Recipe::get_title() const{
 int Recipe::get_portions() const {return portions;}
 
 // get the amount a recipe needs of a SPECIFIC ingredient, via it's uuid
-std::optional<int> Recipe::get_amount(int uuid){
-
-    //
-    auto it = recipe_ingredients.find(uuid);
-    // if the uuid of the inredient is in recipe ingredients, and its type is generic or 'to taste' just return 0 - maybe late fix this
-    if (it != recipe_ingredients.end() && get_ingredient(uuid).get_measurement_type() == MeasurementType::GENERIC) {
-        return std::nullopt;
-    }
-    // otherwise, normal ingredient, return the second element of the unordered map, the amount.
-    else {
-        return it->second;
-    }
-}
+//std::optional<int> Recipe::get_amount(int uuid){
+//
+//    //
+//    auto it = recipe_ingredients.find(uuid);
+//    // if the uuid of the inredient is in recipe ingredients, and its type is generic or 'to taste' just return 0 - maybe late fix this
+//    if (it != recipe_ingredients.end() && get_ingredient(uuid).get_measurement_type() == MeasurementType::GENERIC) {
+//        return std::nullopt;
+//    }
+//    // otherwise, normal ingredient, return the second element of the unordered map, the amount.
+//    else {
+//        return it->second;
+//    }
+//}
 
 std::unordered_map<int, std::optional<int>> Recipe::get_recipe_ingredients() const {return recipe_ingredients;}
 

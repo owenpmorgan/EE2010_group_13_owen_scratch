@@ -10,7 +10,7 @@
 #ifndef EE2010_GROUP_MY_SCRATCH_RECIPE_H
 #define EE2010_GROUP_MY_SCRATCH_RECIPE_H
 
-class Recipe : public IngredientList
+class Recipe
 {
 
 private:
