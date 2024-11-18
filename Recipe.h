@@ -26,8 +26,9 @@ public:
     void add_ingredient(const int uuid);
 
     std::string get_title() const;
-    std::unordered_map<int, std::optional<int>> get_recipe_ingredients();
+    std::unordered_map<int, std::optional<int>> get_recipe_ingredients() const;
     std::optional<int> get_amount(int);
+    int get_portions() const;
 
     void display_recipe_ingredients(std::unordered_map<int, Ingredient>) const;
 

@@ -39,6 +39,8 @@ std::string Recipe::get_title() const{
     return title;
 }
 
+int Recipe::get_portions() const {return portions;}
+
 // get the amount a recipe needs of a SPECIFIC ingredient, via it's uuid
 std::optional<int> Recipe::get_amount(int uuid){
 
@@ -54,7 +56,7 @@ std::optional<int> Recipe::get_amount(int uuid){
     }
 }
 
-std::unordered_map<int, std::optional<int>> Recipe::get_recipe_ingredients() {return recipe_ingredients;}
+std::unordered_map<int, std::optional<int>> Recipe::get_recipe_ingredients() const {return recipe_ingredients;}
 
 void Recipe::display_recipe_ingredients(std::unordered_map<int, Ingredient> ingredients_list) const
 {

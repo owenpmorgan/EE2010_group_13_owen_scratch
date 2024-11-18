@@ -20,5 +20,7 @@ public:
 //    virtual void add_item_to_list(const T1& key, const T1& value) = 0;
 };
 
+static const int MAX_RECIPES = 21;  // Fixed size of 21
+
 
 #endif //EE2010_GROUP_MY_SCRATCH_ORGANISER_H

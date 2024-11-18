@@ -6,12 +6,66 @@
 #include "Recipe.h"
 
 //  provide a recipe name from the list and which meal of the 21 per week you want to assign it to
-void WeekPlan::add_recipe(const Recipe& recipe, int index) {
+void WeekPlan::add_recipe(const Recipe& recipe_to_add){
 
-    if (index < MAX_RECIPES && index > 0) {
-        weeks_recipes[index-1] = recipe;
-    } else {
-        throw std::runtime_error("Please enter meal number from 1-21");
+    int serving = 1;
+    int user_choice = -1;
+
+    // on adding a recipe cycle through it's ingredients and add them to the total ingredients necessary for the week
+    const auto& recipe_ingredients = recipe_to_add.get_recipe_ingredients();
+
+    for (const auto &ingredient: recipe_ingredients)
+    {
+        // grab the uuid of this ingredient to compare it to the list of total ingredients and see where it is or if
+        // it has not been added yet
+        int uuid = ingredient.first;
+
+        // and grab the amount, being sure it can also receive nullopt
+        // store the second value of the current ingredient in an optional in called ammount
+        std::optional<int> amount = ingredient.second;
+        // if amount is numerical...
+        if (amount.has_value())
+        {
+            // if it can find the ingredients uuid in the total_ingredient list already, sum the amounts
+            if (total_ingredients.find(uuid) != total_ingredients.end())
+            {
+                total_ingredients[uuid] = total_ingredients[uuid].value() + amount.value();
+            }
+                // otherwise make a new entry
+            else
+            {
+                total_ingredients[uuid] = amount.value();
+            }
+        }
+            // if amount is NOT numerical
+        else
+        {
+            // do the same but just apply the null value
+            if (total_ingredients.find(uuid) != total_ingredients.end())
+            {
+                // if it exists, make sure it is nullopt
+                total_ingredients[uuid] = std::nullopt;
+            }
+            else
+            {
+                // if it doesn't exist, add a new entry that's nullopt
+                total_ingredients[uuid] = std::nullopt;
+            }
+        }
+    }
+
+    //nOw distribute the number of portions the recipe makes over the week
+    std::cout << recipe_to_add.get_title() << " makes " << recipe_to_add.get_portions() << " portions." << std::endl;
+
+    while(serving <= recipe_to_add.get_portions())
+    {
+        std::cout << "Where would you like to put serving " << serving << std::endl;
+        // todo make this a function in the organiser which sanitises the input
+
+        std::cin >> user_choice;
+
+        weeks_recipes[user_choice - 1] = recipe_to_add;
+        serving++;
     }
 }
 
@@ -30,54 +84,6 @@ void WeekPlan::display_weeks_recipes() const {
 //    weeks_recipes[index-1].display_recipe_ingredients();
 //}
 
-// The main function thats adds the weeks ingredients together and updates total_ingredients member value
-void WeekPlan::sum_total_weeks_ingredients() {
-    for (int i = 0; i < MAX_RECIPES; ++i)
-    {
-        // New variable recipe Ingredients = the meal at the current index we have got to in the iteration, which
-        // returns it's unordered map list of ingredients (uuid, amount)
-        const auto &recipe_ingredients = weeks_recipes[i].get_recipe_ingredients();
-
-        // now for loop through this unordered map of ingredients, each iteration the variable imgredient will be updated
-        for (const auto &ingredient: recipe_ingredients)
-        {
-            // grab the uuid of this ingredient to compare it to the list of total ingredients and see where it is or if
-            // it has not been added yet
-            int uuid = ingredient.first;
-            // and grab the amount, being sure it can also receive nullopt
-
-            // store the second value of the current ingredient in an optional in called ammount
-            std::optional<int> amount = ingredient.second;
-            // if amount is numerical...
-            if (amount.has_value())
-            {
-                // if it can find the ingredients uuid in the total_ingredient list already, sum the amounts
-                if (total_ingredients.find(uuid) != total_ingredients.end())
-                {
-                    total_ingredients[uuid] = total_ingredients[uuid].value() + amount.value();
-                }
-                // otherwise make a new entry
-                else
-                {
-                    total_ingredients[uuid] = amount.value();
-                }
-            }
-            // if amount is NOT numerical
-            else
-            {
-                // do the same but just apply the null value
-                if (total_ingredients.find(uuid) != total_ingredients.end())
-                {
-                    total_ingredients[uuid] = std::nullopt;
-                }
-                else
-                {
-                    total_ingredients[uuid] = std::nullopt;
-                }
-            }
-        }
-    }
-}
 
 // this just returned the total ingredients list after it has been summed, in case we need to use the list somewhere else.
 // eg to a shopping list class that formats it as checkboxes etc.

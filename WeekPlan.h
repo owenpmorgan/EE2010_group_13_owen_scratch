@@ -12,13 +12,13 @@ class WeekPlan : public Organiser
 {
 
 private:
-    static const int MAX_RECIPES = 21;  // Fixed size of 21
+
     Recipe weeks_recipes[MAX_RECIPES];
     std::unordered_map<int, std::optional<int>> total_ingredients;
 
 public:
     // Add a recipe and the index, from 0-21 of when that meal will come
-    void add_recipe(const Recipe&, int);
+    void add_recipe(const Recipe&);
 
 //    void get_ingredients_for_index(int); // I dont think needed
 
