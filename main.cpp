@@ -47,12 +47,7 @@ int main() {
 
     // bool to exit loop when program quits
     bool run = true;
-
-//    while(run){
-//
-//        std::cout << "Pick an option: " << std::endl;
-//
-//    }
+    
 
     myWeek.add_recipe(Eggs_oil);
 

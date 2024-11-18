@@ -11,16 +11,16 @@
 
 class Organiser
 {
-private:
-
+protected:
+    static const int MAX_RECIPES = 21;  // Fixed size of 21
 
 public:
-//    std::unordered_map<T1, T2> local_list;
-    virtual ~Organiser() = default;
-//    virtual void add_item_to_list(const T1& key, const T1& value) = 0;
+
+
+        virtual ~Organiser() = default;
 };
 
-static const int MAX_RECIPES = 21;  // Fixed size of 21
+
 
 
 #endif //EE2010_GROUP_MY_SCRATCH_ORGANISER_H

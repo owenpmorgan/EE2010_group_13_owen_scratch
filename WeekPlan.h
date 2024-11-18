@@ -17,7 +17,10 @@ private:
     std::unordered_map<int, std::optional<int>> total_ingredients;
 
 public:
-    // Add a recipe and the index, from 0-21 of when that meal will come
+
+    WeekPlan();
+    ~ WeekPlan() = default;
+
     void add_recipe(const Recipe&);
 
 //    void get_ingredients_for_index(int); // I dont think needed
@@ -27,6 +30,7 @@ public:
     void sum_total_weeks_ingredients();
     void display_weeks_recipes() const;
     void display_total_weeks_ingredients(std::unordered_map<int, Ingredient>);
+
 
 };
 
