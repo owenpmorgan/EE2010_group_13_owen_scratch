@@ -7,6 +7,8 @@
 #include <nlohmann/json.hpp>
 #include <fstream>
 
+using json = nlohmann::json;
+
 /*
  * todo add clear recipes from week function to start from scratch (need a way to link recipes that are added together?)
  * todo also need to clear the shopping list in this case
@@ -26,12 +28,15 @@ int main() {
 
     // put this in the organiser class
     std::ifstream myFile("recipes_breakfast.json");
-//    file.open("recipes_breakfast.json");
 
     if (!myFile.is_open()) {
         std::cerr << "Failed to open JSON file." << std::endl;
         return 1;
     }
+
+    json data = json::parse(myFile);
+
+    std::cout << data[0]["name"] << std::endl;
 
 //     ingredient(uuid, name, measurementtype)
     ingredientList.add_ingredient(Ingredient(1, "Oil", MeasurementType::VOLUME));
