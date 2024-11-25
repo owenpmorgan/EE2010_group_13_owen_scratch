@@ -10,7 +10,7 @@
 #ifndef EE2010_GROUP_MY_SCRATCH_RECIPE_H
 #define EE2010_GROUP_MY_SCRATCH_RECIPE_H
 
-class Recipe : public IngredientList
+class Recipe
 {
 
 private:
@@ -19,8 +19,9 @@ private:
     int portions;
 
 public:
-    Recipe(std::string title, int portions);
-    Recipe() : title("Unnamed Recipe", 0) {}  // Default constructor
+    Recipe(std::string title, int portions); // constructor
+    Recipe() : title("Unnamed Recipe"), portions(0) {}  // Default constructor if no args passed
+    ~Recipe() = default;
 
     void add_ingredient(const int uuid, int amount);
     void add_ingredient(const int uuid);

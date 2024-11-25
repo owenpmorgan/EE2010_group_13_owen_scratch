@@ -5,15 +5,25 @@
 #include "WeekPlan.h"
 #include "Recipe.h"
 
-//  provide a recipe name from the list and which meal of the 21 per week you want to assign it to
-void WeekPlan::add_recipe(const Recipe& recipe_to_add){
+WeekPlan::WeekPlan() {
 
-    int serving = 1;
+    for(auto& it : weeks_recipes)
+    {
+        it = Recipe("No Recipe", 0);
+    }
+
+}
+//  provide a recipe name from the list and which meal of the 21 per week you want to assign it to
+void WeekPlan::add_recipe(const Recipe& recipe_to_add) {
+
+    int portion = 1;
+
     int user_choice = -1;
 
     // on adding a recipe cycle through it's ingredients and add them to the total ingredients necessary for the week
-    const auto& recipe_ingredients = recipe_to_add.get_recipe_ingredients();
+    const auto &recipe_ingredients = recipe_to_add.get_recipe_ingredients();
 
+//    this sums the total ingredients for the added recipe
     for (const auto &ingredient: recipe_ingredients)
     {
         // grab the uuid of this ingredient to compare it to the list of total ingredients and see where it is or if
@@ -45,8 +55,7 @@ void WeekPlan::add_recipe(const Recipe& recipe_to_add){
             {
                 // if it exists, make sure it is nullopt
                 total_ingredients[uuid] = std::nullopt;
-            }
-            else
+            } else
             {
                 // if it doesn't exist, add a new entry that's nullopt
                 total_ingredients[uuid] = std::nullopt;
@@ -54,40 +63,69 @@ void WeekPlan::add_recipe(const Recipe& recipe_to_add){
         }
     }
 
+
     //nOw distribute the number of portions the recipe makes over the week
     std::cout << recipe_to_add.get_title() << " makes " << recipe_to_add.get_portions() << " portions." << std::endl;
 
-    while(serving <= recipe_to_add.get_portions())
+    display_weeks_recipes();
+
+    while(portion <= recipe_to_add.get_portions())
     {
-        std::cout << "Where would you like to put serving " << serving << std::endl;
+
         // todo make this a function in the organiser which sanitises the input
 
-        std::cin >> user_choice;
+        while(true)
+        {
+            std::cout << "Where would you like to put portion " << portion << std::endl;
+            std::cin >> user_choice;
+            if (weeks_recipes[user_choice - 1].get_title() == "No Recipe")
+            {
+                weeks_recipes[user_choice - 1] = recipe_to_add;
+                break;
+            }
+            else if(user_choice < 1 || user_choice > MAX_RECIPES)
+            {
+                std::cout << "Please enter a number between 0 & " << MAX_RECIPES << std::endl;
+            }
+            else
+            {
+                std::cout << "There is already a recipe in that slot" << std::endl;
+                display_weeks_recipes();
+            }
+        }
 
-        weeks_recipes[user_choice - 1] = recipe_to_add;
-        serving++;
+        portion++;
     }
 }
 
 // display the currently selected weekly plan of meals
 void WeekPlan::display_weeks_recipes() const {
     std::cout << "Recipes in the WeekPlan:" << std::endl;
-    for (int i = 0; i < MAX_RECIPES; ++i)
-    {
-        std::cout << i+1 <<"- " << weeks_recipes[i].get_title() << std::endl;
+
+    std::cout   << "Monday\t\t\t\t"
+                << "Tuesday\t\t\t\t"
+                << "Wednesday\t\t\t\t"
+                << "Thursday\t\t\t\t"
+                << "Friday\t\t\t\t"
+                << "Saturday\t\t\t\t"
+                <<  "Sunday\t\t\t\t"
+                << std::endl;
+    // Outer loop to handle each row
+    for (int row = 0; row < 3; row++) {
+        // Inner loop to print every 7th entry starting at the offset given by 'row'
+        for (int col = 0; col < 7; col++) {
+            int index = row + col * 3;
+            if (index < MAX_RECIPES) {  // Ensure we don't go out of bounds
+                std::cout << index + 1 << "- " << weeks_recipes[index].get_title() << "\t\t\t\t";
+            }
+        }
+        std::cout << std::endl;  // Newline after each row
     }
 }
 
-// provide an index of one of the weeks meals and get back the ingredients for that meal, was gonna be used in below
-// functions but now just here for some use maybe
-//void WeekPlan::get_ingredients_for_index(int index){
-//    weeks_recipes[index-1].display_recipe_ingredients();
-//}
-
-
 // this just returned the total ingredients list after it has been summed, in case we need to use the list somewhere else.
 // eg to a shopping list class that formats it as checkboxes etc.
-std::unordered_map<int, std::optional<int>> WeekPlan::get_total_ingredients() {return total_ingredients;};
+std::unordered_map<int, std::optional<int>> WeekPlan::get_total_ingredients() {return total_ingredients;}
 
 // display the total_ingredients member variable
 void WeekPlan::display_total_weeks_ingredients(std::unordered_map<int, Ingredient> ingredients_list) {
@@ -121,4 +159,4 @@ void WeekPlan::display_total_weeks_ingredients(std::unordered_map<int, Ingredien
         }
 
     }
-};
+}

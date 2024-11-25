@@ -4,6 +4,10 @@
 #include "Recipe.h"
 #include "IngredientList.h"
 #include "WeekPlan.h"
+#include <nlohmann/json.hpp>
+#include <fstream>
+
+using json = nlohmann::json;
 
 /*
  * todo add clear recipes from week function to start from scratch (need a way to link recipes that are added together?)
@@ -12,23 +16,48 @@
  * todo add input sanitising in the organiser class that can be used in all inherited functions
  * todo maybe do the same for clear individual recipes considering portions, eg, you want to delete a 4 portion meal, when you delet the
  * first it asks you to 'clear 4 more of the same recipe'
- * todo maybe be able to manually add a recipe
+ * todo maybe be able to manually add a recipe to a database
  * todo implement being able to replace recipes, or saying a recipe already exists there
  * todo
+ *
+ *todo servings is always 1
 */
 int main() {
 
     IngredientList ingredientList;
 
-//     ingredient(uuid, name, measurementtype, amount, unit)
+
+    /*
+     * TEST_BOOST
+     *
+     *
+     */
+    // put this in the organiser class
+
+    std::ifstream myFile("recipes_breakfast.json");
+
+    if (!myFile.is_open()) {
+        std::cerr << "Failed to open JSON file." << std::endl;
+        return 1;
+    }
+
+    json data = json::parse(myFile);
+
+    std::cout << data[0]["name"] << std::endl;
+
+//     ingredient(uuid, name, measurementtype)
     ingredientList.add_ingredient(Ingredient(1, "Oil", MeasurementType::VOLUME));
     ingredientList.add_ingredient(Ingredient(2, "Herbs", MeasurementType::GENERIC));
     ingredientList.add_ingredient(Ingredient(3, "Rice", MeasurementType::WEIGHT));
     ingredientList.add_ingredient(Ingredient(4, "Eggs", MeasurementType::COUNT));
     ingredientList.add_ingredient(Ingredient(5, "Black Pepper", MeasurementType::SEASONING));
 
+//    for (ingredient in recipe in json)
+
     // recipe (title, portions)
     Recipe Eggs_oil("Eggs and Oil", 1);
+
+//  for recipe in json
     Eggs_oil.add_ingredient(1, 20);
     Eggs_oil.add_ingredient(4, 2);
     Eggs_oil.display_recipe_ingredients(ingredientList.get_ingredients_list());
@@ -47,13 +76,8 @@ int main() {
 
     // bool to exit loop when program quits
     bool run = true;
+    
 
-    while(run){
-
-        std::cout << "Pick an option: " << std::endl;
-
-
-    }
     myWeek.add_recipe(Eggs_oil);
 
     myWeek.add_recipe(Rice_Herbs);

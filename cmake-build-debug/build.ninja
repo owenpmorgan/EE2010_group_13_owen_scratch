@@ -52,36 +52,49 @@ build cmake_object_order_depends_target_EE2010_group_my_scratch: phony || CMakeF
 build CMakeFiles/EE2010_group_my_scratch.dir/main.cpp.o: CXX_COMPILER__EE2010_group_my_scratch_unscanned_Debug /Users/owenmorgan/Library/Mobile$ Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch/main.cpp || cmake_object_order_depends_target_EE2010_group_my_scratch
   DEP_FILE = CMakeFiles/EE2010_group_my_scratch.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/include
   OBJECT_DIR = CMakeFiles/EE2010_group_my_scratch.dir
   OBJECT_FILE_DIR = CMakeFiles/EE2010_group_my_scratch.dir
 
 build CMakeFiles/EE2010_group_my_scratch.dir/Ingredient.cpp.o: CXX_COMPILER__EE2010_group_my_scratch_unscanned_Debug /Users/owenmorgan/Library/Mobile$ Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch/Ingredient.cpp || cmake_object_order_depends_target_EE2010_group_my_scratch
   DEP_FILE = CMakeFiles/EE2010_group_my_scratch.dir/Ingredient.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/include
   OBJECT_DIR = CMakeFiles/EE2010_group_my_scratch.dir
   OBJECT_FILE_DIR = CMakeFiles/EE2010_group_my_scratch.dir
 
 build CMakeFiles/EE2010_group_my_scratch.dir/Recipe.cpp.o: CXX_COMPILER__EE2010_group_my_scratch_unscanned_Debug /Users/owenmorgan/Library/Mobile$ Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch/Recipe.cpp || cmake_object_order_depends_target_EE2010_group_my_scratch
   DEP_FILE = CMakeFiles/EE2010_group_my_scratch.dir/Recipe.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/include
   OBJECT_DIR = CMakeFiles/EE2010_group_my_scratch.dir
   OBJECT_FILE_DIR = CMakeFiles/EE2010_group_my_scratch.dir
 
 build CMakeFiles/EE2010_group_my_scratch.dir/IngredientList.cpp.o: CXX_COMPILER__EE2010_group_my_scratch_unscanned_Debug /Users/owenmorgan/Library/Mobile$ Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch/IngredientList.cpp || cmake_object_order_depends_target_EE2010_group_my_scratch
   DEP_FILE = CMakeFiles/EE2010_group_my_scratch.dir/IngredientList.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/include
   OBJECT_DIR = CMakeFiles/EE2010_group_my_scratch.dir
   OBJECT_FILE_DIR = CMakeFiles/EE2010_group_my_scratch.dir
 
 build CMakeFiles/EE2010_group_my_scratch.dir/WeekPlan.cpp.o: CXX_COMPILER__EE2010_group_my_scratch_unscanned_Debug /Users/owenmorgan/Library/Mobile$ Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch/WeekPlan.cpp || cmake_object_order_depends_target_EE2010_group_my_scratch
   DEP_FILE = CMakeFiles/EE2010_group_my_scratch.dir/WeekPlan.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/include
   OBJECT_DIR = CMakeFiles/EE2010_group_my_scratch.dir
   OBJECT_FILE_DIR = CMakeFiles/EE2010_group_my_scratch.dir
 
 build CMakeFiles/EE2010_group_my_scratch.dir/Organiser.cpp.o: CXX_COMPILER__EE2010_group_my_scratch_unscanned_Debug /Users/owenmorgan/Library/Mobile$ Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch/Organiser.cpp || cmake_object_order_depends_target_EE2010_group_my_scratch
   DEP_FILE = CMakeFiles/EE2010_group_my_scratch.dir/Organiser.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/EE2010_group_my_scratch.dir
+  OBJECT_FILE_DIR = CMakeFiles/EE2010_group_my_scratch.dir
+
+build CMakeFiles/EE2010_group_my_scratch.dir/Interface.cpp.o: CXX_COMPILER__EE2010_group_my_scratch_unscanned_Debug /Users/owenmorgan/Library/Mobile$ Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch/Interface.cpp || cmake_object_order_depends_target_EE2010_group_my_scratch
+  DEP_FILE = CMakeFiles/EE2010_group_my_scratch.dir/Interface.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/include
   OBJECT_DIR = CMakeFiles/EE2010_group_my_scratch.dir
   OBJECT_FILE_DIR = CMakeFiles/EE2010_group_my_scratch.dir
 
@@ -93,8 +106,9 @@ build CMakeFiles/EE2010_group_my_scratch.dir/Organiser.cpp.o: CXX_COMPILER__EE20
 #############################################
 # Link the executable EE2010_group_my_scratch
 
-build EE2010_group_my_scratch: CXX_EXECUTABLE_LINKER__EE2010_group_my_scratch_Debug CMakeFiles/EE2010_group_my_scratch.dir/main.cpp.o CMakeFiles/EE2010_group_my_scratch.dir/Ingredient.cpp.o CMakeFiles/EE2010_group_my_scratch.dir/Recipe.cpp.o CMakeFiles/EE2010_group_my_scratch.dir/IngredientList.cpp.o CMakeFiles/EE2010_group_my_scratch.dir/WeekPlan.cpp.o CMakeFiles/EE2010_group_my_scratch.dir/Organiser.cpp.o
+build EE2010_group_my_scratch: CXX_EXECUTABLE_LINKER__EE2010_group_my_scratch_Debug CMakeFiles/EE2010_group_my_scratch.dir/main.cpp.o CMakeFiles/EE2010_group_my_scratch.dir/Ingredient.cpp.o CMakeFiles/EE2010_group_my_scratch.dir/Recipe.cpp.o CMakeFiles/EE2010_group_my_scratch.dir/IngredientList.cpp.o CMakeFiles/EE2010_group_my_scratch.dir/WeekPlan.cpp.o CMakeFiles/EE2010_group_my_scratch.dir/Organiser.cpp.o CMakeFiles/EE2010_group_my_scratch.dir/Interface.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
+  LINK_PATH = -L/opt/homebrew/lib
   OBJECT_DIR = CMakeFiles/EE2010_group_my_scratch.dir
   POST_BUILD = :
   PRE_LINK = :
