@@ -25,7 +25,7 @@ int main() {
     IngredientList ingredientList;
 
     // put this in the organiser class
-    std::ifstream myFile("/recipes_");
+    std::ifstream myFile("recipes_breakfast.json");
 //    file.open("recipes_breakfast.json");
 
     if (!myFile.is_open()) {
