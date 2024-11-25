@@ -41,9 +41,11 @@ std::unordered_map<int, std::optional<int>> Recipe::get_recipe_ingredients() con
 void Recipe::display_recipe_ingredients(std::unordered_map<int, Ingredient> ingredients_list) const
 {
     std::cout << "Ingredients for " << title << ":\n";
-    // iterate over the ingredients needed for the recipe, the current iteration is called ingredient
+    // iterate over the ingredients needed for the recipe, the current iteration is called ingredient, and recipe ingredients
+    // are key/value pairs <uuid, amount>
     for(const auto& ingredient : recipe_ingredients)
     {
+        // find the ingredient on the ingredients list of the local variable ingredient 's first value, it's uuid
         auto it = ingredients_list.find(ingredient.first);
 
         if(ingredient.second.has_value()){

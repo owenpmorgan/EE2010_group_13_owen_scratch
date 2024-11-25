@@ -16,7 +16,8 @@ WeekPlan::WeekPlan() {
 //  provide a recipe name from the list and which meal of the 21 per week you want to assign it to
 void WeekPlan::add_recipe(const Recipe& recipe_to_add) {
 
-    int serving = 1;
+    int portion = 1;
+
     int user_choice = -1;
 
     // on adding a recipe cycle through it's ingredients and add them to the total ingredients necessary for the week
@@ -66,14 +67,16 @@ void WeekPlan::add_recipe(const Recipe& recipe_to_add) {
     //nOw distribute the number of portions the recipe makes over the week
     std::cout << recipe_to_add.get_title() << " makes " << recipe_to_add.get_portions() << " portions." << std::endl;
 
-    while(serving <= recipe_to_add.get_portions())
+    display_weeks_recipes();
+
+    while(portion <= recipe_to_add.get_portions())
     {
 
         // todo make this a function in the organiser which sanitises the input
 
         while(true)
         {
-            std::cout << "Where would you like to put serving " << serving << std::endl;
+            std::cout << "Where would you like to put portion " << portion << std::endl;
             std::cin >> user_choice;
             if (weeks_recipes[user_choice - 1].get_title() == "No Recipe")
             {
@@ -91,7 +94,7 @@ void WeekPlan::add_recipe(const Recipe& recipe_to_add) {
             }
         }
 
-        serving++;
+        portion++;
     }
 }
 
