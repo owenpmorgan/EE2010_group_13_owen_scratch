@@ -4,6 +4,8 @@
 #include "Recipe.h"
 #include "IngredientList.h"
 #include "WeekPlan.h"
+#include <nlohmann/json.hpp>
+#include <fstream>
 
 /*
  * todo add clear recipes from week function to start from scratch (need a way to link recipes that are added together?)
@@ -15,10 +17,21 @@
  * todo maybe be able to manually add a recipe to a database
  * todo implement being able to replace recipes, or saying a recipe already exists there
  * todo
+ *
+ *todo servings is always 1
 */
 int main() {
 
     IngredientList ingredientList;
+
+    // put this in the organiser class
+    std::ifstream myFile("/recipes_");
+//    file.open("recipes_breakfast.json");
+
+    if (!myFile.is_open()) {
+        std::cerr << "Failed to open JSON file." << std::endl;
+        return 1;
+    }
 
 //     ingredient(uuid, name, measurementtype)
     ingredientList.add_ingredient(Ingredient(1, "Oil", MeasurementType::VOLUME));
@@ -27,8 +40,12 @@ int main() {
     ingredientList.add_ingredient(Ingredient(4, "Eggs", MeasurementType::COUNT));
     ingredientList.add_ingredient(Ingredient(5, "Black Pepper", MeasurementType::SEASONING));
 
+//    for (ingredient in recipe in json)
+
     // recipe (title, portions)
     Recipe Eggs_oil("Eggs and Oil", 1);
+
+//  for recipe in json
     Eggs_oil.add_ingredient(1, 20);
     Eggs_oil.add_ingredient(4, 2);
     Eggs_oil.display_recipe_ingredients(ingredientList.get_ingredients_list());
