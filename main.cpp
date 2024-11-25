@@ -34,16 +34,22 @@ int main() {
      */
     // put this in the organiser class
 
-    std::ifstream myFile("recipes_breakfast.json");
-
+    std::ifstream myFile("all_recipes.json");
     if (!myFile.is_open()) {
         std::cerr << "Failed to open JSON file." << std::endl;
         return 1;
     }
-
     json data = json::parse(myFile);
+    myFile.close();
 
-    std::cout << data[0]["name"] << std::endl;
+    // test print all recipes
+    for(int i; i < data.size(); i++)
+    {
+        std::cout << data[i]["name"] << std::endl;
+    }
+
+
+
 
 //     ingredient(uuid, name, measurementtype)
     ingredientList.add_ingredient(Ingredient(1, "Oil", MeasurementType::VOLUME));
