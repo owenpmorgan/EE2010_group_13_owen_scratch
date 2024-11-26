@@ -3,6 +3,8 @@
 //
 
 #include <iostream>
+#include <stdexcept>
+#include <sstream>
 
 #ifndef EE2010_GROUP_MY_SCRATCH_ORGANISER_H
 #define EE2010_GROUP_MY_SCRATCH_ORGANISER_H
@@ -16,8 +18,9 @@ protected:
 
 public:
 
-
+        virtual int get_int_input() = 0;
         virtual ~Organiser() = default;
+
 };
 
 

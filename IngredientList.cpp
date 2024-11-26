@@ -14,6 +14,8 @@ void IngredientList::add_ingredient(const Ingredient& ingredient) {
     }
 }
 
+int IngredientList::get_int_input() {return -1;}
+
 // function for retrieving an ingredient from the list by UUID
 Ingredient IngredientList::get_ingredient(int uuid) {
 

@@ -2,6 +2,8 @@
 // Created by Owen Morgan on 08/11/2024.
 //
 
+#include <iostream>
+
 #include "WeekPlan.h"
 #include "Recipe.h"
 
@@ -9,16 +11,12 @@ WeekPlan::WeekPlan() {
 
     for(auto& it : weeks_recipes)
     {
-        it = Recipe("No Recipe", 0);
+        it = Recipe("No Recipe");
     }
 
 }
 //  provide a recipe name from the list and which meal of the 21 per week you want to assign it to
 void WeekPlan::add_recipe(const Recipe& recipe_to_add) {
-
-    int portion = 1;
-
-    int user_choice = -1;
 
     // on adding a recipe cycle through it's ingredients and add them to the total ingredients necessary for the week
     const auto &recipe_ingredients = recipe_to_add.get_recipe_ingredients();
@@ -32,19 +30,19 @@ void WeekPlan::add_recipe(const Recipe& recipe_to_add) {
 
         // and grab the amount, being sure it can also receive nullopt
         // store the second value of the current ingredient in an optional in called ammount
-        std::optional<int> amount = ingredient.second;
+        int amount = ingredient.second;
         // if amount is numerical...
-        if (amount.has_value())
+        if (amount != -1)
         {
             // if it can find the ingredients uuid in the total_ingredient list already, sum the amounts
             if (total_ingredients.find(uuid) != total_ingredients.end())
             {
-                total_ingredients[uuid] = total_ingredients[uuid].value() + amount.value();
+                total_ingredients[uuid] = total_ingredients[uuid] + amount;
             }
                 // otherwise make a new entry
             else
             {
-                total_ingredients[uuid] = amount.value();
+                total_ingredients[uuid] = amount;
             }
         }
             // if amount is NOT numerical
@@ -53,49 +51,75 @@ void WeekPlan::add_recipe(const Recipe& recipe_to_add) {
             // do the same but just apply the null value
             if (total_ingredients.find(uuid) != total_ingredients.end())
             {
-                // if it exists, make sure it is nullopt
-                total_ingredients[uuid] = std::nullopt;
+                // if it exists, make sure it is the unused sentinel value
+                total_ingredients[uuid] = -1;
             } else
             {
-                // if it doesn't exist, add a new entry that's nullopt
-                total_ingredients[uuid] = std::nullopt;
+                // if it doesn't exist, add a new entry that has the non countable sentinel value
+                total_ingredients[uuid] = -1;
             }
         }
     }
 
-
-    //nOw distribute the number of portions the recipe makes over the week
-    std::cout << recipe_to_add.get_title() << " makes " << recipe_to_add.get_portions() << " portions." << std::endl;
 
     display_weeks_recipes();
 
-    while(portion <= recipe_to_add.get_portions())
+    while(true)
     {
+        int user_choice = get_int_input();
 
-        // todo make this a function in the organiser which sanitises the input
-
-        while(true)
+        if (weeks_recipes[user_choice - 1].get_title() == "No Recipe")
         {
-            std::cout << "Where would you like to put portion " << portion << std::endl;
-            std::cin >> user_choice;
-            if (weeks_recipes[user_choice - 1].get_title() == "No Recipe")
-            {
-                weeks_recipes[user_choice - 1] = recipe_to_add;
-                break;
-            }
-            else if(user_choice < 1 || user_choice > MAX_RECIPES)
-            {
-                std::cout << "Please enter a number between 0 & " << MAX_RECIPES << std::endl;
-            }
-            else
-            {
-                std::cout << "There is already a recipe in that slot" << std::endl;
-                display_weeks_recipes();
-            }
+            weeks_recipes[user_choice - 1] = recipe_to_add;
+            break;
         }
-
-        portion++;
+        else
+        {
+            std::cout << "There is already a recipe in that slot" << std::endl;
+            display_weeks_recipes();
+        }
     }
+
+}
+
+int WeekPlan::get_int_input()
+{
+    // the int to be returned
+    int userChoice;
+
+    // try get a valid input based on the need for an int (which will be false if passing cin to an int variable fails) and respect of the
+    // max and min parameters passed to the function from a part of code that deals with a menu.
+    std::cout << "Enter the location for this meal: ";
+    // While not a valid entry clear cin and try again
+
+    while(true)
+    {
+        try
+        {
+
+            // if cin is not given as the correct data type for userChoice, int, cin returns a false
+            // if the data type IS an int, but is out of bounds run this code as well
+            if(!(std::cin >> userChoice) || userChoice < 1 || userChoice > MAX_RECIPES)
+            {
+                // claer the error flag and buffer
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                // make the error string
+                std::stringstream error_string;
+                error_string << "Invalid input. Please enter a number between 1 and " << MAX_RECIPES << ".";
+
+                throw std::runtime_error(error_string.str());
+            }
+            // if input valid, break the while loop
+            break;
+        }
+        // send an error, which is the error string constructed above
+        catch (const std::runtime_error& error)
+        {
+            std::cout << error.what() << std::endl;
+        }
+    }
+    return userChoice;
 }
 
 // display the currently selected weekly plan of meals
@@ -125,7 +149,7 @@ void WeekPlan::display_weeks_recipes() const {
 
 // this just returned the total ingredients list after it has been summed, in case we need to use the list somewhere else.
 // eg to a shopping list class that formats it as checkboxes etc.
-std::unordered_map<int, std::optional<int>> WeekPlan::get_total_ingredients() {return total_ingredients;}
+//std::unordered_map<int, std::optional<int>> WeekPlan::get_total_ingredients() {return total_ingredients;}
 
 // display the total_ingredients member variable
 void WeekPlan::display_total_weeks_ingredients(std::unordered_map<int, Ingredient> ingredients_list) {
@@ -144,11 +168,11 @@ void WeekPlan::display_total_weeks_ingredients(std::unordered_map<int, Ingredien
         if (it != ingredients_list.end())
         {
             // if the 'amount' field is not nullopt, and is an integer value
-            if (ingredient.second.has_value())
+            if (ingredient.second != -1)
             {
                 // ingredient is just (uuid, amount), to get the name we need to use the iterator which points to an
                 // Ingredient type and use the get_name member function of Ingredient.
-                std::cout << "- " << it->second.get_name() << ": " << ingredient.second.value() << " " << it->second.get_unit()
+                std::cout << "- " << it->second.get_name() << ": " << ingredient.second << " " << it->second.get_unit()
                           << std::endl;
             }
             // if it DOESNT have a value associated just print the name

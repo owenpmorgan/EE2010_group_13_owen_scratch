@@ -16,6 +16,7 @@ private:
 
 public:
 
+    virtual int get_int_input() override;
     void add_ingredient(const Ingredient& ingredient);
 
     Ingredient get_ingredient(int uuid);

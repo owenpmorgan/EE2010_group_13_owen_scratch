@@ -6,8 +6,8 @@
 
 #include <optional>
 
-Recipe::Recipe(std::string title, int portions)
-              : title(title), portions(portions)
+Recipe::Recipe(std::string title)
+              : title(title)
 {
 }
 
@@ -20,23 +20,12 @@ void Recipe::add_ingredient(const int uuid, int amount)
     }
 }
 
-// the same but support being able to make one without an amount for herbs etc.
-void Recipe::add_ingredient(const int uuid) {
-    auto result = recipe_ingredients.insert({uuid, std::nullopt});
-    // if the bool, second result DIDN't happen then it must have been becasue the uuid already exists, so throw an error
-    if (!result.second)
-    {
-        throw std::runtime_error("Ingredient with this UUID already exists.");
-    }
-}
 
 std::string Recipe::get_title() const{
     return title;
 }
 
-int Recipe::get_portions() const {return portions;}
-
-std::unordered_map<int, std::optional<int>> Recipe::get_recipe_ingredients() const {return recipe_ingredients;}
+std::unordered_map<int, int> Recipe::get_recipe_ingredients() const {return recipe_ingredients;}
 
 void Recipe::display_recipe_ingredients(std::unordered_map<int, Ingredient> ingredients_list) const
 {
@@ -48,9 +37,9 @@ void Recipe::display_recipe_ingredients(std::unordered_map<int, Ingredient> ingr
         // find the ingredient on the ingredients list of the local variable ingredient 's first value, it's uuid
         auto it = ingredients_list.find(ingredient.first);
 
-        if(ingredient.second.has_value()){
+        if(ingredient.second != -1){
 
-            std::cout << it->second.get_name() << ": " << ingredient.second.value() << " " << it->second.get_unit() << std::endl;
+            std::cout << it->second.get_name() << ": " << ingredient.second << " " << it->second.get_unit() << std::endl;
         }
         else{
             std::cout << it->second.get_name() << ": " << "to taste" << std::endl;
