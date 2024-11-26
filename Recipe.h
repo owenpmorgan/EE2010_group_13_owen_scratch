@@ -15,8 +15,12 @@ class Recipe
 
 private:
     std::string title;
-    std::unordered_map<int, int> recipe_ingredients;
     int portions;
+    // first is ingredient's uuid, second int amount
+    std::unordered_map<int, int> recipe_ingredients;
+    std::string method;
+
+
 
 public:
     Recipe(std::string title); // constructor

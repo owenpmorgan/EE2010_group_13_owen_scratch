@@ -41,7 +41,7 @@ int main() {
 
     IngredientList ingredientList;
 
-    std::ifstream myFile("all_recipes.json");
+    std::ifstream myFile("recipes.json");
     if (!myFile.is_open()) {
         std::cerr << "Failed to open JSON file." << std::endl;
         return 1;
