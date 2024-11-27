@@ -11,15 +11,28 @@ WeekPlan::WeekPlan() {
 
     for(auto& it : weeks_recipes)
     {
-        it = Recipe("No Recipe");
+        it = Recipe("No Recipe", 0, "");
     }
 
 }
 //  provide a recipe name from the list and which meal of the 21 per week you want to assign it to
-void WeekPlan::add_recipe(const Recipe& recipe_to_add) {
+void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe> recipe_list) {
 
-    // on adding a recipe cycle through it's ingredients and add them to the total ingredients necessary for the week
-    const auto &recipe_ingredients = recipe_to_add.get_recipe_ingredients();
+    Recipe current_recipe;
+
+    if(recipe_list.find(recipe_to_add) != recipe_list.end())
+    {
+        current_recipe = recipe_list.at(recipe_to_add);
+    }
+    else
+    {
+        //todo throw an exception
+    }
+
+    const auto& recipe_ingredients = current_recipe.get_recipe_ingredients();
+
+    std::cout << "Number of ingredients in recipe: " << recipe_ingredients.size() << "\n";
+    std::cout << "Recipe Title: " << current_recipe.get_title() << "\n";
 
 //    this sums the total ingredients for the added recipe
     for (const auto &ingredient: recipe_ingredients)
@@ -27,10 +40,11 @@ void WeekPlan::add_recipe(const Recipe& recipe_to_add) {
         // grab the uuid of this ingredient to compare it to the list of total ingredients and see where it is or if
         // it has not been added yet
         int uuid = ingredient.first;
-
-        // and grab the amount, being sure it can also receive nullopt
         // store the second value of the current ingredient in an optional in called ammount
         int amount = ingredient.second;
+
+        std::cout << "Ingredient UUID: " << uuid << ", Amount: " << amount << "\n";
+
         // if amount is numerical...
         if (amount != -1)
         {
@@ -61,7 +75,6 @@ void WeekPlan::add_recipe(const Recipe& recipe_to_add) {
         }
     }
 
-
     display_weeks_recipes();
 
     while(true)
@@ -70,7 +83,7 @@ void WeekPlan::add_recipe(const Recipe& recipe_to_add) {
 
         if (weeks_recipes[user_choice - 1].get_title() == "No Recipe")
         {
-            weeks_recipes[user_choice - 1] = recipe_to_add;
+            weeks_recipes[user_choice - 1] = current_recipe;
             break;
         }
         else

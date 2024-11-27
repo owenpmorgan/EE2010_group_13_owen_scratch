@@ -3,6 +3,7 @@
 //
 
 #include "Recipe.h"
+#include <map>
 
 #ifndef EE2010_GROUP_MY_SCRATCH_WEEKPLAN_H
 #define EE2010_GROUP_MY_SCRATCH_WEEKPLAN_H
@@ -24,7 +25,7 @@ public:
 
     virtual int get_int_input() override;
 
-    void add_recipe(const Recipe&);
+    void add_recipe(int, std::map<int, Recipe>);
 
     std::unordered_map<int, int> get_total_ingredients();
 

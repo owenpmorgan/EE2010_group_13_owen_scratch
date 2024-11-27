@@ -23,7 +23,7 @@ private:
 
 
 public:
-    Recipe(std::string title); // constructor
+    Recipe(std::string title, int portions, std::string method); // constructor
     Recipe() : title("Unnamed Recipe") {}  // Default constructor if no args passed
     ~Recipe() = default;
 
@@ -34,6 +34,7 @@ public:
     std::unordered_map<int, int> get_recipe_ingredients() const;
     int get_amount(int);
     int get_portions() const;
+    std::string get_recipe_method() const;
 
     void display_recipe_ingredients(std::unordered_map<int, Ingredient>) const;
 

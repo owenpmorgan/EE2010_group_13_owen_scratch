@@ -21,7 +21,7 @@ public:
     //constructor
     Ingredient(int uuid,
                std::string name,
-               MeasurementType type,
+//               MeasurementType type,
                std::string unit = "");
 
     // getters

@@ -144,7 +144,7 @@
     },
     {
         "name": "Fish pie mac \u2019n\u2019 cheese",
-        "servings": "6 (or 4 adults and 4 children)",
+        "servings": "6",
         "ingredients": [
             {
                 "quantity": "650",
@@ -6390,11 +6390,7 @@
                 "unit": "tsp",
                 "ingredient": "wholegrain mustard"
             },
-            {
-                "quantity": "1",
-                "unit": "tbsp",
-                "ingredient": "wholegrain mustard"
-            },
+
             {
                 "quantity": "3",
                 "unit": "tbsp",
@@ -6438,19 +6434,7 @@
             "Add the lime juice and taste the sauce for a balance of sweet and sour, adding more lime juice and fish sauce, if you like. Scatter over the spring onions, if using, along with the herbs and chilli. For a more filling meal, serve with rice or noodles and the lime wedges on the side."
         ]
     },
-    {
-        "name": "Japanese-style chicken curry",
-        "servings": "6",
-        "ingredients": {
-            "quantity": "1",
-            "unit": "item",
-            "ingredient": "prepared roast chicken (see recipe below)"
-        },
-        "method": [
-            "For the sauce, heat the oil in a large flameproof casserole or pan over a medium heat and cook the onions for 10 mins until lightly golden. Mix in the garlic and ginger, and cook gently for a couple of minutes until fragrant. Add the butter and, once sizzling, stir in the flour, curry powder and garam masala. Cook for 3-4 mins until the mixture has darkened in colour. Gradually ladle in the stock, stirring well after each addition.",
-            "Bring to a gentle simmer and add the soy sauce, honey and vinegar. Stir in the potatoes and carrots, then cover and simmer for about 15-20 mins until the sauce has thickened and the vegetables are cooked. Season to taste, adding a splash more stock if it\u2019s too thick. Slice the chicken and serve with the rice. Spoon over the sauce and scatter over the spring onions. Serve with Japanese pickles, if you like."
-        ]
-    },
+
     {
         "name": "Chicken cacciatore one-pot with orzo",
         "servings": "4",

@@ -8,9 +8,19 @@
 // a function of ingredient list to add an ingredient, it takes the new ingredient only
 void IngredientList::add_ingredient(const Ingredient& ingredient) {
 
+    for (const auto& pair : ingredients_list)
+    {
+        if (pair.second.get_name() == ingredient.get_name())
+        {
+            // Ingredient with this name already exists, so ignore it
+            std::cerr << "Warning: Ingredient with name \"" << ingredient.get_name() << "\" already exists. Ignoring.\n";
+            return; // Exit the function
+        }
+    }
+
     auto result = ingredients_list.insert({ingredient.get_uuid(), ingredient});
     if (!result.second) {
-        throw std::runtime_error("Ingredient with this UUID already exists.");
+        throw std::runtime_error("INGREDIENTLIST: Ingredient with this UUID already exists.");
     }
 }
 

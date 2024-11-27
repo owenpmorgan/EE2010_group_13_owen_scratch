@@ -6,41 +6,41 @@
 
 Ingredient::Ingredient(int uuid,
                         std::string name,
-                        MeasurementType type,
+//                        MeasurementType type,
                         std::string unit)
                         : uuid(uuid),
                         name(name),
-                        measurement_type(type),
+//                        measurement_type(type),
                         unit(unit)
 {
-    set_default_unit();
+//    set_default_unit();
 }
 
 // this gets called in the constructor to find the default unit
-void Ingredient::set_default_unit()
-{
-    if (unit.empty())
-    {
-        switch (measurement_type)
-        {
-            case MeasurementType::SEASONING:
-                unit = "to taste";
-                break;
-            case MeasurementType::WEIGHT:
-                unit = "grams";
-                break;
-            case MeasurementType::VOLUME:
-                unit = "ml";
-                break;
-            case MeasurementType::COUNT:
-                unit = "item(s)";
-                break;
-            case MeasurementType::GENERIC:
-                unit = "";
-                break;
-        }
-    }
-}
+//void Ingredient::set_default_unit()
+//{
+//    if (unit.empty())
+//    {
+//        switch (measurement_type)
+//        {
+//            case MeasurementType::SEASONING:
+//                unit = "to taste";
+//                break;
+//            case MeasurementType::WEIGHT:
+//                unit = "grams";
+//                break;
+//            case MeasurementType::VOLUME:
+//                unit = "ml";
+//                break;
+//            case MeasurementType::COUNT:
+//                unit = "item(s)";
+//                break;
+//            case MeasurementType::GENERIC:
+//                unit = "";
+//                break;
+//        }
+//    }
+//}
 
 int Ingredient::get_uuid() const {return uuid;}
 

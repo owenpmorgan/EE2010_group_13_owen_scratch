@@ -6,8 +6,11 @@
 
 #include <optional>
 
-Recipe::Recipe(std::string title)
-              : title(title)
+Recipe::Recipe(std::string title, int portions, std::string method)
+              : title(title),
+              portions(portions),
+              method(method)
+
 {
 }
 
@@ -16,7 +19,7 @@ void Recipe::add_ingredient(const int uuid, int amount)
     auto result = recipe_ingredients.insert({uuid, amount});
     if (!result.second)
     {
-        throw std::runtime_error("Ingredient with this UUID already exists.");
+        throw std::runtime_error("RECIPE: Ingredient with this UUID already exists.");
     }
 }
 
@@ -24,6 +27,8 @@ void Recipe::add_ingredient(const int uuid, int amount)
 std::string Recipe::get_title() const{
     return title;
 }
+
+std::string Recipe::get_recipe_method() const {return method;}
 
 std::unordered_map<int, int> Recipe::get_recipe_ingredients() const {return recipe_ingredients;}
 

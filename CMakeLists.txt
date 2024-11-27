@@ -24,4 +24,6 @@ add_executable(EE2010_group_my_scratch main.cpp
         Organiser.cpp
         Organiser.h
         Interface.cpp
-        Interface.h)
+        Interface.h
+        RecipeList.cpp
+        RecipeList.h)
