@@ -40,8 +40,12 @@ using json = nlohmann::json;
 
 int main() {
 
+    // unordered_map<int uuid, Ingredient ingredient>
     IngredientList ingredientList;
+    // map<int recipe_id, Recipe recipe>
     RecipeList recipe_list;
+    // Recipe array[max_recipes]
+    WeekPlan myWeek;
 
     // Leave this here for now as it is good at picking up any errors in the json file to be parsed
 //    std::ifstream myFile("recipes.json");
@@ -65,6 +69,9 @@ int main() {
 //
 //    }
 
+/*****************************************************************************************************************
+ * The Following block is all just parsing the scraped json file and adding it to the various classes
+ *****************************************************************************************************************/
 // open the json and parse the data to a json object called data
     std::ifstream myFile("recipes.json");
     if (!myFile.is_open()) {
@@ -74,32 +81,34 @@ int main() {
     json data = json::parse(myFile);
     myFile.close();
 
+    // this will be incremented as new ingredients added, the uuid is a reference to an ingredient in ingredient_list
     int uuid = 0;
 
     // loop through all recipes in the json, i is each recipe
     for(int i = 0; i < data.size(); i++)
     {
-        // grab the string 'name' from the recipe
+        // grab the string 'name' from the current recipe, to be used in the constructor of a new recipe
         std::string recipe_name = data[i]["name"];
 
         // cout recipe name for debugging the loop
-        std::cout << recipe_name << std::endl;
+        // std::cout << recipe_name << std::endl;
 
+        // grab the number of portions from the current recipe, this may not be an int, so the following checks if it is
         int recipe_portions;
         // save string 'servings' so we can inspect it to see if it can be converted to int
         std::string servings_str = data[i]["servings"].get<std::string>();
         // check if the whole thing is numeric
         if (!servings_str.empty() && std::all_of(servings_str.begin(), servings_str.end(), ::isdigit)) {
-            // if so convert it to int and that thats the quantity
+            // if so convert it to int and that that's the portion quantity
             recipe_portions = std::stoi(servings_str);
         }
         else
         {
-            // if not set to a default value
+            // if not set to a default value for recipe_portions used in constructor below
             recipe_portions = 1;
         }
 
-        // set a default value for method
+        // grab the method text from the current recipe, first set a default string to be populated
         std::string recipe_method = "";
         // method is an array of strings, so we need to concatenate them
         for (const auto& step : data[i]["method"])
@@ -107,27 +116,30 @@ int main() {
             // if there is some data
             if (!step.is_null())
             {
-                // add it
-                recipe_method += step.get<std::string>() + "\n"; // Combine steps with a newline
+                // add it to the method string, to be used in constructor below
+                recipe_method += step.get<std::string>() + "\n";
             }
         }
 
-        // make a new recipe object with th gathered data
+        // make a new, temporary, recipe object with the gathered data
         Recipe current_recipe(recipe_name, recipe_portions, recipe_method);
 
-//        std::cout << current_recipe.get_recipe_method();
-
-        // now loop through the ingredients in the recipe
+        // now loop through the ingredients in the recipe, j is an ingredient in the recipe
         for(int j = 0; j < data[i]["ingredients"].size(); j++)
         {
+            // populate the ingredient name variable from the current ingredient in the recipe
             std::string ingredient_name = data[i]["ingredients"][j]["ingredient"];
-//            std::cout << "Processing ingredient: " << ingredient_name << "\n";
 
-            // some ingredient amounts are null, set temp to -1 and then update with real value if not null
-            int ingredient_amount = -1; // Default to -1 if quantity is null
+            // check ingredient is cycling through correctly
+            // std::cout << "Processing ingredient: " << ingredient_name << "\n";
+
+            // get ingredient amount, some ingredient amounts are null in the json,
+            // set temporary amount to sentinel value and then update with real value if not null
+            int ingredient_amount = -1;
+
             if (!data[i]["ingredients"][j]["quantity"].is_null()) {
-                // similarily, some amounts are a string saying 'handfull' etc, ignore these
-                // first get what we are trying to convert to int
+                // similarily, some amounts are a string saying 'handfull' etc, ignore these,
+                // make sure the quantity of the current ingredient is an int.
                 std::string quantity_str = data[i]["ingredients"][j]["quantity"].get<std::string>();
                 // check if the whole thing is numeric
                 if (!quantity_str.empty() && std::all_of(quantity_str.begin(), quantity_str.end(), ::isdigit)) {
@@ -136,100 +148,77 @@ int main() {
                 }
                 else
                 {
-                    // if not set the sentinel value
+                    // if not set the sentinel value, which we can parse later when the ingredient comes up
                     ingredient_amount = -1;
                 }
-
             }
 
-            // some ingredient units are null, set to "" and then if it is not null update with the real value
+            // Similarily some ingredient units are null, set to "" and then if it is not null update with the real value
             std::string ingredient_unit = "";
-            if (!data[i]["ingredients"][j]["unit"].is_null()) {
-                ingredient_unit = data[i]["ingredients"][j]["unit"].get<std::string>();
 
+            if (!data[i]["ingredients"][j]["unit"].is_null())
+            {
+                // get the unit from the json if it is a valid string
+                ingredient_unit = data[i]["ingredients"][j]["unit"].get<std::string>();
             }
 
-            // Check if the ingredient already exists in the IngredientList by name
-            int actual_uuid = -1; // Default to the current UUID if the ingredient doesn't already exist
+            // check ingredient list is growing properly
+            // std::cout << "IngredientList size: " << ingredientList.get_ingredients_list().size() << "\n";
 
-            std::cout << "IngredientList size: " << ingredientList.get_ingredients_list().size() << "\n";
+            // We need to notice if a uuid is a valid, new, uuid, this sentinel value helps this
+            int default_uuid = -1;
 
             // look for the current ingredient name in the ingredient list
+            // get_ingredients_list returns unorderd_map<int, Ingrededient>
             for (const auto& pair : ingredientList.get_ingredients_list())
             {
-                // for each iteration, look at the name of ingredient to be added and see if it's the same as an ingredient on the list
+                // check if the ingredient to be added already exists in the ingredient list (by name)
                 if (pair.second.get_name() == ingredient_name)
                 {
-                    // if it is, just use the existing uuid
-                    actual_uuid = pair.first; // Use the existing ingredient's UUID
+                    // if it is, just use the existing uuid, which is given by pair.first
+                    default_uuid = pair.first;
                     // and break the for
                     break;
                 }
             }
-            // if the above loop exited without the name of the ingredient being found
-            if (actual_uuid == -1)
+            // if the above loop exited without the name of the ingredient being found default_uuid will still be -1
+            if (default_uuid == -1)
             {
-                actual_uuid = uuid; // Use the current UUID
-                ingredientList.add_ingredient(Ingredient(actual_uuid, ingredient_name, ingredient_unit));
-                uuid++; // Increment UUID only for new ingredients
+                // so give it a new uuid
+                default_uuid = uuid;
+                // add the ingredient with the collated values
+                ingredientList.add_ingredient(Ingredient(default_uuid, ingredient_name, ingredient_unit));
+                // and increment ingredient uuid, as we have just made a new ingredient in the list, the next must have
+                // the next uuid
+                uuid++;
             }
-            current_recipe.add_ingredient(actual_uuid, ingredient_amount);
 
-
+            // now add the ingredient to the current recipe, using default_uuid which will have been made either a new uuid
+            // or given the uuid of an existing ingredient.
+            current_recipe.add_ingredient(default_uuid, ingredient_amount);
         }
 
         // finally add the current_recipe to the master recipe_list
         recipe_list.add_recipe_to_list(current_recipe);
     }
 
+    /*****************************************************************************************************************
+ * End of json parsing block
+ *****************************************************************************************************************/
+
     // check you can grab a recipe by id
-//    std::cout << recipe_list.get_recipe_by_id(2).get_title();
+    // std::cout << recipe_list.get_recipe_by_id(2).get_title();
 
-ingredientList.display_total_ingredients_list();
-
-//     ingredient(uuid, name, measurementtype)
-//    ingredientList.add_ingredient(Ingredient(1, "Oil", MeasurementType::VOLUME));
-//    ingredientList.add_ingredient(Ingredient(2, "Herbs", MeasurementType::GENERIC));
-//    ingredientList.add_ingredient(Ingredient(3, "Rice", MeasurementType::WEIGHT));
-//    ingredientList.add_ingredient(Ingredient(4, "Eggs", MeasurementType::COUNT));
-//    ingredientList.add_ingredient(Ingredient(5, "Black Pepper", MeasurementType::SEASONING));
-
-//    for (ingredient in recipe in json)
-
-//    // recipe (title, portions)
-//    Recipe Eggs_oil("Eggs and Oil", 2, "cook it");
-//
-////  for recipe in json
-//    Eggs_oil.add_ingredient(1, 20);
-//    Eggs_oil.add_ingredient(4, 2);
-//    Eggs_oil.display_recipe_ingredients(ingredientList.get_ingredients_list());
-//
-//    Recipe Pepper_bowl("Pepper In a Bowl", 1, "make it");
-//    Pepper_bowl.add_ingredient(5, -1);
-//    Pepper_bowl.display_recipe_ingredients(ingredientList.get_ingredients_list());
-//
-//    Recipe Rice_Herbs("Rice and Herbs", 4, "cook it");
-//    Rice_Herbs.add_ingredient(3, 200);
-//    Rice_Herbs.add_ingredient(2, -1);
-
-//    ingredientList.get_ingredient(3).display();
-
-
-    WeekPlan myWeek;
-
-    // bool to exit loop when program quits
-    bool run = true;
-
+//    ingredientList.display_total_ingredients_list();
 //    recipe_list.display_recipe_list();
 
-
     myWeek.add_recipe(143, recipe_list.get_recipe_list());
+    myWeek.add_recipe(142, recipe_list.get_recipe_list());
+    myWeek.add_recipe(141, recipe_list.get_recipe_list());
 
     myWeek.display_weeks_recipes();
 
-
-//    myWeek.add_recipe(2);
-
     myWeek.display_total_weeks_ingredients(ingredientList.get_ingredients_list());
 
+    return 0;
 }

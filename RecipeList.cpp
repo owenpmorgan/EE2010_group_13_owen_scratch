@@ -23,6 +23,7 @@ void RecipeList::display_recipe_list() {
         int key = pair.first;
         std::string name = pair.second.get_title();
 
+        // display all the recipes with a number to call them with (key)
         std::cout << key << ": " << name << std::endl;
     }
 }

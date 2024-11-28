@@ -2,46 +2,6 @@
 	"entries" : 
 	[
 		{
-			"name" : "Boost_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Boost."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/usr/local/lib/cmake/Boost-1.82.0"
-		},
-		{
-			"name" : "Boost_INCLUDE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a file."
-				}
-			],
-			"type" : "PATH",
-			"value" : "Boost_INCLUDE_DIR-NOTFOUND"
-		},
-		{
-			"name" : "Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "STRING",
-			"value" : "/usr/local/lib/libboost_unit_test_framework.dylib"
-		},
-		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -811,7 +771,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -1176,50 +1136,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/owenmorgan/Library/Mobile Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch"
-		},
-		{
-			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Boost",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Details about finding Boost"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "[/usr/local/lib/cmake/Boost-1.82.0/BoostConfig.cmake][c ][v1.82.0(1.68)]"
-		},
-		{
-			"name" : "boost_headers_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for boost_headers."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/usr/local/lib/cmake/boost_headers-1.82.0"
-		},
-		{
-			"name" : "boost_unit_test_framework_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for boost_unit_test_framework."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/usr/local/lib/cmake/boost_unit_test_framework-1.82.0"
 		}
 	],
 	"kind" : "cache",

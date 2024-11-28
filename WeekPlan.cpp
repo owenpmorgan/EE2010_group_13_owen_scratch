@@ -20,6 +20,7 @@ void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe> recipe_list) 
 
     Recipe current_recipe;
 
+
     if(recipe_list.find(recipe_to_add) != recipe_list.end())
     {
         current_recipe = recipe_list.at(recipe_to_add);
@@ -31,8 +32,8 @@ void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe> recipe_list) 
 
     const auto& recipe_ingredients = current_recipe.get_recipe_ingredients();
 
-    std::cout << "Number of ingredients in recipe: " << recipe_ingredients.size() << "\n";
-    std::cout << "Recipe Title: " << current_recipe.get_title() << "\n";
+//    std::cout << "Number of ingredients in recipe: " << recipe_ingredients.size() << "\n";
+//    std::cout << "Recipe Title: " << current_recipe.get_title() << "\n";
 
 //    this sums the total ingredients for the added recipe
     for (const auto &ingredient: recipe_ingredients)
@@ -43,7 +44,7 @@ void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe> recipe_list) 
         // store the second value of the current ingredient in an optional in called ammount
         int amount = ingredient.second;
 
-        std::cout << "Ingredient UUID: " << uuid << ", Amount: " << amount << "\n";
+//        std::cout << "Ingredient UUID: " << uuid << ", Amount: " << amount << "\n";
 
         // if amount is numerical...
         if (amount != -1)
@@ -76,6 +77,8 @@ void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe> recipe_list) 
     }
 
     display_weeks_recipes();
+
+    std::cout << "Recipe to add: " << current_recipe.get_title() << std::endl;
 
     while(true)
     {
