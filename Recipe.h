@@ -28,12 +28,11 @@ public:
     ~Recipe() = default;
 
     void add_ingredient(const int uuid, int amount);
-//    void add_ingredient(const int uuid);
 
     std::string get_title() const;
     std::unordered_map<int, int> get_recipe_ingredients() const;
-    int get_amount(int);
-    int get_portions() const;
+//    int get_amount(int);
+//    int get_portions() const;
     std::string get_recipe_method() const;
 
     void display_recipe_ingredients(std::unordered_map<int, Ingredient>) const;

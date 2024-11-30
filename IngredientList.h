@@ -16,13 +16,18 @@ private:
 
 public:
 
+    // No need for constructor here, constructed one by one in json parsing
+    IngredientList();
+    // destructor
+    ~IngredientList() = default;
+
     virtual int get_int_input() override;
+
     void add_ingredient(const Ingredient& ingredient);
+    void display_total_ingredients_list() const;
 
     Ingredient get_ingredient(int uuid);
     std::unordered_map<int, Ingredient> get_ingredients_list();
-
-    void display_total_ingredients_list() const;
 
 };
 

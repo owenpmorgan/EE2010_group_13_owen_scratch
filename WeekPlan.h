@@ -14,9 +14,9 @@ class WeekPlan : public Organiser
 
 private:
 
-    Recipe weeks_recipes[MAX_RECIPES];
     // unordered map of uuid (key) amount (value)
     std::unordered_map<int, int> total_ingredients;
+    Recipe weeks_recipes[MAX_RECIPES];
 
 public:
 
@@ -26,12 +26,15 @@ public:
     virtual int get_int_input() override;
 
     void add_recipe(int, std::map<int, Recipe>);
-
-    std::unordered_map<int, int> get_total_ingredients();
-
-    void sum_total_weeks_ingredients();
     void display_weeks_recipes() const;
     void display_total_weeks_ingredients(std::unordered_map<int, Ingredient>);
+    std::unordered_map<int, int> get_total_ingredients();
+    void clear_week_plan();
+    void delete_meal_from_plan(std::map<int, Recipe>);
+
+//    void sum_total_weeks_ingredients();
+
+
 
 
 };

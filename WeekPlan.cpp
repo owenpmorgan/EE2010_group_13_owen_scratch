@@ -15,11 +15,21 @@ WeekPlan::WeekPlan() {
     }
 
 }
+
+void WeekPlan::clear_week_plan()
+{
+    for(auto& it : weeks_recipes)
+    {
+        it = Recipe("No Recipe", 0, "");
+    }
+
+    total_ingredients.clear();
+
+}
 //  provide a recipe name from the list and which meal of the 21 per week you want to assign it to
 void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe> recipe_list) {
 
     Recipe current_recipe;
-
 
     if(recipe_list.find(recipe_to_add) != recipe_list.end())
     {
@@ -27,7 +37,7 @@ void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe> recipe_list) 
     }
     else
     {
-        //todo throw an exception
+        throw std::runtime_error("WEEKPLAN: Recipe index not found");
     }
 
     const auto& recipe_ingredients = current_recipe.get_recipe_ingredients();
@@ -98,16 +108,62 @@ void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe> recipe_list) 
 
 }
 
+void WeekPlan::delete_meal_from_plan(std::map<int, Recipe>) {
+
+    std::cout << "Which meal would you like to delete?" << "\n";
+
+    // weeks recipes starts at 1, but the array starts at 0 so deduct 1
+    int user_choice = get_int_input() - 1;
+
+    Recipe& recipe_to_delete = weeks_recipes[user_choice];
+
+    // iterator to cycle through the ingredients for the recipe in the selected slot
+    const auto& recipe_ingredients = recipe_to_delete.get_recipe_ingredients();
+
+//  go through the ingredients one by one, note pair will be <int, uuid, int amount>
+    for (const auto &ingredient: recipe_ingredients)
+    {
+        // grab the uuid of this ingredient to compare it to the list of total ingredients and see where it is or if
+        // it has not been added yet
+        int uuid = ingredient.first;
+        // store the second value of the current ingredient in an optional in called ammount
+        int amount = ingredient.second;
+
+        // debug line
+//        std::cout << "Ingredient UUID: " << uuid << ", Amount: " << amount << "\n";
+
+        // if it can find the ingredients uuid in the total_ingredient list already, sum the amounts
+        if (total_ingredients.find(uuid) != total_ingredients.end())
+        {
+            total_ingredients[uuid] = total_ingredients[uuid] - amount;
+        }
+        else
+        {
+            throw std::runtime_error("WEEKPLAN: item to delete not found in total ingredients list");
+        }
+        // if this results in a zero value for an ingredient in the weekly list, delete, note do NOT do < 1,
+        // because all the sentinal values for uncountable ingredients are -1, and they would be erased too even if they
+        // were used in other recipes.
+        if (total_ingredients[uuid] == 0)
+        {
+            total_ingredients.erase(uuid);
+        }
+    }
+
+    // reset the recipe in that slot
+    weeks_recipes[user_choice] = Recipe("No Recipe", 0, "");
+
+}
+
 int WeekPlan::get_int_input()
 {
     // the int to be returned
     int userChoice;
 
-    // try get a valid input based on the need for an int (which will be false if passing cin to an int variable fails) and respect of the
-    // max and min parameters passed to the function from a part of code that deals with a menu.
-    std::cout << "Enter the location for this meal: ";
-    // While not a valid entry clear cin and try again
+    // redefine get int input from parent class organiser to make it specific to choosing a meal slot in the weekplan
+    std::cout << "Enter the number of the meal slot: ";
 
+    // While not a valid entry clear cin and try again
     while(true)
     {
         try
@@ -117,7 +173,7 @@ int WeekPlan::get_int_input()
             // if the data type IS an int, but is out of bounds run this code as well
             if(!(std::cin >> userChoice) || userChoice < 1 || userChoice > MAX_RECIPES)
             {
-                // claer the error flag and buffer
+                // clear the error flag and buffer
                 std::cin.clear();
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 // make the error string
@@ -163,7 +219,7 @@ void WeekPlan::display_weeks_recipes() const {
     }
 }
 
-// this just returned the total ingredients list after it has been summed, in case we need to use the list somewhere else.
+// DEBUG this just returnes the total ingredients list after it has been summed, in case we need to use the list somewhere else.
 // eg to a shopping list class that formats it as checkboxes etc.
 //std::unordered_map<int, std::optional<int>> WeekPlan::get_total_ingredients() {return total_ingredients;}
 
@@ -197,6 +253,7 @@ void WeekPlan::display_total_weeks_ingredients(std::unordered_map<int, Ingredien
                 std::cout << "- " << it->second.get_name() << std::endl;
             }
         }
-
     }
 }
+
+std::unordered_map<int, int> WeekPlan::get_total_ingredients(){return total_ingredients;}

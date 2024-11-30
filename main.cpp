@@ -7,7 +7,10 @@
 #include "RecipeList.h"
 #include <nlohmann/json.hpp>
 #include <fstream>
+
 #define BOOST_TEST_MODULE MyTestModule
+
+// uncomment to access the test main (must comment out program main)
 //#include <boost/test/included/unit_test.hpp>
 
 using json = nlohmann::json;
@@ -24,21 +27,53 @@ using json = nlohmann::json;
  *todo servings is always 1
 */
 
+/*
 
-//BOOST_AUTO_TEST_CASE(test_user_ingredient)
-//{
-//    Ingredient ingredient(1, "Eggs", MeasurementType::COUNT);
-//
-//    BOOST_CHECK(ingredient.get_uuid() == 1);
-//    BOOST_CHECK(ingredient.get_name() =="Eggs");
-//    BOOST_CHECK(ingredient.get_measurement_type() == MeasurementType::COUNT);
-//}
+BOOST_AUTO_TEST_CASE(test_user_ingredient)
+{
+    Ingredient ingredient(1, "Egg", "item");
+
+    BOOST_CHECK(ingredient.get_uuid() == 1);
+    BOOST_CHECK(ingredient.get_name() =="Egg");
+    BOOST_CHECK(ingredient.get_unit() == "item");
+}
+
+BOOST_AUTO_TEST_CASE(test_duplicate_ingredient_name)
+{
+    IngredientList ingredientList;
+    // make an item and add it to the list
+    Ingredient ingredient(1, "beef", "item");
+    ingredientList.add_ingredient(ingredient);
+    // and then try to add it again
+    BOOST_CHECK_THROW(ingredientList.add_ingredient(ingredient), std::runtime_error);
+}
+
+BOOST_AUTO_TEST_CASE(test_duplicate_ingredient_uuid)
+{
+    IngredientList ingredientList;
+    // make 2 items with the same UUID
+    Ingredient ingredient(1, "beef", "item");
+    Ingredient ingredient2(1, "fish", "item");
+    // Add the first
+    ingredientList.add_ingredient(ingredient);
+    // then try add the second and check exception is thrown
+    BOOST_CHECK_THROW(ingredientList.add_ingredient(ingredient2), std::runtime_error);
+}
+
+BOOST_AUTO_TEST_CASE(test_recipe_to_add_not_found)
+{
+    RecipeList recipeList;
+    WeekPlan weekplan;
+    BOOST_CHECK_THROW(weekplan.add_recipe(-1, recipeList.get_recipe_list()), std::runtime_error);
+}
+
+*/
 
 
 
+ int main() {
 
 
-int main() {
 
     // unordered_map<int uuid, Ingredient ingredient>
     IngredientList ingredientList;
@@ -47,7 +82,7 @@ int main() {
     // Recipe array[max_recipes]
     WeekPlan myWeek;
 
-    // Leave this here for now as it is good at picking up any errors in the json file to be parsed
+// Leave this here for now as it is good at picking up any errors in the json file to be parsed
 //    std::ifstream myFile("recipes.json");
 //    if (!myFile.is_open()) {
 //        std::cerr << "Failed to open JSON file." << std::endl;
@@ -69,6 +104,7 @@ int main() {
 //
 //    }
 
+
 /*****************************************************************************************************************
  * The Following block is all just parsing the scraped json file and adding it to the various classes
  *****************************************************************************************************************/
@@ -83,6 +119,10 @@ int main() {
 
     // this will be incremented as new ingredients added, the uuid is a reference to an ingredient in ingredient_list
     int uuid = 0;
+
+/*****************************************************************************************************************
+ * The following outer loop (using i) collects recipe data for each in the json and makes a recipe obejct
+ *****************************************************************************************************************/
 
     // loop through all recipes in the json, i is each recipe
     for(int i = 0; i < data.size(); i++)
@@ -123,6 +163,11 @@ int main() {
 
         // make a new, temporary, recipe object with the gathered data
         Recipe current_recipe(recipe_name, recipe_portions, recipe_method);
+
+/*****************************************************************************************************************
+* The following inner loop (using j) collects recipe ingredients, populates the master ingredient list with current recipes
+* ingredients and links each ingredient item to the current recipe.
+*****************************************************************************************************************/
 
         // now loop through the ingredients in the recipe, j is an ingredient in the recipe
         for(int j = 0; j < data[i]["ingredients"].size(); j++)
@@ -202,23 +247,38 @@ int main() {
         recipe_list.add_recipe_to_list(current_recipe);
     }
 
-    /*****************************************************************************************************************
+/*****************************************************************************************************************
  * End of json parsing block
  *****************************************************************************************************************/
 
+    // debug tools
     // check you can grab a recipe by id
     // std::cout << recipe_list.get_recipe_by_id(2).get_title();
+    //  ingredientList.display_total_ingredients_list();
 
-//    ingredientList.display_total_ingredients_list();
-//    recipe_list.display_recipe_list();
+/*****************************************************************************************************************
+ * User interface part of program starts here
+ *****************************************************************************************************************/
+
+    recipe_list.display_recipe_list();
 
     myWeek.add_recipe(143, recipe_list.get_recipe_list());
-    myWeek.add_recipe(142, recipe_list.get_recipe_list());
-    myWeek.add_recipe(141, recipe_list.get_recipe_list());
+//    myWeek.add_recipe(142, recipe_list.get_recipe_list());
+//    myWeek.add_recipe(141, recipe_list.get_recipe_list());
 
     myWeek.display_weeks_recipes();
 
     myWeek.display_total_weeks_ingredients(ingredientList.get_ingredients_list());
 
+//    myWeek.clear_week_plan();
+//    myWeek.display_weeks_recipes();
+//    myWeek.display_total_weeks_ingredients(ingredientList.get_ingredients_list());
+
+    myWeek.delete_meal_from_plan(recipe_list.get_recipe_list());
+    myWeek.display_weeks_recipes();
+    myWeek.display_total_weeks_ingredients(ingredientList.get_ingredients_list());
+
     return 0;
 }
+
+

@@ -5,6 +5,9 @@
 #include "IngredientList.h"
 #include "Ingredient.h"
 
+// constructor in case we need to initialise with something, for now empty
+IngredientList::IngredientList(){}
+
 // a function of ingredient list to add an ingredient, it takes the new ingredient only
 void IngredientList::add_ingredient(const Ingredient& ingredient) {
 
@@ -13,7 +16,7 @@ void IngredientList::add_ingredient(const Ingredient& ingredient) {
         if (pair.second.get_name() == ingredient.get_name())
         {
             // Ingredient with this name already exists, so ignore it
-            std::cerr << "Warning: Ingredient with name \"" << ingredient.get_name() << "\" already exists. Ignoring.\n";
+            throw std::runtime_error("Warning: Ingredient with name " + ingredient.get_name() + "already exists.\n");
             return; // Exit the function
         }
     }
