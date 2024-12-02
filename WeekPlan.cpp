@@ -16,6 +16,8 @@ WeekPlan::WeekPlan() {
 
 }
 
+
+
 void WeekPlan::clear_week_plan()
 {
     for(auto& it : weeks_recipes)

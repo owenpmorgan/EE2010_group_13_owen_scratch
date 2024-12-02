@@ -16,18 +16,6 @@
 using json = nlohmann::json;
 
 /*
- * todo add clear recipes from week function to start from scratch (need a way to link recipes that are added together?)
- * todo also need to clear the shopping list in this case
- * todo create an options screen for view recipes, add recipe, clear recipe, clear all recipes etc.
- * todo add input sanitising in the organiser class that can be used in all inherited functions
- * todo maybe be able to manually add a recipe to a database
- * todo implement being able to replace recipes, or saying a recipe already exists there
- * todo
- *
- *todo servings is always 1
-*/
-
-/*
 
 BOOST_AUTO_TEST_CASE(test_user_ingredient)
 {
@@ -67,7 +55,13 @@ BOOST_AUTO_TEST_CASE(test_recipe_to_add_not_found)
     BOOST_CHECK_THROW(weekplan.add_recipe(-1, &recipeList.get_recipe_list()), std::runtime_error);
 }
 
-*/
+BOOST_AUTO_TEST_CASE(F3_test_get_recipe_list)
+{
+    RecipeList recipeList;
+//    BOOST_CHECK(recipeList.get_recipe_list(), std::map<int, Recipe>);
+    BOOST_CHECK(  (std::is_same<decltype(recipeList.get_recipe_list()), std::map<int, Recipe>>::value)  );
+}
+//*/
 
  int main() {
 
@@ -263,7 +257,7 @@ BOOST_AUTO_TEST_CASE(test_recipe_to_add_not_found)
 
     recipe_list.display_recipe_list();
 
-    myWeek.add_recipe(143, &recipe_list.get_recipe_list());
+    myWeek.add_recipe(145, &recipe_list.get_recipe_list());
     myWeek.add_recipe(142, &recipe_list.get_recipe_list());
     myWeek.add_recipe(141, &recipe_list.get_recipe_list());
 
