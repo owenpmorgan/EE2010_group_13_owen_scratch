@@ -21,7 +21,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "thumb-sized piece ginger grated"
+                "ingredient": "thumb-sized piece of ginger"
             },
             {
                 "quantity": "3",
@@ -31,7 +31,7 @@
             {
                 "quantity": "1",
                 "unit": "tbsp",
-                "ingredient": "smooth peanut butter"
+                "ingredient": "butter"
             },
             {
                 "quantity": "500",
@@ -103,7 +103,7 @@
             {
                 "quantity": "2",
                 "unit": "400g cans",
-                "ingredient": "chopped tomatoes"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "1",
@@ -144,7 +144,7 @@
     },
     {
         "name": "Fish pie mac \u2019n\u2019 cheese",
-        "servings": "6",
+        "servings": "6 (or 4 adults and 4 children)",
         "ingredients": [
             {
                 "quantity": "650",
@@ -215,7 +215,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "aubergines cut into \u00bd cm thick slices"
+                "ingredient": "aubergines"
             },
             {
                 "quantity": "8",
@@ -235,7 +235,7 @@
             {
                 "quantity": "handful",
                 "unit": null,
-                "ingredient": "cherry tomatoes halved"
+                "ingredient": "tomatoes"
             }
         ],
         "method": [
@@ -268,7 +268,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "thumb-sized piece of ginger peeled"
+                "ingredient": "thumb-sized piece of ginger"
             },
             {
                 "quantity": "2",
@@ -283,7 +283,7 @@
             {
                 "quantity": "3",
                 "unit": "item",
-                "ingredient": "cardamom pods crushed"
+                "ingredient": "cardamom pods"
             },
             {
                 "quantity": "70",
@@ -344,7 +344,7 @@
             {
                 "quantity": "2",
                 "unit": "cans",
-                "ingredient": "400g chopped tomatoes"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "1",
@@ -415,7 +415,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "carrots finely chopped"
+                "ingredient": "carrots"
             },
             {
                 "quantity": "3",
@@ -450,7 +450,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can plum tomatoes"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "250",
@@ -460,7 +460,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can butter beans"
+                "ingredient": "butter"
             },
             {
                 "quantity": "60",
@@ -491,7 +491,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "thumb-sized piece ginger peeled and grated"
+                "ingredient": "thumb-sized piece of ginger"
             },
             {
                 "quantity": "2",
@@ -511,7 +511,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "2",
@@ -526,7 +526,7 @@
             {
                 "quantity": "3",
                 "unit": "item",
-                "ingredient": "cardamom pods bashed"
+                "ingredient": "cardamom pods"
             },
             {
                 "quantity": "200",
@@ -649,7 +649,7 @@
             {
                 "quantity": "350",
                 "unit": "g",
-                "ingredient": "boneless chicken thighs cut into strips"
+                "ingredient": "boneless chicken thighs"
             },
             {
                 "quantity": null,
@@ -717,7 +717,7 @@
             {
                 "quantity": "500",
                 "unit": "g",
-                "ingredient": "boneless chicken thighs cut into bite-sized pieces"
+                "ingredient": "boneless chicken thighs"
             },
             {
                 "quantity": "25",
@@ -889,78 +889,6 @@
         ]
     },
     {
-        "name": "Miso & butternut squash ramen",
-        "servings": "2",
-        "ingredients": [
-            {
-                "quantity": "200",
-                "unit": "g",
-                "ingredient": "pack of chopped butternut squash"
-            },
-            {
-                "quantity": "100",
-                "unit": "g",
-                "ingredient": "purple sprouting broccoli"
-            },
-            {
-                "quantity": "3",
-                "unit": "item",
-                "ingredient": "garlic cloves unpeeled and lightly bashed"
-            },
-            {
-                "quantity": "1",
-                "unit": "tbsp",
-                "ingredient": "vegetable oil"
-            },
-            {
-                "quantity": "\u00bd",
-                "unit": "tbsp",
-                "ingredient": "white miso"
-            },
-            {
-                "quantity": "1",
-                "unit": "tbsp",
-                "ingredient": "peanut butter"
-            },
-            {
-                "quantity": "1",
-                "unit": "tsp",
-                "ingredient": "reduced-salt soy sauce"
-            },
-            {
-                "quantity": "700",
-                "unit": "ml",
-                "ingredient": "low-salt vegetable stock"
-            },
-            {
-                "quantity": "150",
-                "unit": "g",
-                "ingredient": "wholemeal egg noodles"
-            },
-            {
-                "quantity": "2",
-                "unit": "item",
-                "ingredient": "eggs soft-boiled (for 7 mins)"
-            },
-            {
-                "quantity": "5",
-                "unit": "g",
-                "ingredient": "coriander roughly chopped, or leaves picked"
-            },
-            {
-                "quantity": "1",
-                "unit": "item",
-                "ingredient": "red chilli sliced"
-            }
-        ],
-        "method": [
-            "Heat the oven to 220C/200C fan/gas 7. Spread the butternut squash, broccoli and garlic cloves across a large baking tray lined with baking parchment, then drizzle with the vegetable oil and season well. Roast for 20-25 mins until cooked through and charring around the edges.",
-            "Put half of the butternut squash in a medium bowl and squeeze out the roasted garlic from the skins into the bowl. Leave the broccoli in the oven to keep warm. Mash the squash and garlic well with a fork or potato masher until a rough paste forms. Whisk in the miso, peanut butter and soy sauce until smooth.",
-            "Heat the stock in a large pan until boiling, then whisk in the butternut squash and miso mixture. Bring toa simmer and add the noodles. Cook for 3-4 mins until just tender.",
-            "Split the soup and noodles between two bowls, then top with the remaining half of the butternut squash, the broccoli, halved soft-boiled eggs, coriander and sliced chilli. Grind black pepper over the eggs, if you like."
-        ]
-    },
-    {
         "name": "Speedy lentil coconut curry",
         "servings": "4",
         "ingredients": [
@@ -982,7 +910,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "carrot roughly chopped"
+                "ingredient": "carrots"
             },
             {
                 "quantity": "10",
@@ -1049,7 +977,7 @@
             {
                 "quantity": "2",
                 "unit": "tsp",
-                "ingredient": "vegetable or sunflower oil"
+                "ingredient": "vegetable oil"
             },
             {
                 "quantity": "200",
@@ -1059,7 +987,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "carrots roughly chopped"
+                "ingredient": "carrots"
             },
             {
                 "quantity": "2",
@@ -1140,12 +1068,12 @@
             {
                 "quantity": "320",
                 "unit": "g",
-                "ingredient": "prepared butternut squash"
+                "ingredient": "butter"
             },
             {
                 "quantity": "600",
                 "unit": "ml",
-                "ingredient": "vegetable stock made with 1 tbsp bouillon powder"
+                "ingredient": "vegetable stock"
             },
             {
                 "quantity": "2",
@@ -1165,7 +1093,7 @@
             {
                 "quantity": null,
                 "unit": null,
-                "ingredient": "broccoli and peas to serve"
+                "ingredient": "broccoli florets"
             }
         ],
         "method": [
@@ -1335,7 +1263,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can cherry tomatoes"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "600",
@@ -1355,7 +1283,7 @@
             {
                 "quantity": "\u00bd",
                 "unit": "item",
-                "ingredient": "small bunch of basil chopped"
+                "ingredient": "basil"
             }
         ],
         "method": [
@@ -1418,7 +1346,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can black beans drained"
+                "ingredient": "black beans"
             },
             {
                 "quantity": "15",
@@ -1473,7 +1401,7 @@
             {
                 "quantity": "220",
                 "unit": "ml",
-                "ingredient": "vegetable stock made with 1 low-salt stock cube"
+                "ingredient": "vegetable stock"
             },
             {
                 "quantity": "250",
@@ -1488,7 +1416,7 @@
             {
                 "quantity": "5",
                 "unit": "g",
-                "ingredient": "Thai basil roughly torn"
+                "ingredient": "basil"
             },
             {
                 "quantity": "1",
@@ -1558,7 +1486,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "Little Gem lettuce leaves separated"
+                "ingredient": "little gem lettuce"
             },
             {
                 "quantity": null,
@@ -1615,7 +1543,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "2",
@@ -1702,12 +1630,12 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "\u00bd",
                 "unit": "item",
-                "ingredient": "x 250g block halloumi sliced"
+                "ingredient": "block halloumi"
             },
             {
                 "quantity": "\u00bd",
@@ -1758,7 +1686,7 @@
             {
                 "quantity": "\u00bd",
                 "unit": "large head",
-                "ingredient": "broccoli finely chopped"
+                "ingredient": "broccoli florets"
             },
             {
                 "quantity": "2",
@@ -1864,7 +1792,7 @@
             {
                 "quantity": "250",
                 "unit": "g",
-                "ingredient": "baby potatoes thickly sliced"
+                "ingredient": "baby potatoes"
             },
             {
                 "quantity": "2",
@@ -1889,7 +1817,7 @@
             {
                 "quantity": "1",
                 "unit": "tbsp",
-                "ingredient": "capers plus extra to serve"
+                "ingredient": "capers"
             },
             {
                 "quantity": "1",
@@ -1925,7 +1853,7 @@
             {
                 "quantity": "20",
                 "unit": "g",
-                "ingredient": "salted butter"
+                "ingredient": "butter"
             },
             {
                 "quantity": "6",
@@ -1997,7 +1925,7 @@
             {
                 "quantity": "160",
                 "unit": "g",
-                "ingredient": "baby spinach or other soft green salad leaves"
+                "ingredient": "baby spinach"
             },
             {
                 "quantity": "200",
@@ -2007,7 +1935,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "carrots finely shredded or grated"
+                "ingredient": "carrots"
             },
             {
                 "quantity": "2",
@@ -2050,7 +1978,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "tomatoes chopped"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "1",
@@ -2060,7 +1988,7 @@
             {
                 "quantity": "500",
                 "unit": "ml",
-                "ingredient": "warm beef stock"
+                "ingredient": "beef stock"
             },
             {
                 "quantity": "300",
@@ -2137,7 +2065,7 @@
             {
                 "quantity": "2",
                 "unit": "400g cans",
-                "ingredient": "chopped tomatoes"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "100",
@@ -2222,12 +2150,12 @@
             {
                 "quantity": "1",
                 "unit": "l",
-                "ingredient": "veg stock"
+                "ingredient": "vegetable stock"
             },
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "2",
@@ -2292,7 +2220,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "carrots chopped"
+                "ingredient": "carrots"
             },
             {
                 "quantity": "2",
@@ -2322,7 +2250,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "400",
@@ -2392,7 +2320,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "carrots finely sliced"
+                "ingredient": "carrots"
             },
             {
                 "quantity": "1",
@@ -2545,7 +2473,7 @@
             {
                 "quantity": "227",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "600",
@@ -2605,7 +2533,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "large tomatoes"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "2",
@@ -2744,7 +2672,7 @@
             {
                 "quantity": "100",
                 "unit": "g",
-                "ingredient": "cherry tomatoes quartered"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "25",
@@ -2850,7 +2778,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "large butternut squash peeled and cut into 2cm-thick slices (see tip, below)"
+                "ingredient": "butter"
             },
             {
                 "quantity": "small handful",
@@ -2895,7 +2823,7 @@
             {
                 "quantity": "80",
                 "unit": "g",
-                "ingredient": "sundried tomatoes roughly chopped"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "600",
@@ -2905,7 +2833,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "100",
@@ -2935,12 +2863,12 @@
             {
                 "quantity": "1",
                 "unit": "tbsp",
-                "ingredient": "vegetable or other flavourless oil"
+                "ingredient": "vegetable oil"
             },
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "banana shallots finely chopped"
+                "ingredient": "banana peeled"
             },
             {
                 "quantity": "1",
@@ -3030,7 +2958,7 @@
             {
                 "quantity": "250",
                 "unit": "g",
-                "ingredient": "baby potatoes sliced"
+                "ingredient": "baby potatoes"
             },
             {
                 "quantity": "1",
@@ -3040,7 +2968,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "bay leaf"
+                "ingredient": "bay leaves"
             },
             {
                 "quantity": "1",
@@ -3060,7 +2988,7 @@
             {
                 "quantity": "200",
                 "unit": "ml",
-                "ingredient": "vegetable stock made with 1 tsp vegetable bouillon powder"
+                "ingredient": "vegetable stock"
             },
             {
                 "quantity": "1",
@@ -3161,7 +3089,7 @@
             {
                 "quantity": "25",
                 "unit": "g",
-                "ingredient": "unsalted butter"
+                "ingredient": "butter"
             },
             {
                 "quantity": "1",
@@ -3282,7 +3210,7 @@
             {
                 "quantity": "650",
                 "unit": "ml",
-                "ingredient": "vegetable stock made with 2 tsp bouillon powder"
+                "ingredient": "vegetable stock"
             },
             {
                 "quantity": "420",
@@ -3471,7 +3399,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "yellow pepper deseeded and sliced"
+                "ingredient": "yellow pepper"
             },
             {
                 "quantity": "1",
@@ -3552,7 +3480,7 @@
             {
                 "quantity": "2",
                 "unit": "tbsp",
-                "ingredient": "vegetable oil plus a drizzle"
+                "ingredient": "vegetable oil"
             },
             {
                 "quantity": "2",
@@ -3562,7 +3490,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "thumb-sized piece of ginger peeled and cut into matchsticks"
+                "ingredient": "thumb-sized piece of ginger"
             },
             {
                 "quantity": "1",
@@ -3615,7 +3543,7 @@
             {
                 "quantity": "340",
                 "unit": "g",
-                "ingredient": "baby potatoes, any larger ones halved"
+                "ingredient": "baby potatoes"
             },
             {
                 "quantity": "1",
@@ -3772,7 +3700,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "yellow pepper, deseeded and finely chopped"
+                "ingredient": "yellow pepper"
             },
             {
                 "quantity": "1",
@@ -3797,7 +3725,7 @@
             {
                 "quantity": "150",
                 "unit": "ml",
-                "ingredient": "vegetable stock made with 2 tsp bouillon powder"
+                "ingredient": "vegetable stock"
             },
             {
                 "quantity": "500",
@@ -3827,7 +3755,7 @@
             {
                 "quantity": "320",
                 "unit": "g",
-                "ingredient": "broccoli florets or green beans"
+                "ingredient": "broccoli florets"
             }
         ],
         "method": [
@@ -3890,7 +3818,7 @@
             {
                 "quantity": "300",
                 "unit": "g",
-                "ingredient": "turkey mince"
+                "ingredient": "turkey"
             },
             {
                 "quantity": "1",
@@ -3920,7 +3848,7 @@
             {
                 "quantity": "\u00bc",
                 "unit": null,
-                "ingredient": "white cabbage finely sliced"
+                "ingredient": "white cabbage finely chopped"
             },
             {
                 "quantity": null,
@@ -3965,7 +3893,7 @@
             {
                 "quantity": "200",
                 "unit": "g",
-                "ingredient": "Maris Piper potatoes cut into chunks"
+                "ingredient": "maris piper potatoes"
             },
             {
                 "quantity": "1",
@@ -3980,7 +3908,7 @@
             {
                 "quantity": "200",
                 "unit": "ml",
-                "ingredient": "whole milk plus 1 tbsp"
+                "ingredient": "whole milk"
             },
             {
                 "quantity": "\u00bd",
@@ -4052,7 +3980,7 @@
             {
                 "quantity": "100",
                 "unit": "g",
-                "ingredient": "soft white breadcrumbs"
+                "ingredient": "white bread"
             },
             {
                 "quantity": "2",
@@ -4077,7 +4005,7 @@
             {
                 "quantity": "500",
                 "unit": "g",
-                "ingredient": "baby potatoes halved"
+                "ingredient": "baby potatoes"
             },
             {
                 "quantity": "320",
@@ -4112,7 +4040,7 @@
             {
                 "quantity": "325",
                 "unit": "g",
-                "ingredient": "baby plum tomatoes on the vine, halved"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "320",
@@ -4127,7 +4055,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "6",
@@ -4269,7 +4197,7 @@
             {
                 "quantity": "2",
                 "unit": "tsp",
-                "ingredient": "vegetable bouillon powder"
+                "ingredient": "vegetable bouillon"
             },
             {
                 "quantity": "40",
@@ -4327,7 +4255,7 @@
             {
                 "quantity": "100",
                 "unit": "g",
-                "ingredient": "smoked bacon lardons pancetta or chopped smoked streaky bacon"
+                "ingredient": "bacon"
             },
             {
                 "quantity": "2",
@@ -4362,7 +4290,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "beef stock cubes mixed with 600ml boiling water"
+                "ingredient": "beef stock"
             },
             {
                 "quantity": "1",
@@ -4471,7 +4399,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can butter beans drained and rinsed"
+                "ingredient": "butter"
             },
             {
                 "quantity": "100",
@@ -4522,7 +4450,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "large aubergine chopped"
+                "ingredient": "aubergines"
             },
             {
                 "quantity": "1",
@@ -4552,12 +4480,12 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can cherry tomatoes"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": null,
                 "unit": null,
-                "ingredient": "small bunch of basil leaves picked and stems finely chopped"
+                "ingredient": "basil"
             },
             {
                 "quantity": "25",
@@ -4607,7 +4535,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "bay leaf"
+                "ingredient": "bay leaves"
             },
             {
                 "quantity": "80",
@@ -4768,7 +4696,7 @@
             {
                 "quantity": "6",
                 "unit": "item",
-                "ingredient": "large carrots halved lengthways and thickly sliced"
+                "ingredient": "carrots"
             },
             {
                 "quantity": "2",
@@ -4828,7 +4756,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "anchovy crushed using a pestle and mortar (optional)"
+                "ingredient": "anchovies"
             },
             {
                 "quantity": "small handful",
@@ -4838,7 +4766,7 @@
             {
                 "quantity": "500",
                 "unit": "g",
-                "ingredient": "Maris Piper or King Edward potatoes finely sliced (use a mandoline if you have one)"
+                "ingredient": "maris piper potatoes"
             },
             {
                 "quantity": "10",
@@ -4884,7 +4812,7 @@
             {
                 "quantity": "600",
                 "unit": "g",
-                "ingredient": "tomatoes chopped"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "400",
@@ -4954,7 +4882,7 @@
             {
                 "quantity": "1",
                 "unit": "tsp",
-                "ingredient": "capers drained"
+                "ingredient": "capers"
             },
             {
                 "quantity": "200",
@@ -5037,7 +4965,7 @@
             {
                 "quantity": "350",
                 "unit": "g",
-                "ingredient": "turkey thigh mince"
+                "ingredient": "turkey"
             },
             {
                 "quantity": "1",
@@ -5072,7 +5000,7 @@
             {
                 "quantity": "2",
                 "unit": "cans",
-                "ingredient": "400g chopped tomatoes"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "2",
@@ -5082,7 +5010,7 @@
             {
                 "quantity": "150",
                 "unit": "g",
-                "ingredient": "ball mozzarella torn into pieces"
+                "ingredient": "ball mozzarella"
             },
             {
                 "quantity": "4",
@@ -5272,7 +5200,7 @@
             {
                 "quantity": "1",
                 "unit": "tbsp",
-                "ingredient": "tomato ketchup or tomato pur\u00e9e (optional)"
+                "ingredient": "tomato ketchup"
             },
             {
                 "quantity": "1",
@@ -5338,7 +5266,7 @@
             {
                 "quantity": "300",
                 "unit": "g",
-                "ingredient": "carrots cooked, to serve"
+                "ingredient": "carrots"
             }
         ],
         "method": [
@@ -5362,7 +5290,7 @@
             {
                 "quantity": "200",
                 "unit": "g",
-                "ingredient": "cherry tomatoes"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "3",
@@ -5372,7 +5300,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chickpeas drained and rinsed"
+                "ingredient": "can chickpeas"
             },
             {
                 "quantity": "2",
@@ -5485,7 +5413,7 @@
             {
                 "quantity": "1",
                 "unit": "large bunch",
-                "ingredient": "carrots with tops (about 800g)"
+                "ingredient": "carrots"
             },
             {
                 "quantity": "2",
@@ -5495,7 +5423,7 @@
             {
                 "quantity": "1",
                 "unit": "tsp",
-                "ingredient": "za\u2019atar"
+                "ingredient": "za'atar"
             },
             {
                 "quantity": "2",
@@ -5515,7 +5443,7 @@
             {
                 "quantity": "50",
                 "unit": "g",
-                "ingredient": "walnuts roughly chopped"
+                "ingredient": "walnuts chopped"
             },
             {
                 "quantity": "40",
@@ -5606,7 +5534,7 @@
             {
                 "quantity": "200",
                 "unit": "g",
-                "ingredient": "cherry tomatoes halved"
+                "ingredient": "tomatoes"
             }
         ],
         "method": [
@@ -5672,7 +5600,7 @@
             {
                 "quantity": "70",
                 "unit": "g",
-                "ingredient": "baby corn halved"
+                "ingredient": "baby corn"
             },
             {
                 "quantity": "2",
@@ -5732,7 +5660,7 @@
             {
                 "quantity": "1",
                 "unit": "tbsp",
-                "ingredient": "vegetable oil plus extra for the fish"
+                "ingredient": "vegetable oil"
             },
             {
                 "quantity": "4",
@@ -5804,7 +5732,7 @@
             {
                 "quantity": "2",
                 "unit": "can",
-                "ingredient": "400g chopped tomatoes with garlic & basil"
+                "ingredient": "basil"
             },
             {
                 "quantity": "200",
@@ -5850,7 +5778,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can black beans drained and rinsed"
+                "ingredient": "black beans"
             },
             {
                 "quantity": "6",
@@ -6001,7 +5929,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "cherry tomatoes on the vine"
+                "ingredient": "tomatoes"
             }
         ],
         "method": [
@@ -6037,7 +5965,7 @@
             {
                 "quantity": "227",
                 "unit": "g",
-                "ingredient": "can tomatoes"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "2",
@@ -6068,7 +5996,7 @@
             {
                 "quantity": "430",
                 "unit": "g",
-                "ingredient": "Maris Piper potatoes cut into 1.5cm chunks"
+                "ingredient": "maris piper potatoes"
             },
             {
                 "quantity": "1",
@@ -6110,7 +6038,7 @@
             {
                 "quantity": "2",
                 "unit": "tbsp",
-                "ingredient": "unsalted butter"
+                "ingredient": "butter"
             },
             {
                 "quantity": "60",
@@ -6145,7 +6073,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "large butternut squash peeled (about 1.5kg)"
+                "ingredient": "butter"
             },
             {
                 "quantity": "1",
@@ -6155,12 +6083,12 @@
             {
                 "quantity": "250",
                 "unit": "g",
-                "ingredient": "baby spinach leaves"
+                "ingredient": "baby spinach"
             },
             {
                 "quantity": "50",
                 "unit": "g",
-                "ingredient": "sundried tomatoes in oil, drained and finely chopped"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "500",
@@ -6224,7 +6152,7 @@
             {
                 "quantity": "150",
                 "unit": "g",
-                "ingredient": "cherry tomatoes halved"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "150",
@@ -6271,7 +6199,7 @@
             {
                 "quantity": "200",
                 "unit": "g",
-                "ingredient": "cherry tomatoes halved"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "2",
@@ -6390,7 +6318,6 @@
                 "unit": "tsp",
                 "ingredient": "wholegrain mustard"
             },
-
             {
                 "quantity": "3",
                 "unit": "tbsp",
@@ -6434,7 +6361,6 @@
             "Add the lime juice and taste the sauce for a balance of sweet and sour, adding more lime juice and fish sauce, if you like. Scatter over the spring onions, if using, along with the herbs and chilli. For a more filling meal, serve with rice or noodles and the lime wedges on the side."
         ]
     },
-
     {
         "name": "Chicken cacciatore one-pot with orzo",
         "servings": "4",
@@ -6487,7 +6413,7 @@
             {
                 "quantity": "2",
                 "unit": "400g cans",
-                "ingredient": "cherry tomatoes"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "1",
@@ -6502,7 +6428,7 @@
             {
                 "quantity": "2",
                 "unit": "tbsp",
-                "ingredient": "capers (optional)"
+                "ingredient": "capers"
             },
             {
                 "quantity": "1",
@@ -6529,7 +6455,7 @@
             {
                 "quantity": "1\u00bd",
                 "unit": "tbsp",
-                "ingredient": "sunflower or vegetable oil"
+                "ingredient": "vegetable oil"
             },
             {
                 "quantity": "2",
@@ -6619,7 +6545,7 @@
             {
                 "quantity": "1",
                 "unit": "tbsp",
-                "ingredient": "sunflower or vegetable oil"
+                "ingredient": "vegetable oil"
             },
             {
                 "quantity": "1",
@@ -6674,7 +6600,7 @@
             {
                 "quantity": "1",
                 "unit": "tsp",
-                "ingredient": "vegetable bouillon powder"
+                "ingredient": "vegetable bouillon"
             },
             {
                 "quantity": "\u00bd",
@@ -6684,12 +6610,12 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chickpeas drained"
+                "ingredient": "can chickpeas"
             },
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "aubergine (about 260g), thinly sliced, or halved and sliced if it\u2019s a thicker one"
+                "ingredient": "aubergines"
             },
             {
                 "quantity": "20",
@@ -6746,7 +6672,7 @@
             {
                 "quantity": "1",
                 "unit": "can",
-                "ingredient": "400g black beans drained and rinsed"
+                "ingredient": "black beans"
             },
             {
                 "quantity": "50",
@@ -6805,12 +6731,12 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "5",
                 "unit": "item",
-                "ingredient": "anchovy fillets, finely chopped"
+                "ingredient": "anchovies"
             },
             {
                 "quantity": "120",
@@ -6820,7 +6746,7 @@
             {
                 "quantity": "2",
                 "unit": "tbsp",
-                "ingredient": "capers drained"
+                "ingredient": "capers"
             },
             {
                 "quantity": "300",
@@ -6876,7 +6802,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "thumb-sized piece of ginger finely grated"
+                "ingredient": "thumb-sized piece of ginger"
             },
             {
                 "quantity": "150",
@@ -6956,7 +6882,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "40",
@@ -6981,7 +6907,7 @@
             {
                 "quantity": null,
                 "unit": null,
-                "ingredient": "brown basmati rice to serve"
+                "ingredient": "brown basmati rice"
             }
         ],
         "method": [
@@ -7078,7 +7004,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "2",
@@ -7149,12 +7075,12 @@
             {
                 "quantity": "2",
                 "unit": "x 400g cans",
-                "ingredient": "chopped tomatoes"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "2",
                 "unit": "x 400g cans",
-                "ingredient": "black beans drained and rinsed"
+                "ingredient": "black beans"
             },
             {
                 "quantity": null,
@@ -7205,12 +7131,12 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "large tomatoes chopped"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "500",
@@ -7220,7 +7146,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "basil sprig leaves picked and torn"
+                "ingredient": "basil"
             },
             {
                 "quantity": "9",
@@ -7235,7 +7161,7 @@
             {
                 "quantity": "125",
                 "unit": "g",
-                "ingredient": "ball mozzarella torn"
+                "ingredient": "ball mozzarella"
             }
         ],
         "method": [
@@ -7277,12 +7203,12 @@
             {
                 "quantity": "250",
                 "unit": "g",
-                "ingredient": "block lighter halloumi sliced into 8 pieces"
+                "ingredient": "block halloumi"
             },
             {
                 "quantity": "\u00bc",
                 "unit": "item",
-                "ingredient": "small white cabbage finely sliced"
+                "ingredient": "white cabbage finely chopped"
             },
             {
                 "quantity": "2",
@@ -7391,7 +7317,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "aubergine"
+                "ingredient": "aubergines"
             },
             {
                 "quantity": "2",
@@ -7401,7 +7327,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "bay leaf"
+                "ingredient": "bay leaves"
             },
             {
                 "quantity": "\u00bd",
@@ -7426,7 +7352,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "fresh tomatoes chopped"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "pinch",
@@ -7451,7 +7377,7 @@
             {
                 "quantity": "2",
                 "unit": "400g cans",
-                "ingredient": "black beans 1 drained and rinsed"
+                "ingredient": "black beans"
             },
             {
                 "quantity": "\u00bd",
@@ -7503,7 +7429,7 @@
             {
                 "quantity": "1",
                 "unit": "tbsp",
-                "ingredient": "olive oil or melted butter"
+                "ingredient": "butter"
             },
             {
                 "quantity": null,
@@ -7554,7 +7480,7 @@
             {
                 "quantity": "1.2",
                 "unit": "kg",
-                "ingredient": "Maris Piper potatoes cut into 2cm chunks"
+                "ingredient": "maris piper potatoes"
             },
             {
                 "quantity": "1",
@@ -7616,7 +7542,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "thumb-sized piece ginger finely grated"
+                "ingredient": "thumb-sized piece of ginger"
             },
             {
                 "quantity": "2",
@@ -7651,7 +7577,7 @@
             {
                 "quantity": "150",
                 "unit": "g",
-                "ingredient": "cherry tomatoes"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "200",
@@ -7793,7 +7719,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "carrots cut into rounds"
+                "ingredient": "carrots"
             },
             {
                 "quantity": "1",
@@ -7803,7 +7729,7 @@
             {
                 "quantity": "3",
                 "unit": "item",
-                "ingredient": "broccoli spears or florets"
+                "ingredient": "broccoli florets"
             },
             {
                 "quantity": "3",
@@ -7813,7 +7739,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "bay leaf"
+                "ingredient": "bay leaves"
             },
             {
                 "quantity": "150",
@@ -7854,7 +7780,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "thumb-sized piece of ginger grated"
+                "ingredient": "thumb-sized piece of ginger"
             },
             {
                 "quantity": "6",
@@ -7869,7 +7795,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "100",
@@ -7914,7 +7840,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "aubergines (about 550g), each sliced into 4 lengthways, then cut into cubes"
+                "ingredient": "aubergines"
             },
             {
                 "quantity": "4",
@@ -7934,17 +7860,17 @@
             {
                 "quantity": "250",
                 "unit": "ml",
-                "ingredient": "vegetable stock made with 1 tbsp bouillon powder (vegan, if needed)"
+                "ingredient": "vegetable stock"
             },
             {
                 "quantity": "330",
                 "unit": "g",
-                "ingredient": "cherry tomatoes halved"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "30",
                 "unit": "g",
-                "ingredient": "pack of basil chopped"
+                "ingredient": "basil"
             },
             {
                 "quantity": "1",
@@ -7954,7 +7880,7 @@
             {
                 "quantity": "50",
                 "unit": "g",
-                "ingredient": "walnut pieces lightly toasted and chopped if large"
+                "ingredient": "walnuts chopped"
             }
         ],
         "method": [
@@ -7975,7 +7901,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "carrot grated"
+                "ingredient": "carrots"
             },
             {
                 "quantity": "3",
@@ -8010,7 +7936,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "1",
@@ -8040,7 +7966,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "large aubergine sliced into rounds about \u00bdcm thick"
+                "ingredient": "aubergines"
             },
             {
                 "quantity": "2",
@@ -8050,7 +7976,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "1",
@@ -8065,7 +7991,7 @@
             {
                 "quantity": "225",
                 "unit": "g",
-                "ingredient": "block halloumi sliced into 8-9 pieces"
+                "ingredient": "block halloumi"
             },
             {
                 "quantity": "pinch",
@@ -8173,7 +8099,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "yellow pepper finely sliced"
+                "ingredient": "yellow pepper"
             },
             {
                 "quantity": "4",
@@ -8357,12 +8283,12 @@
             {
                 "quantity": "6",
                 "unit": "item",
-                "ingredient": "cardamon pods seeds only"
+                "ingredient": "cardamom pods"
             },
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chickpeas drained"
+                "ingredient": "can chickpeas"
             },
             {
                 "quantity": "2",
@@ -8438,7 +8364,7 @@
             {
                 "quantity": "25",
                 "unit": "g",
-                "ingredient": "unsalted butter"
+                "ingredient": "butter"
             },
             {
                 "quantity": "4",
@@ -8453,7 +8379,7 @@
             {
                 "quantity": "small handful",
                 "unit": null,
-                "ingredient": "basil finely chopped"
+                "ingredient": "basil"
             }
         ],
         "method": [
@@ -8508,7 +8434,7 @@
             {
                 "quantity": "1",
                 "unit": "item",
-                "ingredient": "avocado peeled, halved, stoned and finely chopped"
+                "ingredient": "avocado"
             },
             {
                 "quantity": "3",
@@ -8569,7 +8495,7 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can chopped tomatoes"
+                "ingredient": "can chopped tomato"
             },
             {
                 "quantity": "50",
@@ -8745,7 +8671,7 @@
             {
                 "quantity": "3",
                 "unit": "400g cans",
-                "ingredient": "black beans drained and rinsed"
+                "ingredient": "black beans"
             },
             {
                 "quantity": "3",
@@ -8807,12 +8733,12 @@
             {
                 "quantity": "400",
                 "unit": "g",
-                "ingredient": "can black beans drained and rinsed"
+                "ingredient": "black beans"
             },
             {
                 "quantity": "200",
                 "unit": "g",
-                "ingredient": "cherry tomatoes halved"
+                "ingredient": "tomatoes"
             },
             {
                 "quantity": "1",
@@ -8925,7 +8851,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "carrots finely diced"
+                "ingredient": "carrots"
             },
             {
                 "quantity": "2",
@@ -8955,7 +8881,7 @@
             {
                 "quantity": null,
                 "unit": null,
-                "ingredient": "broccoli and potatoes or pasta and salad to serve"
+                "ingredient": "broccoli florets"
             }
         ],
         "method": [
@@ -8985,7 +8911,7 @@
             {
                 "quantity": "2",
                 "unit": "item",
-                "ingredient": "anchovy fillets in oil, drained"
+                "ingredient": "anchovies"
             },
             {
                 "quantity": "2",
