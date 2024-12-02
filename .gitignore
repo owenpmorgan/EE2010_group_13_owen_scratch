@@ -1,2 +1,2 @@
 /cmake-build-debug/
-!*/*.json
+!/cmake-build-debug/*.json
