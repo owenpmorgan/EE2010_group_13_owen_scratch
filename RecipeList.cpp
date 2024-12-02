@@ -6,7 +6,8 @@
 
 void RecipeList::add_recipe_to_list(const Recipe& recipe)
 {
-    recipes[next_id++] = recipe;
+    recipes[next_id] = recipe;
+    next_id++;
 }
 
 Recipe& RecipeList::get_recipe_by_id(int id)
@@ -28,4 +29,4 @@ void RecipeList::display_recipe_list() {
     }
 }
 
-std::map<int, Recipe> RecipeList::get_recipe_list() {return recipes;}
+std::map<int, Recipe>& RecipeList::get_recipe_list() {return recipes;}

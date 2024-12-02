@@ -48,4 +48,4 @@ void IngredientList::display_total_ingredients_list() const
     }
 }
 
-std::unordered_map<int, Ingredient> IngredientList::get_ingredients_list() {return ingredients_list;}
+std::unordered_map<int, Ingredient>& IngredientList::get_ingredients_list() {return ingredients_list;}

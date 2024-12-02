@@ -27,7 +27,7 @@ public:
     void display_total_ingredients_list() const;
 
     Ingredient get_ingredient(int uuid);
-    std::unordered_map<int, Ingredient> get_ingredients_list();
+    std::unordered_map<int, Ingredient>& get_ingredients_list();
 
 };
 

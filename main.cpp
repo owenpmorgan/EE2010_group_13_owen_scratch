@@ -64,16 +64,12 @@ BOOST_AUTO_TEST_CASE(test_recipe_to_add_not_found)
 {
     RecipeList recipeList;
     WeekPlan weekplan;
-    BOOST_CHECK_THROW(weekplan.add_recipe(-1, recipeList.get_recipe_list()), std::runtime_error);
+    BOOST_CHECK_THROW(weekplan.add_recipe(-1, &recipeList.get_recipe_list()), std::runtime_error);
 }
 
 */
 
-
-
  int main() {
-
-
 
     // unordered_map<int uuid, Ingredient ingredient>
     IngredientList ingredientList;
@@ -82,7 +78,9 @@ BOOST_AUTO_TEST_CASE(test_recipe_to_add_not_found)
     // Recipe array[max_recipes]
     WeekPlan myWeek;
 
-// Leave this here for now as it is good at picking up any errors in the json file to be parsed
+/*****************************************************************************************************************
+ * Debugger for the json file
+ *****************************************************************************************************************/
 //    std::ifstream myFile("recipes.json");
 //    if (!myFile.is_open()) {
 //        std::cerr << "Failed to open JSON file." << std::endl;
@@ -101,8 +99,10 @@ BOOST_AUTO_TEST_CASE(test_recipe_to_add_not_found)
 //            std::cout << data[i]["ingredients"][j]["ingredient"] << "\t" <<
 //            data[i]["ingredients"][j]["quantity"] << std::endl;
 //        }
-//
 //    }
+/*****************************************************************************************************************
+ * End
+ *****************************************************************************************************************/
 
 
 /*****************************************************************************************************************
@@ -251,6 +251,7 @@ BOOST_AUTO_TEST_CASE(test_recipe_to_add_not_found)
  * End of json parsing block
  *****************************************************************************************************************/
 
+
     // debug tools
     // check you can grab a recipe by id
     // std::cout << recipe_list.get_recipe_by_id(2).get_title();
@@ -262,21 +263,21 @@ BOOST_AUTO_TEST_CASE(test_recipe_to_add_not_found)
 
     recipe_list.display_recipe_list();
 
-    myWeek.add_recipe(143, recipe_list.get_recipe_list());
-//    myWeek.add_recipe(142, recipe_list.get_recipe_list());
-//    myWeek.add_recipe(141, recipe_list.get_recipe_list());
+    myWeek.add_recipe(143, &recipe_list.get_recipe_list());
+    myWeek.add_recipe(142, &recipe_list.get_recipe_list());
+    myWeek.add_recipe(141, &recipe_list.get_recipe_list());
 
     myWeek.display_weeks_recipes();
 
-    myWeek.display_total_weeks_ingredients(ingredientList.get_ingredients_list());
+    myWeek.display_shopping_list(&ingredientList.get_ingredients_list());
 
 //    myWeek.clear_week_plan();
 //    myWeek.display_weeks_recipes();
 //    myWeek.display_total_weeks_ingredients(ingredientList.get_ingredients_list());
 
-    myWeek.delete_meal_from_plan(recipe_list.get_recipe_list());
+    myWeek.delete_meal_from_plan();
     myWeek.display_weeks_recipes();
-    myWeek.display_total_weeks_ingredients(ingredientList.get_ingredients_list());
+    myWeek.display_shopping_list(&ingredientList.get_ingredients_list());
 
     return 0;
 }

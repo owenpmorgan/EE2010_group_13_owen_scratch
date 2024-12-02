@@ -27,19 +27,20 @@ void WeekPlan::clear_week_plan()
 
 }
 //  provide a recipe name from the list and which meal of the 21 per week you want to assign it to
-void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe> recipe_list) {
+void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe>* recipe_list) {
 
     Recipe current_recipe;
 
-    if(recipe_list.find(recipe_to_add) != recipe_list.end())
+    if(recipe_list->find(recipe_to_add) != recipe_list->end())
     {
-        current_recipe = recipe_list.at(recipe_to_add);
+        current_recipe = recipe_list->at(recipe_to_add);
     }
     else
     {
         throw std::runtime_error("WEEKPLAN: Recipe index not found");
     }
 
+    // get recipe ingredients is an unordered map<uuid:int, amount:int>
     const auto& recipe_ingredients = current_recipe.get_recipe_ingredients();
 
 //    std::cout << "Number of ingredients in recipe: " << recipe_ingredients.size() << "\n";
@@ -86,6 +87,7 @@ void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe> recipe_list) 
         }
     }
 
+    // add comments
     display_weeks_recipes();
 
     std::cout << "Recipe to add: " << current_recipe.get_title() << std::endl;
@@ -108,7 +110,7 @@ void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe> recipe_list) 
 
 }
 
-void WeekPlan::delete_meal_from_plan(std::map<int, Recipe>) {
+void WeekPlan::delete_meal_from_plan() {
 
     std::cout << "Which meal would you like to delete?" << "\n";
 
@@ -116,6 +118,13 @@ void WeekPlan::delete_meal_from_plan(std::map<int, Recipe>) {
     int user_choice = get_int_input() - 1;
 
     Recipe& recipe_to_delete = weeks_recipes[user_choice];
+
+    if(weeks_recipes[user_choice].get_title() == "No Recipe")
+    {
+        std::cout << "There is no recipe in that slot\n";
+        return;
+    }
+
 
     // iterator to cycle through the ingredients for the recipe in the selected slot
     const auto& recipe_ingredients = recipe_to_delete.get_recipe_ingredients();
@@ -168,7 +177,6 @@ int WeekPlan::get_int_input()
     {
         try
         {
-
             // if cin is not given as the correct data type for userChoice, int, cin returns a false
             // if the data type IS an int, but is out of bounds run this code as well
             if(!(std::cin >> userChoice) || userChoice < 1 || userChoice > MAX_RECIPES)
@@ -220,13 +228,12 @@ void WeekPlan::display_weeks_recipes() const {
 }
 
 // DEBUG this just returnes the total ingredients list after it has been summed, in case we need to use the list somewhere else.
-// eg to a shopping list class that formats it as checkboxes etc.
 //std::unordered_map<int, std::optional<int>> WeekPlan::get_total_ingredients() {return total_ingredients;}
 
 // display the total_ingredients member variable
-void WeekPlan::display_total_weeks_ingredients(std::unordered_map<int, Ingredient> ingredients_list) {
+void WeekPlan::display_shopping_list(std::unordered_map<int, Ingredient>* ingredients_list) {
     // Display the total ingredients
-    std::cout << "Total Ingredients for the Week Plan:" << std::endl;
+    std::cout << "Your shopping list for this week plan:" << std::endl;
     // new temp variable ingredient loops over total ingredients, it's value will be a key value pair (uuid, amount)
     for (const auto ingredient: total_ingredients)
     {
@@ -234,10 +241,10 @@ void WeekPlan::display_total_weeks_ingredients(std::unordered_map<int, Ingredien
         // this iterator goes over the master ingredient list in the ingredient list class until it finds the uuid (first)
         // of the temp ingredient variable, it then stores this as a pointer to the unordered_map ingredient list where it
         // found the key value, so the first field is the uuid and the second field the ingredient object
-        auto it = ingredients_list.find(ingredient.first);
+        auto it = ingredients_list->find(ingredient.first);
 
         // if it didn't find it, it would just store the marker for the end of the ingredentList
-        if (it != ingredients_list.end())
+        if (it != ingredients_list->end())
         {
             // if the 'amount' field is not nullopt, and is an integer value
             if (ingredient.second != -1)

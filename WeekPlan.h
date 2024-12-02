@@ -25,17 +25,14 @@ public:
 
     virtual int get_int_input() override;
 
-    void add_recipe(int, std::map<int, Recipe>);
+    void add_recipe(int, std::map<int, Recipe>*);
     void display_weeks_recipes() const;
-    void display_total_weeks_ingredients(std::unordered_map<int, Ingredient>);
+    void display_shopping_list(std::unordered_map<int, Ingredient>*);
     std::unordered_map<int, int> get_total_ingredients();
     void clear_week_plan();
-    void delete_meal_from_plan(std::map<int, Recipe>);
+    void delete_meal_from_plan();
 
 //    void sum_total_weeks_ingredients();
-
-
-
 
 };
 

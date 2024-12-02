@@ -9,7 +9,7 @@
 #define EE2010_GROUP_MY_SCRATCH_RECIPELIST_H
 
 
-class RecipeList: public Recipe
+class RecipeList
 {
 private:
     std::map<int, Recipe> recipes;
@@ -23,7 +23,7 @@ public:
     // print the recipe list
     void display_recipe_list();
     // get the recipe list map
-    std::map<int, Recipe> get_recipe_list();
+    std::map<int, Recipe>& get_recipe_list();
 };
 
 
