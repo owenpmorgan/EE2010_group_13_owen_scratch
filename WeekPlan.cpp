@@ -206,21 +206,49 @@ int WeekPlan::get_int_input()
 void WeekPlan::display_weeks_recipes() const {
     std::cout << "Recipes in the WeekPlan:" << std::endl;
 
-    std::cout   << "Monday\t\t\t\t"
-                << "Tuesday\t\t\t\t"
-                << "Wednesday\t\t\t\t"
-                << "Thursday\t\t\t\t"
-                << "Friday\t\t\t\t"
-                << "Saturday\t\t\t\t"
-                <<  "Sunday\t\t\t\t"
-                << std::endl;
+    const int spaces = 30;
+    const std::string days[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+
+    for (const auto &day: days) {
+        for (int i = 0; i < spaces; i++) {
+            if (day.size() > i) {
+                std::cout << day[i];
+            } else {
+                std::cout << " ";
+            }
+        }
+
+    }
+    std::cout << std::endl;
+
+    // std::cout   << "Monday" <<
+    //             << "Tuesday\t\t\t\t"
+    //             << "Wednesday\t\t\t\t"
+    //             << "Thursday\t\t\t\t"
+    //             << "Friday\t\t\t\t"
+    //             << "Saturday\t\t\t\t"
+    //             <<  "Sunday\t\t\t\t"
+    //             << std::endl;
+
+
     // Outer loop to handle each row
     for (int row = 0; row < 3; row++) {
         // Inner loop to print every 7th entry starting at the offset given by 'row'
         for (int col = 0; col < 7; col++) {
             int index = row + col * 3;
             if (index < MAX_RECIPES) {  // Ensure we don't go out of bounds
-                std::cout << index + 1 << "- " << weeks_recipes[index].get_title() << "\t\t\t\t";
+                std::cout << index+1 << ": ";
+                int spaces_left = spaces - 3;
+                if (index+1 > 9) spaces_left -= 1;
+                // Print only first 20 characters of string or fill with empty space up to 20 chars
+                for (int i = 0; i < spaces_left; i++) {
+                    if (weeks_recipes[index].get_title().size() > i) {
+                        std::cout << weeks_recipes[index].get_title()[i];
+                    } else {
+                        std::cout << " ";
+                    }
+                }
+                // std::cout << index + 1 << "- " << weeks_recipes[index].get_title() << "\t\t\t\t";
             }
         }
         std::cout << std::endl;  // Newline after each row

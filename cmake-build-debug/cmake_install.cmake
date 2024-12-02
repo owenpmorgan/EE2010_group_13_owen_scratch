@@ -1,4 +1,4 @@
-# Install script for directory: /Users/owenmorgan/Library/Mobile Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch
+# Install script for directory: /Users/alexsem/Library/Mobile Documents/com~apple~CloudDocs/Documents/Coursework/EE2010/EE2010_group_13_owen_scratch
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/owenmorgan/Library/Mobile Documents/com~apple~CloudDocs/CLOUD/STEM/_Programming/_C++/EE2010_group_my_scratch/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/alexsem/Library/Mobile Documents/com~apple~CloudDocs/Documents/Coursework/EE2010/EE2010_group_13_owen_scratch/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
