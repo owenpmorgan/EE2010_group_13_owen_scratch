@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Interface.h"
 #include "Ingredient.h"
 #include "MeasurementType.h"
 #include "Recipe.h"
@@ -119,6 +120,8 @@ BOOST_AUTO_TEST_CASE(F3_test_get_recipe_list)
     RecipeList recipe_list;
     // Recipe array[max_recipes]
     WeekPlan myWeek;
+    // Create the interface object to run the main app commands
+    Interface interface;
 
 
 
@@ -148,7 +151,7 @@ BOOST_AUTO_TEST_CASE(F3_test_get_recipe_list)
         std::string recipe_name = data[i]["name"];
 
 //         cout recipe name for debugging the loop
-         std::cout << recipe_name << std::endl;
+//         std::cout << recipe_name << std::endl;
 
         // grab the number of portions from the current recipe, this may not be an int, so the following checks if it is
         int recipe_portions;
@@ -277,28 +280,98 @@ BOOST_AUTO_TEST_CASE(F3_test_get_recipe_list)
  * User interface part of program starts here
  *****************************************************************************************************************/
 
-//while (1);
+int user_choice;
+
+
+    interface.display_intro_screen();
+
+    while (1)
+    {
+        user_choice = interface.display_menu();
+
+        switch (user_choice)
+        {
+            case 1:
+            {
+                // see the weeks recipes
+                interface.clear_screen();
+                myWeek.display_weeks_recipes();
+                break;
+            }
+
+            case 2:
+            {
+                // add a recipe to the weeks recipe list
+                recipe_list.display_recipe_list();
+                int min = 1;
+                int max = recipe_list.get_recipe_list().size();
+                int selection = interface.get_int_input(min, max);
+                myWeek.add_recipe(selection, &recipe_list.get_recipe_list());
+                interface.clear_screen();
+                myWeek.display_weeks_recipes();
+                break;
+            }
+
+            case 3:
+            {
+                myWeek.display_weeks_recipes();
+                myWeek.delete_meal_from_plan();
+                interface.clear_screen();
+                myWeek.display_weeks_recipes();
+                break;
+            }
+
+            case 4:
+            {
+                interface.clear_screen();
+                myWeek.display_shopping_list(&ingredientList.get_ingredients_list());
+                break;
+            }
+
+            case 5:
+            {
+                recipe_list.display_recipe_list();
+                int min = 1;
+                int max = recipe_list.get_recipe_list().size();
+                int selection = interface.get_int_input(min, max);
+                recipe_list.get_recipe_by_id(selection).display_recipe_method();
+                break;
+            }
+
+            case 6:
+            {
+                exit(0);
+                break;
+            }
+
+            default:
+            {
+                std::cout << "Not a valid selection";
+            }
+        }
+    }
+
+
+//    recipe_list.display_recipe_list();
+
+//    myWeek.add_recipe(10, &recipe_list.get_recipe_list());
+//    myWeek.add_recipe(37, &recipe_list.get_recipe_list());
+//    myWeek.add_recipe(45, &recipe_list.get_recipe_list());
 
 
 
-
-    recipe_list.display_recipe_list();
-
-    myWeek.add_recipe(10, &recipe_list.get_recipe_list());
-    myWeek.add_recipe(37, &recipe_list.get_recipe_list());
-    myWeek.add_recipe(45, &recipe_list.get_recipe_list());
-
-    myWeek.display_weeks_recipes();
-
-    myWeek.display_shopping_list(&ingredientList.get_ingredients_list());
+//    myWeek.display_shopping_list(&ingredientList.get_ingredients_list());
 
 //    myWeek.clear_week_plan();
 //    myWeek.display_weeks_recipes();
 //    myWeek.display_total_weeks_ingredients(ingredientList.get_ingredients_list());
 
-    myWeek.delete_meal_from_plan();
-    myWeek.display_weeks_recipes();
-    myWeek.display_shopping_list(&ingredientList.get_ingredients_list());
+//    interface.clear_screen();
+//
+//    myWeek.display_weeks_recipes();
+//    myWeek.delete_meal_from_plan();
+//    myWeek.display_weeks_recipes();
+//    myWeek.display_shopping_list(&ingredientList.get_ingredients_list());
 
     return 0;
 }

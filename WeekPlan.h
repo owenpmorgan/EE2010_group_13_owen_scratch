@@ -23,7 +23,7 @@ public:
     WeekPlan();
     ~ WeekPlan() = default;
 
-    virtual int get_int_input() override;
+    virtual int get_int_input(int min = 1, int max = MAX_RECIPES) override;
 
     void add_recipe(int, std::map<int, Recipe>*);
     void display_weeks_recipes() const;

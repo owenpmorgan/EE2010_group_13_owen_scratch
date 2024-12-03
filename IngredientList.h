@@ -21,7 +21,8 @@ public:
     // destructor
     ~IngredientList() = default;
 
-    virtual int get_int_input() override;
+    // make sure this is implimented otherwise IngredientList also becomes abstract class
+    virtual int get_int_input(int min = 0, int max = 100) override;
 
     void add_ingredient(const Ingredient& ingredient);
     void display_total_ingredients_list() const;

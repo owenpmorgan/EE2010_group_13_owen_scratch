@@ -3,6 +3,7 @@
 //
 
 #include "RecipeList.h"
+#include <iomanip>
 
 void RecipeList::add_recipe_to_list(const Recipe& recipe)
 {
@@ -19,13 +20,23 @@ Recipe& RecipeList::get_recipe_by_id(int id)
 }
 
 void RecipeList::display_recipe_list() {
+
+    int col_count = 0;
+    int col_width = 60;
+
     for(const auto& pair : recipes)
     {
         int key = pair.first;
         std::string name = pair.second.get_title();
 
         // display all the recipes with a number to call them with (key)
-        std::cout << key << ": " << name << std::endl;
+        std::cout << std::left << std::setw(3) << key << ": " << std::setw(col_width) << name;
+        col_count++;
+        if(col_count > 2)
+        {
+            std::cout << "\n";
+            col_count = 0;
+        }
     }
 }
 

@@ -28,7 +28,45 @@ std::string Recipe::get_title() const{
     return title;
 }
 
-std::string Recipe::get_recipe_method() const {return method;}
+void Recipe::display_recipe_method() const
+{
+    // max line length
+    int line_length = 150;
+    // counter to check current line length
+    int counter = 0;
+    // enumerate distinc steps in the recipe (recipe method is an array of strings representing steps
+    int step_enumerator = 1;
+
+    std::cout << step_enumerator << ": ";
+
+    for(int i = 0; i < method.size(); i++ )
+    {
+        // first cond. if there is a newline detected, start the counter again and increment the step
+        // second cond. if the newline is at the end of the string ignore it
+        if(method[i] == '\n' && i < method.size() - 1)
+        {
+            // next step
+            step_enumerator++;
+            // reset line width counter
+            counter = 0;
+            std::cout << "\n\n" << step_enumerator << ": ";
+        }
+        // otherwise continue printing the string and increment max line width counter
+        else
+        {
+            std::cout << method[i];
+            counter++;
+        }
+        // if we've gone over line length max wait for a space character to split to the line to a new line
+        if(counter > line_length && method[i] == ' ')
+        {
+            counter = 0;
+            std::cout << '\n';
+        }
+    }
+    // place a new line after each step
+    std::cout << "\n";
+}
 
 std::unordered_map<int, int> Recipe::get_recipe_ingredients() const {return recipe_ingredients;}
 

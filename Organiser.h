@@ -18,7 +18,7 @@ protected:
 
 public:
 
-        virtual int get_int_input() = 0;
+        virtual int get_int_input(int min = 0, int max = 100) = 0;
         virtual ~Organiser() = default;
 
 };

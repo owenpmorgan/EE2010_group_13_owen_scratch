@@ -166,7 +166,7 @@ void WeekPlan::delete_meal_from_plan() {
 
 }
 
-int WeekPlan::get_int_input()
+int WeekPlan::get_int_input(int min, int max)
 {
     // the int to be returned
     int userChoice;
@@ -181,14 +181,14 @@ int WeekPlan::get_int_input()
         {
             // if cin is not given as the correct data type for userChoice, int, cin returns a false
             // if the data type IS an int, but is out of bounds run this code as well
-            if(!(std::cin >> userChoice) || userChoice < 1 || userChoice > MAX_RECIPES)
+            if(!(std::cin >> userChoice) || userChoice < min || userChoice > max)
             {
                 // clear the error flag and buffer
                 std::cin.clear();
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 // make the error string
                 std::stringstream error_string;
-                error_string << "Invalid input. Please enter a number between 1 and " << MAX_RECIPES << ".";
+                error_string << "Invalid input. Please enter a number between " << min << " and " << max << ".";
 
                 throw std::runtime_error(error_string.str());
             }
@@ -206,7 +206,7 @@ int WeekPlan::get_int_input()
 
 // display the currently selected weekly plan of meals
 void WeekPlan::display_weeks_recipes() const {
-    std::cout << "Recipes in the WeekPlan:" << std::endl;
+    std::cout << "WeekPlan:" << std::endl;
 
     // display spaces value to be used below
     const int spaces = 30;
@@ -250,6 +250,7 @@ void WeekPlan::display_weeks_recipes() const {
         }
         std::cout << std::endl;  // Newline after each row
     }
+    std::cout << std::endl;  // Newline after complete table
 }
 
 // DEBUG this just returnes the total ingredients list after it has been summed, in case we need to use the list somewhere else.
@@ -284,6 +285,7 @@ void WeekPlan::display_shopping_list(std::unordered_map<int, Ingredient>* ingred
             }
         }
     }
+    std::cout << std::endl;
 }
 
 std::unordered_map<int, int> WeekPlan::get_total_ingredients(){return total_ingredients;}
