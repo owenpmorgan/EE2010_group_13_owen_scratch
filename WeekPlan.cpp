@@ -28,11 +28,13 @@ void WeekPlan::clear_week_plan()
     total_ingredients.clear();
 
 }
-//  provide a recipe name from the list and which meal of the 21 per week you want to assign it to
+//  Provide the number of a recipe index, and take a pointer to the master recipe list
 void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe>* recipe_list) {
 
+    // make a temporary emtpy recipe to be the working recipe
     Recipe current_recipe;
 
+    // find the recipe of the given recipe index in the recipe list, and update current recipe to be that recipe
     if(recipe_list->find(recipe_to_add) != recipe_list->end())
     {
         current_recipe = recipe_list->at(recipe_to_add);
@@ -42,32 +44,27 @@ void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe>* recipe_list)
         throw std::runtime_error("WEEKPLAN: Recipe index not found");
     }
 
-    // get recipe ingredients is an unordered map<uuid:int, amount:int>
+    // get_recipe_ingredients returns an unordered map<uuid:int, amount:int>
     const auto& recipe_ingredients = current_recipe.get_recipe_ingredients();
 
-//    std::cout << "Number of ingredients in recipe: " << recipe_ingredients.size() << "\n";
-//    std::cout << "Recipe Title: " << current_recipe.get_title() << "\n";
-
-//    this sums the total ingredients for the added recipe
+    // iterate through the recipe ingredients unordered_map, the iterator (called ingredient) is a pointer to one of the ingredients
     for (const auto &ingredient: recipe_ingredients)
     {
-        // grab the uuid of this ingredient to compare it to the list of total ingredients and see where it is or if
-        // it has not been added yet
+        // store the value of the uuid of the current ingredient being iterated thorugh
         int uuid = ingredient.first;
         // store the second value of the current ingredient in an optional in called ammount
         int amount = ingredient.second;
 
-//        std::cout << "Ingredient UUID: " << uuid << ", Amount: " << amount << "\n";
-
+        // -1 is a sentinel value, used in the parser to mean the ingredient amount is non-numeric (eg, "to taste")
         // if amount is numerical...
         if (amount != -1)
         {
-            // if it can find the ingredients uuid in the total_ingredient list already, sum the amounts
+            // If the ingredient UUID is already in the total_ingredients for the week list, add the new amount
             if (total_ingredients.find(uuid) != total_ingredients.end())
             {
                 total_ingredients[uuid] = total_ingredients[uuid] + amount;
             }
-                // otherwise make a new entry
+                // otherwise make a new entry in the total_ingredients list
             else
             {
                 total_ingredients[uuid] = amount;
@@ -76,11 +73,11 @@ void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe>* recipe_list)
             // if amount is NOT numerical
         else
         {
-            // do the same but just apply the null value
+            // do the same but just apply the sentinel value
             if (total_ingredients.find(uuid) != total_ingredients.end())
             {
-                // if it exists, make sure it is the unused sentinel value
-                total_ingredients[uuid] = -1;
+                // if the uncountable item, eg "pepper" is on the list already ignore
+                break;
             } else
             {
                 // if it doesn't exist, add a new entry that has the non countable sentinel value
@@ -89,23 +86,27 @@ void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe>* recipe_list)
         }
     }
 
-    // add comments
+    // once summed, dispaly the week_plan
     display_weeks_recipes();
 
+    // Now get the user to say where to place the recipe
     std::cout << "Recipe to add: " << current_recipe.get_title() << std::endl;
 
     while(true)
     {
         int user_choice = get_int_input();
 
+        // if the user_choice selects an empty slot in the weeks_recipes array, add the current recipe
         if (weeks_recipes[user_choice - 1].get_title() == "No Recipe")
         {
             weeks_recipes[user_choice - 1] = current_recipe;
             break;
         }
+        // otherwise warn they have aleady filled this slot
         else
         {
             std::cout << "There is already a recipe in that slot" << std::endl;
+            // displays recipes again to allow user to see the available slots
             display_weeks_recipes();
         }
     }
@@ -119,8 +120,10 @@ void WeekPlan::delete_meal_from_plan() {
     // weeks recipes starts at 1, but the array starts at 0 so deduct 1
     int user_choice = get_int_input() - 1;
 
+    // get the recipe to delete in the weeks_recipes array
     Recipe& recipe_to_delete = weeks_recipes[user_choice];
 
+    // if the user chose an empty slot, warn them and return
     if(weeks_recipes[user_choice].get_title() == "No Recipe")
     {
         std::cout << "There is no recipe in that slot\n";
@@ -128,24 +131,21 @@ void WeekPlan::delete_meal_from_plan() {
     }
 
 
+    // otherwise, this is the the same ass adding recipe ingredient amounts but, now it deducts
     // iterator to cycle through the ingredients for the recipe in the selected slot
     const auto& recipe_ingredients = recipe_to_delete.get_recipe_ingredients();
 
-//  go through the ingredients one by one, note pair will be <int, uuid, int amount>
+    //  iterate over ingredients one by one, note; pair will be <int(uuid), int(amount)>
     for (const auto &ingredient: recipe_ingredients)
     {
-        // grab the uuid of this ingredient to compare it to the list of total ingredients and see where it is or if
-        // it has not been added yet
+        // get uuid and amount of current ingredient in recipe
         int uuid = ingredient.first;
-        // store the second value of the current ingredient in an optional in called ammount
         int amount = ingredient.second;
 
-        // debug line
-//        std::cout << "Ingredient UUID: " << uuid << ", Amount: " << amount << "\n";
-
-        // if it can find the ingredients uuid in the total_ingredient list already, sum the amounts
+        // if it can find the ingredients uuid in the total_ingredient list already..
         if (total_ingredients.find(uuid) != total_ingredients.end())
         {
+            // deduct the amount of the ingredient needed for the recipe to be deleted
             total_ingredients[uuid] = total_ingredients[uuid] - amount;
         }
         else
@@ -208,9 +208,14 @@ int WeekPlan::get_int_input()
 void WeekPlan::display_weeks_recipes() const {
     std::cout << "Recipes in the WeekPlan:" << std::endl;
 
+    // display spaces value to be used below
     const int spaces = 30;
+
+    // an array of strings for the day names
     const std::string days[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 
+    // for each day, count through the available spaces (up to the max) and either print a character of the days name
+    // or a space if the days name has been completed
     for (const auto &day: days) {
         for (int i = 0; i < spaces; i++) {
             if (day.size() > i) {
@@ -222,16 +227,6 @@ void WeekPlan::display_weeks_recipes() const {
 
     }
     std::cout << std::endl;
-
-    // std::cout   << "Monday" <<
-    //             << "Tuesday\t\t\t\t"
-    //             << "Wednesday\t\t\t\t"
-    //             << "Thursday\t\t\t\t"
-    //             << "Friday\t\t\t\t"
-    //             << "Saturday\t\t\t\t"
-    //             <<  "Sunday\t\t\t\t"
-    //             << std::endl;
-
 
     // Outer loop to handle each row
     for (int row = 0; row < 3; row++) {
@@ -268,19 +263,17 @@ void WeekPlan::display_shopping_list(std::unordered_map<int, Ingredient>* ingred
     for (const auto ingredient: total_ingredients)
     {
 
-        // this iterator goes over the master ingredient list in the ingredient list class until it finds the uuid (first)
-        // of the temp ingredient variable, it then stores this as a pointer to the unordered_map ingredient list where it
-        // found the key value, so the first field is the uuid and the second field the ingredient object
+        // for each ingredient iterated over, make an iterator that grabs the ingredient with the same UUDI as our
+        // temporary ingredient from the ingredients list
         auto it = ingredients_list->find(ingredient.first);
 
-        // if it didn't find it, it would just store the marker for the end of the ingredentList
+        // this if makes sure the ingredient was found
         if (it != ingredients_list->end())
         {
-            // if the 'amount' field is not nullopt, and is an integer value
+            // if that ingredients amount (.second) field is not the sentinel value
             if (ingredient.second != -1)
             {
-                // ingredient is just (uuid, amount), to get the name we need to use the iterator which points to an
-                // Ingredient type and use the get_name member function of Ingredient.
+                // print it along with the amount
                 std::cout << "- " << it->second.get_name() << ": " << ingredient.second << " " << it->second.get_unit()
                           << std::endl;
             }
