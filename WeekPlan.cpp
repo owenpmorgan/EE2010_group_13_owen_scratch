@@ -27,6 +27,8 @@ void WeekPlan::clear_week_plan()
 
     total_ingredients.clear();
 
+
+
 }
 //  Provide the number of a recipe index, and take a pointer to the master recipe list
 void WeekPlan::add_recipe(int recipe_to_add, std::map<int, Recipe>* recipe_list) {

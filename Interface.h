@@ -18,11 +18,7 @@ public:
     void display_intro_screen();
     int display_menu();
 
-
 private:
-
-    int user_choice;
-
 
 };
 

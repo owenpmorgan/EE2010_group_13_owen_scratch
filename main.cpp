@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Interface.h"
 #include "Ingredient.h"
-#include "MeasurementType.h"
 #include "Recipe.h"
 #include "IngredientList.h"
 #include "WeekPlan.h"
@@ -282,7 +281,6 @@ BOOST_AUTO_TEST_CASE(F3_test_get_recipe_list)
 
 int user_choice;
 
-
     interface.display_intro_screen();
 
     while (1)
@@ -301,6 +299,14 @@ int user_choice;
 
             case 2:
             {
+                // see the recipes database parsed from the recipes json file
+                interface.clear_screen();
+                recipe_list.display_recipe_list();
+                break;
+            }
+
+            case 3:
+            {
                 // add a recipe to the weeks recipe list
                 recipe_list.display_recipe_list();
                 int min = 1;
@@ -312,8 +318,10 @@ int user_choice;
                 break;
             }
 
-            case 3:
+            case 4:
             {
+                // delete a recipe from the weeks recipe list
+                interface.clear_screen();
                 myWeek.display_weeks_recipes();
                 myWeek.delete_meal_from_plan();
                 interface.clear_screen();
@@ -321,15 +329,18 @@ int user_choice;
                 break;
             }
 
-            case 4:
+            case 5:
             {
+                // view the total ingredients needed, the weeks shopping list
                 interface.clear_screen();
                 myWeek.display_shopping_list(&ingredientList.get_ingredients_list());
                 break;
             }
 
-            case 5:
+            case 6:
             {
+                // display a method for a recipe on the list
+                interface.clear_screen();
                 recipe_list.display_recipe_list();
                 int min = 1;
                 int max = recipe_list.get_recipe_list().size();
@@ -338,8 +349,18 @@ int user_choice;
                 break;
             }
 
-            case 6:
+            case 7:
             {
+                myWeek.clear_week_plan();
+                interface.clear_screen();
+                std::cout << "Your WeekPlan has been cleared\n\n";
+                myWeek.display_weeks_recipes();
+                break;
+            }
+
+            case 8:
+            {
+                // quit the program
                 exit(0);
                 break;
             }
@@ -350,30 +371,6 @@ int user_choice;
             }
         }
     }
-
-
-//    recipe_list.display_recipe_list();
-
-//    myWeek.add_recipe(10, &recipe_list.get_recipe_list());
-//    myWeek.add_recipe(37, &recipe_list.get_recipe_list());
-//    myWeek.add_recipe(45, &recipe_list.get_recipe_list());
-
-
-
-//    myWeek.display_shopping_list(&ingredientList.get_ingredients_list());
-
-//    myWeek.clear_week_plan();
-//    myWeek.display_weeks_recipes();
-//    myWeek.display_total_weeks_ingredients(ingredientList.get_ingredients_list());
-
-//    interface.clear_screen();
-//
-//    myWeek.display_weeks_recipes();
-//    myWeek.delete_meal_from_plan();
-//    myWeek.display_weeks_recipes();
-//    myWeek.display_shopping_list(&ingredientList.get_ingredients_list());
-
-    return 0;
 }
 
 

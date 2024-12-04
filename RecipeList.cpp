@@ -38,6 +38,7 @@ void RecipeList::display_recipe_list() {
             col_count = 0;
         }
     }
+    std::cout << std::endl;
 }
 
 std::map<int, Recipe>& RecipeList::get_recipe_list() {return recipes;}

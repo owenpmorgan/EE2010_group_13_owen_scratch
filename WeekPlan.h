@@ -32,8 +32,6 @@ public:
     void clear_week_plan();
     void delete_meal_from_plan();
 
-//    void sum_total_weeks_ingredients();
-
 };
 
 #endif //EE2010_GROUP_MY_SCRATCH_WEEKPLAN_H

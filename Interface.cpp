@@ -23,8 +23,9 @@ void Interface::display_intro_screen() {
     "\\_|  |_/\\___|\\__,_|_\\_|   |_|\\__,_|_| |_|\n\n\n";
 
     std::cout <<
-    "Welcome to Group 13's meal planner app, you pick the recipes\n" <<
-    "We sum up the ingredients and give you a handy weekly shopping list!\n\n";
+    "Welcome to Group 13's meal planner app. You pick the recipes, we sum\n"
+    "up the ingredients and give you a handy weekly shopping list!\n\n"
+    "Your recipes database has been succesfully built.\n\n";
 }
 
 int Interface::display_menu()
@@ -33,14 +34,16 @@ int Interface::display_menu()
 
     std::cout << "______________________\n";
     std::cout << "1 - View MealPlan\n"
-                 "2 - Add Recipe\n"
-                 "3 - Delete Recipe\n"
-                 "4 - View Shopping List\n"
-                 "5 - Get Recipe Method\n"
-                 "6 - Quit\n";
+                 "2 - View Recipe Database\n"
+                 "3 - Add Recipe\n"
+                 "4 - Delete Recipe\n"
+                 "5 - View Shopping List\n"
+                 "6 - Get Recipe Method\n"
+                 "7 - Clear MealPlan\n"
+                 "8 - Quit\n";
     std::cout << "______________________\n\n";
 
-    int userChoice = get_int_input(1, 6);
+    int userChoice = get_int_input(1, 8);
 
     return userChoice;
 }
