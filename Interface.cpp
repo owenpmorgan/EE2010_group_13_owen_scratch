@@ -50,25 +50,24 @@ int Interface::display_menu()
     return userChoice;
 }
 
+// polymorphic re-definiton of get_int_input for use in interface
 int Interface::get_int_input(int min, int max) {
 
-    // the int to be returned
+    // the input sanitised int to be returned
     int userChoice;
     // and a counter that will give up and return 1 if too many errors
     int errorCounter = 0;
 
     while(true)
     {
-        // if the value passed to max is greater than MAX_RECIPES it must be from the recipe list
+        // If called with a large max it will be from the recipe list, so display a more relevant message in this case
         if(max > MAX_RECIPES)
         {
             std::cout << "Please select a meal: ";
-
         }
         else
         {
             std::cout << "Enter the number of your choice: ";
-
         }
         // While not a valid entry clear cin and try again
         while(!(std::cin >> userChoice) || userChoice < min || userChoice > max)
@@ -79,7 +78,7 @@ int Interface::get_int_input(int min, int max) {
             errorCounter++;
             if(errorCounter > 3)
             {
-                // If too many failed inputs return a 1
+                // If too many failed inputs return a 1, (to avoid getting stuck)
                 std::cout << "\nToo many failed inputs! \n";
                 return 1;
             }

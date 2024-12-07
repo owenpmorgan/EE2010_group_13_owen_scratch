@@ -9,8 +9,6 @@
 #ifndef EE2010_GROUP_MY_SCRATCH_ORGANISER_H
 #define EE2010_GROUP_MY_SCRATCH_ORGANISER_H
 
-//template <typename T1, typename T2>
-
 class Organiser
 {
 protected:

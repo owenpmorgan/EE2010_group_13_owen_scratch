@@ -13,6 +13,8 @@
 // uncomment to access the test main (must comment out program main)
 //#include <boost/test/included/unit_test.hpp>
 
+// test
+
 /*
 
 BOOST_AUTO_TEST_CASE(F1_test_create_recipe_database)
@@ -61,7 +63,6 @@ BOOST_AUTO_TEST_CASE(F5_remove_meal_from_meal_plan)
     recipe_list.add_recipe_to_list(current_recipe);
     week_plan.add_recipe(1, &recipe_list.get_recipe_list());
     week_plan.delete_meal_from_plan();
-
 }
 
 BOOST_AUTO_TEST_CASE(test_user_ingredient)
@@ -129,7 +130,7 @@ using json = nlohmann::json;
  * The Following block is all just parsing the scraped json file and adding it to the various classes
  *****************************************************************************************************************/
 // open the json and parse the data to a json object called data
-    std::ifstream myFile("recipes3.json");
+    std::ifstream myFile("recipes_.json");
     if (!myFile.is_open()) {
         std::cerr << "Failed to open JSON file." << std::endl;
         return 1;
