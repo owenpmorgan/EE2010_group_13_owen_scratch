@@ -4,14 +4,12 @@
 #include<cstdlib>
 
 #include "Interface.h"
+#include <iostream>
 
 // ANSI escape codes do not work in clion output console, so use a scroll to simulate clear screen
 void Interface::clear_screen()
 {
-    for (int i = 0; i < 20; i++) {
-        std::cout << "\n";
-    }
-    std::cout.flush();
+    std::cout << "\033[2J\033[H";
 }
 
 // One time title screen to be displayed at app start

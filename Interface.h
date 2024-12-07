@@ -12,11 +12,11 @@ class Interface : public Organiser
 {
 
 public:
-
-    void clear_screen();
+    static void clear_screen();
     // redefine this inherited function
-    virtual int get_int_input(int, int) override;
-    void display_intro_screen();
+    int get_int_input(int, int) override;
+
+    static void display_intro_screen();
     int display_menu();
 
 private:
