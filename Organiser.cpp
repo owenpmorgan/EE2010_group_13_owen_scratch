@@ -5,3 +5,4 @@
 
 #include "Organiser.h"
 
+// pure virtual function, no implementation
