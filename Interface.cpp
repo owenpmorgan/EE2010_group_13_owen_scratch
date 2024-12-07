@@ -9,7 +9,11 @@
 // ANSI escape codes do not work in clion output console, so use a scroll to simulate clear screen
 void Interface::clear_screen()
 {
+#if defined(__APPLE__)
+    system("clear");
+#else
     std::cout << "\033[2J\033[H";
+#endif
 }
 
 // One time title screen to be displayed at app start
