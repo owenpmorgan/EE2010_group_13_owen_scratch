@@ -16,19 +16,18 @@
 ///*
 
 BOOST_AUTO_TEST_CASE(F1_test_create_recipe_database)
-// Test F1
-{
+{ // Testing - Creates Recipe database from JSON file parsing
     std::cout << "You are in test F1\n";
     RecipeList recipe_list;
     Recipe current_recipe("A Meal", 2, "Cook It");
     recipe_list.add_recipe_to_list(current_recipe);
     BOOST_CHECK(recipe_list.get_recipe_by_id(1).get_title() == "A Meal");
+    // check if any exceptions were thrown
     BOOST_CHECK_NO_THROW(recipe_list.get_recipe_by_id(1).display_recipe_method());
-
 }
 
 BOOST_AUTO_TEST_CASE(F2_view_weekly_meal_plan)
-{
+{ //Testing - that the Weekly meal plan is displayed
     std::cout << "You are in test F3a\n";
     WeekPlan week_plan;
     // check if any exceptions were thrown
@@ -36,45 +35,45 @@ BOOST_AUTO_TEST_CASE(F2_view_weekly_meal_plan)
 }
 
 BOOST_AUTO_TEST_CASE(F3a_test_view_list_of_recipes)
-{
+{ // Testing - Views list of recipes is displayed
     std::cout << "You are in test F2\n";
     RecipeList recipe_list;
     Recipe current_recipe("A Meal", 2, "Cook It");
     recipe_list.add_recipe_to_list(current_recipe);
-
     // check that no exceptions were thrown
     BOOST_CHECK_NO_THROW(recipe_list.display_recipe_list());
 }
 
-
 BOOST_AUTO_TEST_CASE(F3b_test_get_recipe_list)
-{
+{ // Testing - Gets recipe info from JSON file into the recipe database
     std::cout << "You are in test F3b\n";
     RecipeList recipeList;
     BOOST_CHECK((std::is_same<decltype(recipeList.get_recipe_list()), std::map<int, Recipe>&>::value));
 }
 
-// this one requires a user input
+// This one requires a user input
 BOOST_AUTO_TEST_CASE(F5a_add_recipe_to_week_plan)
-{
+{ // Testing - Adds recipe to the weekly plan
     std::cout << "You are in test F4a\n";
     WeekPlan week_plan;
     RecipeList recipe_list;
     Recipe current_recipe("A Meal", 2, "Cook It");
     recipe_list.add_recipe_to_list(current_recipe);
+    // check that no exceptions were thrown
     BOOST_CHECK_NO_THROW(week_plan.add_recipe(1, &recipe_list.get_recipe_list()));
 }
 
 BOOST_AUTO_TEST_CASE(F5b_test_recipe_to_add_not_found)
-{
+{ // Testing - Recipe to add not found
     std::cout << "You are in test F4b\n";
     RecipeList recipeList;
     WeekPlan weekplan;
+    // check that no exceptions were thrown
     BOOST_CHECK_THROW(weekplan.add_recipe(-1, &recipeList.get_recipe_list()), std::runtime_error);
 }
 
 BOOST_AUTO_TEST_CASE(F6_remove_meal_from_meal_plan)
-{
+{ // Testing - removes a meal from the meal plan
     std::cout << "You are in test F5\n";
     WeekPlan week_plan;
     RecipeList recipe_list;
@@ -85,7 +84,7 @@ BOOST_AUTO_TEST_CASE(F6_remove_meal_from_meal_plan)
 }
 
 BOOST_AUTO_TEST_CASE(F7a_view_recipe_method)
-{
+{ // Testing - Displays the recipe
     std::cout << "You are in test F7a\n";
     WeekPlan week_plan;
     RecipeList recipe_list;
@@ -94,7 +93,7 @@ BOOST_AUTO_TEST_CASE(F7a_view_recipe_method)
 }
 
 BOOST_AUTO_TEST_CASE(F7b_get_recipe_method)
-{
+{ // Testing - Gets recipe from database into the current recipe
     std::cout << "You are in test F7b\n";
     WeekPlan week_plan;
     RecipeList recipe_list;
@@ -103,7 +102,7 @@ BOOST_AUTO_TEST_CASE(F7b_get_recipe_method)
 }
 
 BOOST_AUTO_TEST_CASE(F8_clear_meal_plan)
-{
+{ // Testing - Clears and empties the meal plan
     std::cout << "You are in test F8\n";
     WeekPlan weekPlan;
     RecipeList recipeList;
@@ -115,14 +114,14 @@ BOOST_AUTO_TEST_CASE(F8_clear_meal_plan)
 
 
 BOOST_AUTO_TEST_CASE(F9_display_shopping_list)
-{
+{ // Testing - Displays the weekly shopping list to the user
     std::cout << "You are in test F9\n";
 
     IngredientList ingredientList;
     WeekPlan weekPlan;
     RecipeList recipeList;
 
-
+    // adds ingredients
     Ingredient ing1(1, "ing1", "ml");
     Ingredient ing2(2, "ing2", "g");
 
@@ -130,6 +129,7 @@ BOOST_AUTO_TEST_CASE(F9_display_shopping_list)
     ingredientList.add_ingredient(ing2);
 
     Recipe current_recipe("A Meal", 2, "Cook It");
+    //makes two items
     current_recipe.add_ingredient(1, 30);
     current_recipe.add_ingredient(2, 20);
 
@@ -139,7 +139,7 @@ BOOST_AUTO_TEST_CASE(F9_display_shopping_list)
 }
 
 BOOST_AUTO_TEST_CASE(PARSER1_test_duplicate_ingredient_name)
-{
+{ // Testing - Checks for duplicate ingredients names
     std::cout << "You are in test PARSER1\n";
     IngredientList ingredientList;
     // make an item and add it to the list
@@ -150,7 +150,7 @@ BOOST_AUTO_TEST_CASE(PARSER1_test_duplicate_ingredient_name)
 }
 
 BOOST_AUTO_TEST_CASE(PARSER2_test_duplicate_ingredient_uuid)
-{
+{ // Testing - checks for duplicate ingredients uuid
     std::cout << "You are in test PARSER2\n";
     IngredientList ingredientList;
     // make 2 items with the same UUID
