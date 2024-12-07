@@ -1,0 +1,2420 @@
+[
+    {
+        "name": "Reuben sandwich",
+        "servings": "4",
+        "ingredients": [
+            {
+                "quantity": "8",
+                "unit": "slices",
+                "ingredient": "corned beef"
+            },
+            {
+                "quantity": "100",
+                "unit": "g",
+                "ingredient": "gruy\u00e8re sliced"
+            },
+            {
+                "quantity": "4",
+                "unit": "tbsp",
+                "ingredient": "butter"
+            },
+            {
+                "quantity": "8",
+                "unit": "thick slices",
+                "ingredient": "rye bread"
+            },
+            {
+                "quantity": "75",
+                "unit": "g",
+                "ingredient": "white sauerkraut"
+            }
+        ],
+        "method": [
+            "Mix all the ingredients for the mayonnaise, except the lemon juice, together in a bowl. Season to taste with the lemon juice, salt, and pepper.",
+            "Heat the grill to high. Line a baking tray with baking parchment and arrange the corned beef into four piles on it, then top with the cheese and grill until melted and bubbling.",
+            "Butter both sides of all the bread slices. Heat a frying pan over a medium heat and toast the bread slices on both sides until golden. Generously spread the mayonnaise over one side of each bread slice. Top four of the slices, mayonnaise-side up, with the cheese-topped corned beef and the sauerkraut, then sandwich with the remaining bread slices, mayonnaise-side down. Secure with cocktail sticks, then slice in half to serve."
+        ]
+    },
+    {
+        "name": "Pearl couscous salad with hot smoked trout & buttermilk dressing",
+        "servings": "4",
+        "ingredients": [
+            {
+                "quantity": "200",
+                "unit": "g",
+                "ingredient": "pearl couscous"
+            },
+            {
+                "quantity": "15",
+                "unit": "item",
+                "ingredient": "radishes"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "cucumber"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "green apple"
+            },
+            {
+                "quantity": "150",
+                "unit": "g",
+                "ingredient": "hot smoked trout"
+            }
+        ],
+        "method": [
+            "Cook the pearl couscous following pack instructions, then drain well and rinse with cold water. Dry the pan, then mix all the dressing ingredients in it and season well. Tip in the prepared veg and apple along with the couscous. Mix well and check for seasoning.",
+            "Spread out on a platter and flake the smoked trout over the top. Will keep chilled for up to two days."
+        ]
+    },
+    {
+        "name": "Smoked salmon, quinoa & dill lunch pot",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "half-fat soured cream"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "lemon juice"
+            },
+            {
+                "quantity": "\u00bd",
+                "unit": "pack",
+                "ingredient": "dill"
+            },
+            {
+                "quantity": "250",
+                "unit": "g",
+                "ingredient": "pouch ready-to-eat quinoa (we used Merchant Gourmet)"
+            },
+            {
+                "quantity": "\u00bd",
+                "unit": "item",
+                "ingredient": "cucumber halved and sliced"
+            },
+            {
+                "quantity": "4",
+                "unit": "item",
+                "ingredient": "radish"
+            },
+            {
+                "quantity": "100",
+                "unit": "g",
+                "ingredient": "smoked salmon torn into strips"
+            }
+        ],
+        "method": [
+            "First, make the dressing. Mix the soured cream and lemon juice together in a bowl, then add most of the dill, reserving a quarter for serving.",
+            "In another bowl, combine the quinoa with the cucumber and radishes, and stir through half the dressing. Season and top with the salmon and the rest of the dill.",
+            "Put the other half of the dressing in a small pot and drizzle over the quinoa just before serving."
+        ]
+    },
+    {
+        "name": "Rice cake cress faces",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "4",
+                "unit": "tbsp",
+                "ingredient": "butter"
+            },
+            {
+                "quantity": "4",
+                "unit": "item",
+                "ingredient": "rice or corn cakes"
+            },
+            {
+                "quantity": "4",
+                "unit": "item",
+                "ingredient": "tomatoes"
+            },
+            {
+                "quantity": "\u00bc",
+                "unit": "item",
+                "ingredient": "cucumber cut into half-moons"
+            },
+            {
+                "quantity": "\u00bc",
+                "unit": "item",
+                "ingredient": "pepper (any colour), sliced"
+            },
+            {
+                "quantity": "4",
+                "unit": "item",
+                "ingredient": "pitted olives sliced"
+            },
+            {
+                "quantity": null,
+                "unit": null,
+                "ingredient": "punnet of cress"
+            }
+        ],
+        "method": [
+            "Spread the hummus or nut butter over the rice cakes or corn cakes. Use the veg to create faces, snipping off some cress and using it to give the faces any desired hairstyle, beard or moustache."
+        ]
+    },
+    {
+        "name": "Air-fryer ham, cheese & egg bagel",
+        "servings": "1",
+        "ingredients": [
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "bagel halved"
+            },
+            {
+                "quantity": "\u00bd",
+                "unit": "tbsp",
+                "ingredient": "chilli jam or red onion chutney"
+            },
+            {
+                "quantity": "25",
+                "unit": "g",
+                "ingredient": "cheddar grated"
+            },
+            {
+                "quantity": "1-2",
+                "unit": "slices",
+                "ingredient": "ham"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "eggs"
+            }
+        ],
+        "method": [
+            "Heat the air-fryer to 180C. Bake the split bagel for 2-3 mins to toast it lightly. Remove from the air-fryer and make the hole in the top bagel slightly wider by cutting with a sharp knife (this is to make the egg easier to fit \u2013 if the bagel has a wide hole already this may not be necessary). Spread the chilli jam or chutney on the bottom slice, then sprinkle over the cheddar and add a slice of ham. Top with the other half of bagel and cook for 5 mins in the air-fryer to melt the cheese a little.",
+            "Remove the bagel from the air-fryer, then either crack the egg directly into the hole in the top of the bagel. If the egg seems a little too large, you can try lifting up the bagel slice just a little to allow some of the white to sit underneath. Put in the air-fryer and bake for 8-10 mins until the egg is cooked to your liking, the cheese has melted and the bagel is golden. Grind over a little black pepper, if you like."
+        ]
+    },
+    {
+        "name": "Crunchy lettuce salad wraps with sweet satay dip",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "little gem lettuce"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "chicken breast"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "carrots"
+            },
+            {
+                "quantity": "\u00bc",
+                "unit": "item",
+                "ingredient": "cucumber sliced"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "radishes"
+            },
+            {
+                "quantity": "handful",
+                "unit": null,
+                "ingredient": "of coriander or mint leaves"
+            }
+        ],
+        "method": [
+            "For the dip, combine the peanut butter, chilli sauce, soy sauce and lime juice in a bowl, loosening with a splash of cold water, if needed, so it\u2019s a drizzling consistency.",
+            "Lay a couple of lettuce leaves on a plate and pile a little chicken and some of the veg on each piece. Scatter over the coriander or mint leaves, and squeeze over some lime juice. Drizzle over some of the satay dip, then roll the lettuce around the filling. Serve with the remaining satay on the side for dipping, if you like and the lime wedges for squeezing over."
+        ]
+    },
+    {
+        "name": "Crispy shredded chicken",
+        "servings": "2 as a main, 4 as a sharer",
+        "ingredients": [
+            {
+                "quantity": "320",
+                "unit": "g",
+                "ingredient": "pack chicken mini breast fillets"
+            },
+            {
+                "quantity": "2\u00bd",
+                "unit": "tbsp",
+                "ingredient": "light soy sauce"
+            },
+            {
+                "quantity": null,
+                "unit": "for frying",
+                "ingredient": "vegetable oil"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "red pepper deseeded and thinly sliced"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "green pepper deseeded and thinly sliced"
+            },
+            {
+                "quantity": "3",
+                "unit": "tbsp",
+                "ingredient": "cornflour"
+            },
+            {
+                "quantity": "3",
+                "unit": "tbsp",
+                "ingredient": "sweet chilli sauce"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "garlic and ginger paste"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "sesame oil"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "spring onions trimmed and finely sliced"
+            }
+        ],
+        "method": [
+            "Slice the chicken into thin strips. Pour over 2 tbsp of the soy and marinate in the fridge, covered, for 1 hr.",
+            "Meanwhile, heat 1 tbsp of the oil in a wok or deep frying pan over a medium heat and cook the peppers for 3-4 mins until just beginning to soften. Remove with a slotted spoon and set aside.",
+            "Spread the cornflour out in a shallow bowl. Season, then add the marinated chicken strips and toss to coat well.",
+            "Fill a wok or deep frying pan with the oil so it\u2019s about \u00bdcm deep, then heat to medium-high. Carefully add the chicken in batches, cooking for 3-4 mins, using tongs to turn regularly until golden and crispy. Remove with a slotted spoon and place on a plate lined with kitchen paper to drain.",
+            "Mix together the remaining soy, sweet chilli, garlic paste and sesame oil in a large bowl. Add the cooked peppers, crispy chicken and toss together until coated all over and sticky. Serve sprinkled with the spring onions."
+        ]
+    },
+    {
+        "name": "Air fryer chicken breasts",
+        "servings": "4",
+        "ingredients": [
+            {
+                "quantity": "4",
+                "unit": "item",
+                "ingredient": "chicken breasts"
+            },
+            {
+                "quantity": "\u00bd",
+                "unit": "tbsp",
+                "ingredient": "rapeseed oil"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "salt"
+            },
+            {
+                "quantity": "1 \u00bd",
+                "unit": "tsp",
+                "ingredient": "garlic granules"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "smoked sweet paprika"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp",
+                "ingredient": "mixed herbs"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "pepper"
+            }
+        ],
+        "method": [
+            "Coat the chicken in the oil and set aside. In a bowl, combine the salt, garlic, paprika and mixed herbs with a good grinding of black pepper, then scatter onto a plate.",
+            "Roll each oiled chicken breast in the seasoning and put in your air fryer basket. Cook at 180C for 18-20 mins, turning after 10 mins. To check it is cooked, pierce the chicken with a knife at the thickest part to see if the juices run clear. Or insert a temperature thermometer and it should read 70C. Serve with rice and greens or a salad."
+        ]
+    },
+    {
+        "name": "Panuozzo sandwich",
+        "servings": "4",
+        "ingredients": [
+            {
+                "quantity": "300",
+                "unit": "g",
+                "ingredient": "white bread"
+            },
+            {
+                "quantity": "3",
+                "unit": "g",
+                "ingredient": "fast-action dried yeast (about half a sachet)"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "olive oil"
+            }
+        ],
+        "method": [
+            "Put the flour in a large bowl, then stir in the yeast and a large pinch of salt. Make a well in the centre, pour in 175ml warm water and the oil and bring together with a wooden spoon to make a soft, fairly wet dough. Turn out onto a lightly floured surface and knead for 5-8 mins until smooth. Divide the dough into four balls and arrange on a floured tray, well spaced apart. Cover with a tea towel and set aside for about 40 mins-1 hr until doubled in size.",
+            "Heat the oven to 240C/220C fan/gas 8 and put a baking tray in the oven to heat up. Roll the dough balls out on a floured surface into long baguette sticks about 22-25cm long, place on the hot tray and bake for 10-12 mins until puffed up and golden, then leave to cool. Can be made a few hours ahead of baking.",
+            "To assemble, split the bread down one side and neatly layer in the tomato, ham, mozzarella and rocket, if using. Mix the pesto with the olive oil, drizzle over, halve and serve."
+        ]
+    },
+    {
+        "name": "Caesar salad wrap",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "1",
+                "unit": "small",
+                "ingredient": "garlic clove"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "garlic granules"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "anchovies"
+            },
+            {
+                "quantity": "4",
+                "unit": "tbsp",
+                "ingredient": "mayonnaise"
+            },
+            {
+                "quantity": "15",
+                "unit": "g",
+                "ingredient": "parmesan grated"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "Dijon mustard"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp",
+                "ingredient": "giardiniera pickling liquid"
+            },
+            {
+                "quantity": "2",
+                "unit": "large",
+                "ingredient": "flour tortillas"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "romaine lettuce"
+            },
+            {
+                "quantity": "75",
+                "unit": "g",
+                "ingredient": "giardiniera"
+            }
+        ],
+        "method": [
+            "Bash together the garlic and anchovies using a pestle and mortar to create a thick paste. Transfer to a bowl and stir in the mayonnaise, parmesan, mustard and a splash of the leftover giardiniera pickling liquid. Season with salt, pepper and a bit more pickling liquid, if needed.",
+            "Spread the dressing over the tortillas, leaving a border, then dot over the sliced chicken leftovers, lettuce and the leftover drained giardiniera. Wrap up tightly, folding the ends in so everything stays in place."
+        ]
+    },
+    {
+        "name": "Bulgur & quinoa lunch bowls",
+        "servings": "4 (makes 2 of each flavour)",
+        "ingredients": [
+            {
+                "quantity": "1",
+                "unit": "large",
+                "ingredient": "onion"
+            },
+            {
+                "quantity": "150",
+                "unit": "g",
+                "ingredient": "bulgur and quinoa (this comes ready mixed)"
+            },
+            {
+                "quantity": "2",
+                "unit": "sprigs",
+                "ingredient": "thyme"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp",
+                "ingredient": "vegetable bouillon"
+            }
+        ],
+        "method": [
+            "Tip the onion and bulgur mix into a pan, pour over 600ml water and stir in the thyme and bouillon. Cook, covered, over a low heat for 15 mins, then leave to stand for 10 mins. All the liquid should now be absorbed. When cool, remove the thyme and divide the bulgur between four bowls or plastic containers.",
+            "For the avocado topping, toss all the ingredients together except for the rocket. Pile onto two portions of the bulgur and top with the rocket.",
+            "For the beetroot topping, first pile the chickpeas on top, then toss the beetroot with the tomato, mint, cumin, a good pinch of cinnamon, the oil and vinegar. Toss well, add the orange, then pile onto the remaining portions of bulghur, scatter with the pine nuts and sprinkle with extra cinnamon. Chill in the fridge until needed."
+        ]
+    },
+    {
+        "name": "Air fryer loaded frittata with bacon & cheddar",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "6",
+                "unit": "rashers",
+                "ingredient": "bacon"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "olive oil"
+            },
+            {
+                "quantity": "4",
+                "unit": "items",
+                "ingredient": "eggs"
+            },
+            {
+                "quantity": "1",
+                "unit": "small slice",
+                "ingredient": "white bread"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "parsley"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "chilli flakes"
+            },
+            {
+                "quantity": "40",
+                "unit": "g",
+                "ingredient": "mature cheddar grated"
+            }
+        ],
+        "method": [
+            "Heat the air-fryer to 200C. Arrange the bacon in a small non-stick baking tin (or use two individual tins) and cook for 5-7 mins until golden but not too crisp. Remove the bacon to a plate lined with kitchen paper to drain, then drizzle the olive oil into the tin (or divide between the two tins).",
+            "Meanwhile, beat the eggs in a bowl and stir in the breadcrumbs, parsley, chilli flakes (if using), most of the cheese and some seasoning.",
+            "Reduce the air-fryer temperature to 170C. Pour the egg mixture into the tin or tins and cook for 8-12 mins until the frittata is golden and completely set.",
+            "Roughly chop the bacon, then sprinkle this over the cooked frittata along with the reserved cheese. Return to the air-fryer for 1-2 mins until the cheese has melted. Sprinkle over some parsley and serve."
+        ]
+    },
+    {
+        "name": "Beef sandwich with pink pickled onions",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "\u00bd",
+                "unit": "item",
+                "ingredient": "red onion finely sliced"
+            },
+            {
+                "quantity": "60",
+                "unit": "ml",
+                "ingredient": "rice vinegar"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "caster sugar"
+            },
+            {
+                "quantity": "100",
+                "unit": "g",
+                "ingredient": "green beans"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "demi baguette halved"
+            },
+            {
+                "quantity": "60-70",
+                "unit": "g",
+                "ingredient": "leftover avocado sauce (see recipe below)"
+            },
+            {
+                "quantity": "300",
+                "unit": "g",
+                "ingredient": "leftover beef (see recipe below)"
+            },
+            {
+                "quantity": "handful",
+                "unit": null,
+                "ingredient": "leftover spicy greens (see recipe below)"
+            }
+        ],
+        "method": [
+            "Mix the red onion with the vinegar, sugar and \u00bc tsp salt and set aside to lightly pickle for 20 mins.",
+            "Bring a pan of salted water to the boil over a medium heat and carefully tip in the green beans. Cook for 3-4 mins until tender but not soft, then plunge into a bowl of ice-cold water and leave for 5 mins. Drain thoroughly and pat dry.",
+            "Halve the baguette and spread any remaining avocado sauce over the base. Layer up the beef and greens and top with the green beans and pink pickled onions. Sandwich together and enjoy. Will keep chilled for up to a day."
+        ]
+    },
+    {
+        "name": "Smoky fish dip & bagel chips",
+        "servings": "2 - 4",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "smoked mackerel fillets"
+            },
+            {
+                "quantity": "\u00bd",
+                "unit": "item",
+                "ingredient": "lemon zested and juiced"
+            },
+            {
+                "quantity": "100",
+                "unit": "g",
+                "ingredient": "Greek or natural yogurt"
+            },
+            {
+                "quantity": "small handful",
+                "unit": null,
+                "ingredient": "dill"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "smoked paprika"
+            }
+        ],
+        "method": [
+            "Remove the skin from the fish fillets and flake into a bowl, removing any pin bones you find along the centre. Lightly mash with a fork, then stir in the lemon zest and juice, yogurt, dill and paprika. The fish will be quite salty so it shouldn\u2019t need any more seasoning. Will keep chilled for up to three days.",
+            "Thinly slice the bagels into small discs. Tip them into a bowl, drizzle with oil and sprinkle with paprika. Arrange in a single layer on a baking tray and cook in the oven or your air-fryer at 180C/160C fan/gas 4 for 10 mins, turning halfway. Once cooled, the bagel chips will keep in an airtight container for up to a week. Pack in a lunchbox and cool bag."
+        ]
+    },
+    {
+        "name": "Falafel burgers",
+        "servings": "4",
+        "ingredients": [
+            {
+                "quantity": "400",
+                "unit": "g",
+                "ingredient": "can chickpeas"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "red onion"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "garlic clove"
+            },
+            {
+                "quantity": "handful",
+                "unit": null,
+                "ingredient": "of flat-leaf parsley or curly parsley"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "ground cumin"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "ground coriander"
+            },
+            {
+                "quantity": "\u00bd",
+                "unit": "tsp",
+                "ingredient": "harissa paste or chilli powder"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "plain flour"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "sunflower oil"
+            },
+            {
+                "quantity": null,
+                "unit": null,
+                "ingredient": "toasted pitta bread to serve"
+            },
+            {
+                "quantity": "200",
+                "unit": "g",
+                "ingredient": "tub tomato salsa to serve"
+            },
+            {
+                "quantity": null,
+                "unit": null,
+                "ingredient": "green salad to serve"
+            }
+        ],
+        "method": [
+            "Drain the chickpeas and pat dry with kitchen paper. Tip into a food processor along with the onion, garlic, parsley, cumin, coriander, harissa paste, flour and a little salt. Blend until fairly smooth, then shape into four patties with your hands.",
+            "Heat the sunflower oil in a non-stick frying pan, and fry the burgers for 3 mins on each side until lightly golden. Serve with the toasted pitta bread, tomato salsa and green salad."
+        ]
+    },
+    {
+        "name": "Egg & avocado open sandwich",
+        "servings": "1",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "eggs"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "ripe avocado"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "lime"
+            },
+            {
+                "quantity": "2",
+                "unit": "slices",
+                "ingredient": "rye bread"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp",
+                "ingredient": "hot chilli sauce"
+            },
+            {
+                "quantity": "handful",
+                "unit": null,
+                "ingredient": "cress"
+            }
+        ],
+        "method": [
+            "Bring a medium pan of water to the boil. Add the eggs and cook for 8-9 mins until hard-boiled. Meanwhile, halve the avocado and scoop the flesh into a bowl. Add the lime juice, season well and mash with a fork.",
+            "When the eggs are cooked, run under cold water for 2 mins before removing the shells. Spread the avocado on the rye bread. Slice the eggs into thin rounds and place on top of the avocado. Drizzle some chilli sauce over the eggs, scatter the cress on top and add a good grinding of black pepper."
+        ]
+    },
+    {
+        "name": "Beef & red chimichurri quinoa",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "small handful",
+                "unit": null,
+                "ingredient": "parsley"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "shallot"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "red wine vinegar"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "red pepper"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "red chili"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "dried oregano"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "garlic clove"
+            },
+            {
+                "quantity": "60",
+                "unit": "ml",
+                "ingredient": "olive oil"
+            },
+            {
+                "quantity": "handful",
+                "unit": null,
+                "ingredient": "greens"
+            },
+            {
+                "quantity": "160",
+                "unit": "g",
+                "ingredient": "sweetcorn"
+            },
+            {
+                "quantity": "150",
+                "unit": "g",
+                "ingredient": "tomatoes"
+            },
+            {
+                "quantity": "250",
+                "unit": "g",
+                "ingredient": "pouch cooked quinoa"
+            },
+            {
+                "quantity": "200-300",
+                "unit": "g",
+                "ingredient": "beef"
+            },
+            {
+                "quantity": null,
+                "unit": null,
+                "ingredient": "avocado sauce"
+            }
+        ],
+        "method": [
+            "For the chmichurri dressing, combine the parsley, shallot, vinegar, red pepper, chilli, oregano, garlic and olive oil in a small bowl. Season to taste and set aside.",
+            "In a second bowl, combine the leftover greens, sweetcorn, tomatoes and quinoa, then pack into two airtight containers, layer over the beef and drizzle over the chimichurri to serve. Serve with any leftover avocado sauce. Will keep chilled in an airtight container for up to two days."
+        ]
+    },
+    {
+        "name": "Storecupboard saucy pasta & chickpeas",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "100",
+                "unit": "g",
+                "ingredient": "pasta"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "butter"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "small garlic cloves crushed"
+            },
+            {
+                "quantity": "200",
+                "unit": "g",
+                "ingredient": "tomatoes"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "sundried tomato paste or tomato pur\u00e9e mixed with a pinch of sugar"
+            },
+            {
+                "quantity": "400",
+                "unit": "g",
+                "ingredient": "can cooked chickpeas drained"
+            },
+            {
+                "quantity": "\u00bd",
+                "unit": "tsp",
+                "ingredient": "dried oregano"
+            },
+            {
+                "quantity": "50",
+                "unit": "g",
+                "ingredient": "parmesan or strong cheddar, grated"
+            }
+        ],
+        "method": [
+            "Boil the kettle and cook the pasta following pack instructions.",
+            "Meanwhile, heat a frying pan on a medium heat, add the oil or butter, then stir in the garlic and veg. Fry for a couple of minutes until just softened, then add the sundried tomato paste or tomato pur\u00e9e, chickpeas, oregano and a ladleful of the pasta cooking water. Season well and cook for another 1-2 mins.",
+            "When the pasta is just cooked, drain and reserve a cup of the water. Add the pasta to the veg, then stir in the cheese. Stir well, adding another splash of cooking water if the mixture is too dry. Transfer the pasta to a Thermos or lunchbox, with extra cheese if you like. Will keep chilled for up to three days."
+        ]
+    },
+    {
+        "name": "Lime pickle rarebit",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "25",
+                "unit": "g",
+                "ingredient": "butter"
+            },
+            {
+                "quantity": "25",
+                "unit": "g",
+                "ingredient": "plain flour"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "mustard powder"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "Worcestershire sauce"
+            },
+            {
+                "quantity": "120",
+                "unit": "ml",
+                "ingredient": "beer"
+            },
+            {
+                "quantity": "100",
+                "unit": "g",
+                "ingredient": "mature cheddar grated"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "lime pickle"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "thick slices bread (we used sourdough)"
+            },
+            {
+                "quantity": null,
+                "unit": null,
+                "ingredient": "green salad to serve"
+            }
+        ],
+        "method": [
+            "Melt the butter in a saucepan over a medium heat. Once foaming, tip in the flour and mustard powder and stir until a paste forms. Continue to cook for 2-3 mins until the paste turns darker. Splash in the Worcestershire sauce and a little of the beer. Stir and continue adding the beer slowly, stirring well after each addition, keeping the heat low to make sure the mix doesn\u2019t boil.",
+            "Heat the grill to high. Remove the saucepan from the heat and stir through the cheese and lime pickle, continuing to stir until the cheese has melted. (You may need to return the pan to a low heat to completely melt the cheese.) Season with a pinch of pepper and set aside. Arrange the sliced bread on a baking tray and lightly toast both sides under the grill, 1-2 mins each side. Spread the cheese sauce over the top and grill for a further 3-4 mins until bubbling and browned. Leave to stand for 2 mins before serving with a green salad in a lemony dressing, if you like."
+        ]
+    },
+    {
+        "name": "Spicy tuna wrap",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "145",
+                "unit": "g",
+                "ingredient": "tuna"
+            },
+            {
+                "quantity": "70",
+                "unit": "g",
+                "ingredient": "mayo"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "red onion"
+            },
+            {
+                "quantity": "30",
+                "unit": "g",
+                "ingredient": "jalepenos"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "jalapeno brine"
+            },
+            {
+                "quantity": "10",
+                "unit": "g",
+                "ingredient": "dill"
+            },
+            {
+                "quantity": "90",
+                "unit": "g",
+                "ingredient": "cucumber"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "Tabasco"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "large tortilla wraps"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "little gem lettuce"
+            }
+        ],
+        "method": [
+            "For the filling, put the tuna, mayo, red onion, jalape\u00f1os (along with the brine), dill, cucumber and Tabasco in a large bowl. Season and mix well. Will keep chilled for three days.",
+            "Layer half of the filling into each wrap and top with the lettuce. Wrap with baking parchment and packinto a lunchbox. Keep in the fridge or in a cool bag until ready to eat."
+        ]
+    },
+    {
+        "name": "Shake-it-up chopped salad",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "yogurt"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "mayo"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "extra virgin olive oil"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp",
+                "ingredient": "Dijon mustard"
+            },
+            {
+                "quantity": "1",
+                "unit": "small",
+                "ingredient": "garlic clove"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "honey"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "lemon zested and juiced"
+            },
+            {
+                "quantity": "\u00bd",
+                "unit": "tsp",
+                "ingredient": "dried oregano"
+            }
+        ],
+        "method": [
+            "Take two large leak-proof containers, and mix half the ingredients for the dressing in each one. Layer the salad ingredients on top, starting with the salami followed by the cheese, olives, cucumber, tomatoes, onion, pepper, lettuce and croutons, in that order, so that the more tender veg doesn\u2019t soften in the dressing. Pack into a cool bag with an ice pack.",
+            "Just before eating, shake the salad well until everything is coated in the creamy dressing."
+        ]
+    },
+    {
+        "name": "Chicken sandos",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "100",
+                "unit": "g",
+                "ingredient": "white cabbage"
+            },
+            {
+                "quantity": "50",
+                "unit": "g",
+                "ingredient": "leftover giardiniera (see recipe below)"
+            },
+            {
+                "quantity": "50",
+                "unit": "g",
+                "ingredient": "mayonnaise"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "crusty rolls"
+            },
+            {
+                "quantity": "4",
+                "unit": "item",
+                "ingredient": "thick slices of bloomer"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "leftover garlic & parmesan breaded chicken breast (see recipe below)"
+            }
+        ],
+        "method": [
+            "Mix the cabbage with a splash of the leftover giardiniera pickling liquid and massage in using your hands, along with a pinch of salt and pepper. Set aside. Roughly chop the remaining giardiniera and stir through the mayonnaise, adding another splash of the leftover pickling liquid. Season to taste.",
+            "Spread some of the mayonnaise over the slices of the bread. Fill your sandwiches with the remaining chicken breast, cut into slices, with more mayo on top, then a handful of the cabbage."
+        ]
+    },
+    {
+        "name": "Spicy chicken & avocado wraps",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "chicken breast (approx 180g), thinly sliced at an angle"
+            },
+            {
+                "quantity": "0.5",
+                "unit": "item",
+                "ingredient": "lime, squeezed for juice"
+            },
+            {
+                "quantity": "\u00bd",
+                "unit": "tsp",
+                "ingredient": "mild chilli powder"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "garlic clove"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "olive oil"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "seeded wraps"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "avocado"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "roasted red pepper from a jar, sliced"
+            },
+            {
+                "quantity": "a few",
+                "unit": "sprigs",
+                "ingredient": "coriander"
+            }
+        ],
+        "method": [
+            "Mix the chicken with the lime juice, chilli powder and garlic.",
+            "Heat the oil in a non-stick frying pan then fry the chicken for a couple of mins \u2013 it will cook very quickly so keep an eye on it. Meanwhile, warm the wraps following the pack instructions or, if you have a gas hob, heat them over the flame to slightly char them. Do not let them dry out or they are difficult to roll.",
+            "Squash half an avocado onto each wrap, add the peppers to the pan to warm them through then pile onto the wraps with the chicken, and sprinkle over the coriander. Roll up, cut in half and eat with your fingers."
+        ]
+    },
+    {
+        "name": "Chorizo & chickpea soup",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "400",
+                "unit": "g",
+                "ingredient": "canned chopped tomato"
+            },
+            {
+                "quantity": "110",
+                "unit": "g",
+                "ingredient": "chorizo"
+            },
+            {
+                "quantity": "140",
+                "unit": "g",
+                "ingredient": "wedge Savoy cabbage"
+            },
+            {
+                "quantity": "sprinkling",
+                "unit": null,
+                "ingredient": "dried chilli flakes"
+            },
+            {
+                "quantity": "410",
+                "unit": "g",
+                "ingredient": "can chickpeas"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "chicken stock cube"
+            },
+            {
+                "quantity": null,
+                "unit": null,
+                "ingredient": "crusty bread or garlic bread, to serve"
+            }
+        ],
+        "method": [
+            "Put a medium pan on the heat and tip in the tomatoes, followed by a can of water. While the tomatoes are heating, quickly chop the chorizo into chunky pieces (removing any skin) and shred the cabbage.",
+            "Pile the chorizo and cabbage into the pan with the chilli flakes and chickpeas, then crumble in the stock cube. Stir well, cover and leave to bubble over a high heat for 6 mins or until the cabbage is just tender. Ladle into bowls and eat with crusty or garlic bread."
+        ]
+    },
+    {
+        "name": "Kale caesar salad",
+        "servings": "2 as a main or 4 as a light lunch",
+        "ingredients": [
+            {
+                "quantity": "400",
+                "unit": "g",
+                "ingredient": "kale"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "olive oil"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "sourdough"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "little gem lettuce"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "avocado"
+            },
+            {
+                "quantity": "30",
+                "unit": "g",
+                "ingredient": "parmesan shaved"
+            }
+        ],
+        "method": [
+            "Combine the kale with 1 tbsp of the olive oil and a good pinch of salt in a large bowl, and massage the oil into the leaves for a minute before setting aside to tenderise a little.",
+            "Heat the oven to 200C/180C fan/gas 6. Scatter the bread on a large roasting tray, then drizzle over the remaining 1 tbsp oil. Toss to coat the bread, then bake for 10 mins until golden and crisp. Remove from the oven and set aside.",
+            "Toss together the kale, lettuce, avocado, if using, and shaved parmesan until evenly mixed.",
+            "Combine the dressing ingredients in a small bowl and mix together until well combined. You can also do this in a jar \u2013 put the lid on and shake well. Loosen with a little water (it should be the consistency of yogurt), then pour over the salad. Scatter over the sourdough croutons and toss again, then grind over some black pepper and serve."
+        ]
+    },
+    {
+        "name": "Prawn & mango salad",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "avocado"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "lemon juice"
+            },
+            {
+                "quantity": "50",
+                "unit": "g",
+                "ingredient": "small cooked prawns"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "mango"
+            },
+            {
+                "quantity": "4",
+                "unit": "item",
+                "ingredient": "tomatoes"
+            },
+            {
+                "quantity": "finger-sized piece",
+                "unit": null,
+                "ingredient": "cucumber"
+            },
+            {
+                "quantity": "handful",
+                "unit": null,
+                "ingredient": "spinach"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "mint"
+            },
+            {
+                "quantity": "1-2",
+                "unit": "tsp",
+                "ingredient": "sweet chilli sauce"
+            }
+        ],
+        "method": [
+            "Mix the avocado with the lemon juice, then toss with the prawns, mango, tomatoes, cucumber, spinach and mint. Pack into a lunchbox and drizzle over the sweet chilli sauce, then chill until ready to eat."
+        ]
+    },
+    {
+        "name": "Egg & rocket pizzas",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "seeded wraps"
+            },
+            {
+                "quantity": "a little",
+                "unit": null,
+                "ingredient": "olive oil"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "roasted red pepper"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "tomatoes"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "tomato pur\u00e9e"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "dill"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "parsley"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "eggs"
+            },
+            {
+                "quantity": "65",
+                "unit": "g",
+                "ingredient": "pack rocket"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "red onion"
+            }
+        ],
+        "method": [
+            "Heat oven to 200C/180C fan/gas 6. Lay the tortillas on two baking sheets, brush sparingly with the oil then bake for 3 mins. Meanwhile chop the pepper and tomatoes and mix with the tomato pur\u00e9e, seasoning and herbs. Turn the tortillas over and spread with the tomato mixture, leaving the centre free from any large pieces of pepper or tomato.",
+            "Break an egg into the centre then return to the oven for 10 mins or until the egg is just set and the tortilla is crispy round the edges. Serve scattered with the rocket and onion."
+        ]
+    },
+    {
+        "name": "Creamy miso beans on toast",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "butter"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "garlic cloves peeled"
+            },
+            {
+                "quantity": "4",
+                "unit": "item",
+                "ingredient": "spring onions"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "white miso"
+            },
+            {
+                "quantity": "400",
+                "unit": "g",
+                "ingredient": "white beans"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "lemon juiced"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "slices sourdough bread"
+            },
+            {
+                "quantity": null,
+                "unit": null,
+                "ingredient": "crispy chilli oil to serve (optional)"
+            }
+        ],
+        "method": [
+            "Heat the butter in a frying pan over medium heat. Lightly bash the garlic using the side of your knife and add to the pan along with the white parts of the spring onions. Stir to coat in the butter and fry for 3-4 mins. Stir in the miso and beans along with 200ml water. Bring to a simmer and cook for a further 4-5 mins.",
+            "Remove the garlic cloves and, using the back of a wooden spoon, lightly press some of the beans against the side of the pan to mash them slightly. Stir in half the green tops of the spring onions and season with salt, pepper and the lemon juice.",
+            "Spoon the beans over the toast. Drizzle over the chilli oil, if using, and garnish with the remaining green spring onion tops to serve."
+        ]
+    },
+    {
+        "name": "Chicken pesto wrap",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "cooked chicken breast"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "plain yogurt"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp",
+                "ingredient": "pesto"
+            },
+            {
+                "quantity": "2",
+                "unit": "thin slices",
+                "ingredient": "Edam cheese"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "flour tortillas"
+            },
+            {
+                "quantity": "handful",
+                "unit": null,
+                "ingredient": "red pepper"
+            },
+            {
+                "quantity": null,
+                "unit": null,
+                "ingredient": "lettuce leaves"
+            }
+        ],
+        "method": [
+            "Mix together the shredded chicken, soured cream, yogurt or mayonnaise with the pesto. Season.",
+            "Lay a slice of cheese on each wrap, then divide the chicken mixture between them. Sprinkle with red pepper, then top with the lettuce leaves. Be careful not to overfill or it will be tricky to contain all the filling. Wrap and roll each one, then pack in a lunchbox or tightly wrap in foil."
+        ]
+    },
+    {
+        "name": "Broccoli pasta salad with eggs & sunflower seeds",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "eggs"
+            },
+            {
+                "quantity": "75",
+                "unit": "g",
+                "ingredient": "pasta"
+            },
+            {
+                "quantity": "160",
+                "unit": "g",
+                "ingredient": "broccoli florets"
+            },
+            {
+                "quantity": "160",
+                "unit": "g",
+                "ingredient": "fine beans"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "white miso paste"
+            },
+            {
+                "quantity": "10",
+                "unit": "g",
+                "ingredient": "ginger"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "rapeseed oil"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "sunflower seeds"
+            }
+        ],
+        "method": [
+            "Hard-boil the eggs for 8 mins, then shell and halve. Meanwhile, boil the pasta for 5 mins, add the broccoli and beans, and cook 5 mins more or until everything is tender.",
+            "Drain, reserving the water, then tip the pasta and veg into a bowl and stir in the miso, ginger, oil and 4 tbsp pasta water. Serve topped with the eggs and seeds."
+        ]
+    },
+    {
+        "name": "Healthy beef chow mein",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "wholemeal noodle nests (85g)"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp",
+                "ingredient": "rapeseed or sesame oil"
+            },
+            {
+                "quantity": "200",
+                "unit": "g",
+                "ingredient": "fillet steak"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "red onion"
+            },
+            {
+                "quantity": "15",
+                "unit": "g",
+                "ingredient": "ginger"
+            },
+            {
+                "quantity": "160",
+                "unit": "g",
+                "ingredient": "chestnut mushrooms thickly sliced"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "garlic clove"
+            },
+            {
+                "quantity": "160",
+                "unit": "g",
+                "ingredient": "ready-to-eat beansprouts"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "tamari"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "brown rice vinegar"
+            },
+            {
+                "quantity": "4",
+                "unit": "item",
+                "ingredient": "spring onions"
+            }
+        ],
+        "method": [
+            "Cook the noodles following pack instructions. Meanwhile, heat half the oil in a wok and stir-fry the beef over a high heat for 30 seconds until browned. Tip onto a plate, set aside, then add the remaining oil to the wok. Stir-fry the onion and ginger until softened. Add a drop of water to prevent burning, if needed and cook covered for 2-3 mins.",
+            "Stir in the mushrooms and garlic, and fry until they start to soften (around 3 mins), then add the beansprouts and cook for a minute or two more until piping hot.",
+            "Mix the tamari and vinegar together in a small bowl with 2 tbsp water. Add the drained noodles to the wok, toss well, then add the tamari mixture, spring onions and the beef. Stir-fry for a few minutes until heated through. Season with plenty of black pepper and serve."
+        ]
+    },
+    {
+        "name": "Storecupboard pasta salad",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "red onion"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "capers"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "pesto"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp",
+                "ingredient": "olive oil"
+            },
+            {
+                "quantity": "185",
+                "unit": "g",
+                "ingredient": "can of tuna in spring water, drained"
+            },
+            {
+                "quantity": "100",
+                "unit": "g",
+                "ingredient": "pasta"
+            },
+            {
+                "quantity": "3",
+                "unit": "item",
+                "ingredient": "tomatoes"
+            }
+        ],
+        "method": [
+            "Mix the onion, capers, pesto and oil. Flake the tuna into a bowl with the pasta and tomatoes, then stir in the pesto mix."
+        ]
+    },
+    {
+        "name": "Ultimate chorizo ciabatta",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "itam",
+                "ingredient": "small ciabatta"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "large ciabatta"
+            },
+            {
+                "quantity": "150",
+                "unit": "g",
+                "ingredient": "pack cooking chorizo halved lengthways"
+            },
+            {
+                "quantity": "75",
+                "unit": "g",
+                "ingredient": "pesto"
+            },
+            {
+                "quantity": "200",
+                "unit": "g",
+                "ingredient": "roasted red peppers from a jar"
+            },
+            {
+                "quantity": "handful",
+                "unit": null,
+                "ingredient": "rocket"
+            }
+        ],
+        "method": [
+            "Heat oven to 180C/160C fan/gas 4 and put the ciabatta in to warm up. Put a griddle pan over a medium heat and cook the chorizo for 5 mins each side or until charred and cooked through.",
+            "Open up the warmed ciabatta and spread the pesto on the bottom. Layer with the red peppers , then the warm chorizo. Scatter over the rocket, sandwich the ciabatta together, cut in two and serve."
+        ]
+    },
+    {
+        "name": "Veggie noodle pot",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "100",
+                "unit": "g",
+                "ingredient": "noodles (rice, soba or egg)"
+            },
+            {
+                "quantity": "3",
+                "unit": "tbsp",
+                "ingredient": "frozen peas"
+            },
+            {
+                "quantity": "1",
+                "unit": "handful",
+                "ingredient": "sugar snap peas or mangetout, halved lengthways"
+            },
+            {
+                "quantity": "1",
+                "unit": "handful",
+                "ingredient": "baby corn"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "spring onion"
+            },
+            {
+                "quantity": "\u00bd",
+                "unit": "item",
+                "ingredient": "red pepper"
+            }
+        ],
+        "method": [
+            "To make the omelette, heat the olive oil in a small non-stick frying pan. Add a splash of milk to the beaten eggs, then tip into the pan. Stir once and allow to cook over a gentle heat until almost set. Flip (using a plate if necessary) and cook on the other side until cooked through. Tip onto a board and cut into strips. (You can roll the omelette up and cut slices to give you spirals, if you like.)",
+            "Cook the noodles following pack instructions. Drain and rinse under cold water, then set aside. Meanwhile, mix the dressing ingredients together. Blanch the peas and sugar snap peas, then drain and run under cold water to stop them cooking any further.",
+            "To assemble the salad, mix the noodles with the baby corn, spring onion, red pepper and green veg, then toss with the dressing and top with strips of omelette."
+        ]
+    },
+    {
+        "name": "Indian-inspired spicy cabbage",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "rapeseed oil plus a drop"
+            },
+            {
+                "quantity": "15",
+                "unit": "g",
+                "ingredient": "ginger"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "red chilli halved, deseeded and thinly sliced"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "carrots"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "onion"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp",
+                "ingredient": "mustard seeds (yellow or black)"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "cumin seeds"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp",
+                "ingredient": "Madras curry powder"
+            },
+            {
+                "quantity": "250",
+                "unit": "g",
+                "ingredient": "pointed or Savoy cabbage shredded"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "tomatoes"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "eggs"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "lime halved"
+            },
+            {
+                "quantity": "15",
+                "unit": "g",
+                "ingredient": "coriander"
+            }
+        ],
+        "method": [
+            "Heat 2 tbsp oil in a large non-stick pan or wok and stir-fry the ginger and chilli for 1-2 mins to soften. Stir in the carrots and onion, then leave for 10 mins, stirring every now and then until the onion is golden.",
+            "Add the mustard seeds, cumin seeds and curry powder and stir to toast the spices. Tip in the cabbage and stir for 5 mins until starting to soften. Add the tomatoes and stir for 1-2 mins more until softened and the cabbage is tender. If the cabbage is still too firm add a dash of water and put the lid on the pan.",
+            "Meanwhile fry the eggs in a drop of oil in a small non-stick pan until crisp at the edges, but the yolks are still runny. Squeeze about 1 tbsp lime juice over the cabbage mix and toss together along with the coriander. Divide between two plates, top with an egg each and serve with the remaining halved lime for squeezing over."
+        ]
+    },
+    {
+        "name": "Chicken kiev quesadilla",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "large wrap or wheat tortilla"
+            },
+            {
+                "quantity": "4",
+                "unit": "tbsp",
+                "ingredient": "garlic and herb soft cheese"
+            },
+            {
+                "quantity": "50",
+                "unit": "g",
+                "ingredient": "cheddar grated"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "spring onion"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "lemon zested"
+            },
+            {
+                "quantity": "1",
+                "unit": "small pack",
+                "ingredient": "parsley"
+            },
+            {
+                "quantity": "100",
+                "unit": "g",
+                "ingredient": "chicken"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "panko breadcrumbs"
+            }
+        ],
+        "method": [
+            "Cook the chicken",
+            "Heat a non-stick frying pan over a medium-high heat. Spread half the wrap with 2 tbsp soft cheese and put in the pan. Cover the other half with the cheddar, then top with the spring onion, lemon zest, parsley and chicken. Scatter over the panko and dot the remaining soft cheese over.",
+            "Fold the soft-cheese-spread side of the wrap over to close the quesadilla. Cook for 3-4 mins until the cheese has melted and the top of the quesadilla is warm, so you know the chicken is heated through. Slice and serve."
+        ]
+    },
+    {
+        "name": "Italian sub",
+        "servings": "1",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "items",
+                "ingredient": "ciabatta rolls"
+            },
+            {
+                "quantity": "90",
+                "unit": "g",
+                "ingredient": "salami slices"
+            },
+            {
+                "quantity": "60",
+                "unit": "g",
+                "ingredient": "mozzarella torn"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "basil"
+            },
+            {
+                "quantity": "10",
+                "unit": "item",
+                "ingredient": "tomatoes"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "balsamic glaze"
+            }
+        ],
+        "method": [
+            "Halve the ciabatta rolls and butter the bases, if you like. Lay the salami slices, mozzarella, basil and sundried tomatoes on top, and drizzle over the balsamic glaze. Close to serve."
+        ]
+    },
+    {
+        "name": "Caesar pitta",
+        "servings": "1",
+        "ingredients": [
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "lemon juice"
+            },
+            {
+                "quantity": "1",
+                "unit": "small",
+                "ingredient": "garlic clove"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "Greek yogurt"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "mayonnaise"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "mustard powder"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "brown anchovy"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "grated parmesan"
+            },
+            {
+                "quantity": "1",
+                "unit": "small",
+                "ingredient": "skinless cooked chicken breast, or 80g cooked chicken, shredded"
+            },
+            {
+                "quantity": "1",
+                "unit": "small",
+                "ingredient": "cucumber"
+            },
+            {
+                "quantity": "3",
+                "unit": "item",
+                "ingredient": "tomatoes"
+            },
+            {
+                "quantity": "4",
+                "unit": "item",
+                "ingredient": "little gem lettuce"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "wholemeal pitta bread"
+            }
+        ],
+        "method": [
+            "Whisk the lemon juice, garlic, yogurt, mayonnaise, mustard powder, anchovy, parmesan and 2-3 tbsp water together with a good grinding of black pepper. Toss in the chicken, cucumber, tomatoes and lettuce, until everything is well coated. Toast the pitta and split, then stuff with the salad and chicken mixture."
+        ]
+    },
+    {
+        "name": "Fish finger wraps with pea pur\u00e9e",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "6",
+                "unit": "item",
+                "ingredient": "fish fingers"
+            },
+            {
+                "quantity": "175",
+                "unit": "g",
+                "ingredient": "frozen pea"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "rapeseed oil"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "lemon"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "wholemeal & seed tortillas"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "carrots"
+            },
+            {
+                "quantity": "1-2",
+                "unit": "item",
+                "ingredient": "cornichons"
+            }
+        ],
+        "method": [
+            "Grill or bake the fish fingers following pack instructions. Meanwhile, boil the peas for 3 mins, then drain, add the oil and lemon juice, and blitz with a hand blender (or in a food processor) until smooth. Season, adding a little more lemon juice if you like.",
+            "Warm the tortillas. Spread with the pea pur\u00e9e, scatter with the carrots, then top with the fish fingers and cornichons. Roll up and eat while still hot, with a good squeeze of lemon."
+        ]
+    },
+    {
+        "name": "Zingy grapefruit, prawn, avocado & tamarind salad",
+        "servings": "6",
+        "ingredients": [
+            {
+                "quantity": "3",
+                "unit": "tbsp",
+                "ingredient": "sesame oil"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "tamarind"
+            },
+            {
+                "quantity": "1",
+                "unit": "small",
+                "ingredient": "garlic clove"
+            },
+            {
+                "quantity": "15",
+                "unit": "g",
+                "ingredient": "ginger"
+            },
+            {
+                "quantity": "3",
+                "unit": "tsp",
+                "ingredient": "fish sauce"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "limes"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "avocados"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "red grapefruits"
+            },
+            {
+                "quantity": "8",
+                "unit": "item",
+                "ingredient": "radishes"
+            },
+            {
+                "quantity": "150",
+                "unit": "g",
+                "ingredient": "cooked king prawns"
+            },
+            {
+                "quantity": "2",
+                "unit": "tbsp",
+                "ingredient": "sesame seeds"
+            },
+            {
+                "quantity": "1",
+                "unit": "small bunch",
+                "ingredient": "coriander leaves picked and torn"
+            }
+        ],
+        "method": [
+            "Combine the sesame oil, tamarind, garlic, ginger, fish sauce and lime juice. Taste and add more fish sauce if needed, then season to taste.",
+            "Arrange the avocado, grapefruit rounds, radishes and prawns on a serving platter. Drizzle over the dressing and scatter with the sesame seeds and coriander."
+        ]
+    },
+    {
+        "name": "Feta & semi-dried tomato omelette",
+        "servings": "1",
+        "ingredients": [
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "olive oil"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "eggs"
+            },
+            {
+                "quantity": "4",
+                "unit": "item",
+                "ingredient": "tomatoes"
+            },
+            {
+                "quantity": "25",
+                "unit": "g",
+                "ingredient": "feta cheese crumbled"
+            },
+            {
+                "quantity": null,
+                "unit": null,
+                "ingredient": "mixed salad leaves to serve"
+            }
+        ],
+        "method": [
+            "Heat the oil in a small frying pan, add the eggs and cook, swirling the eggs with a fork as they set. When the eggs are still slightly runny in the middle, scatter over the tomatoes and feta, then fold the omelette in half. Cook for 1 min more before sliding onto a plate. Serve alongside a mixed leaf salad."
+        ]
+    },
+    {
+        "name": "Beetroot hummus toasts with olives & mint",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "slices",
+                "ingredient": "seeded wholemeal soda bread"
+            },
+            {
+                "quantity": "210",
+                "unit": "g",
+                "ingredient": "chickpeas"
+            },
+            {
+                "quantity": "200",
+                "unit": "g",
+                "ingredient": "beetroot"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "lemon juice"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "garlic clove"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "rapeseed oil"
+            },
+            {
+                "quantity": "30",
+                "unit": "g",
+                "ingredient": "feta crumbled"
+            },
+            {
+                "quantity": "6",
+                "unit": "item",
+                "ingredient": "Kalamata olives"
+            },
+            {
+                "quantity": "a few",
+                "unit": null,
+                "ingredient": "fresh mint leaves"
+            }
+        ],
+        "method": [
+            "Toast the bread \u2013 if the slices are quite long, halve them first.",
+            "Meanwhile, tip the chickpeas into a bowl with half the beetroot, the lemon juice, garlic and oil, and blitz with a stick blender to make hummus. Spread on the toast, top with the remaining beetroot and scatter with feta, olives and mint."
+        ]
+    },
+    {
+        "name": "Lemony tuna & asparagus salad box",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "eggs"
+            },
+            {
+                "quantity": "200",
+                "unit": "g",
+                "ingredient": "asparagus"
+            },
+            {
+                "quantity": "160",
+                "unit": "g",
+                "ingredient": "can tuna drained"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "red onion"
+            },
+            {
+                "quantity": "125",
+                "unit": "g",
+                "ingredient": "cannellini beans"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "lemon"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "dill"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "extra virgin olive oil"
+            }
+        ],
+        "method": [
+            "Put a pan of water on to boil with a steamer above. When boiling, lower the eggs into the water and steam the asparagus above for 8 mins.",
+            "Meanwhile, gently toss all the other ingredients together and arrange on plates or in rigid containers. Plunge the eggs into cold water to cool them a little, then peel and quarter. Add the eggs and asparagus to the tuna salad. Will keep in the fridge for 2 days."
+        ]
+    },
+    {
+        "name": "Curried pork bulgur salad",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "50",
+                "unit": "g",
+                "ingredient": "bulgur wheat"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "Madras curry powder"
+            },
+            {
+                "quantity": "\u00bc",
+                "unit": "tsp",
+                "ingredient": "cumin seeds (optional)"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "vegetable bouillon"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "medjool dates"
+            },
+            {
+                "quantity": "3",
+                "unit": "item",
+                "ingredient": "spring onions"
+            },
+            {
+                "quantity": "4",
+                "unit": "tsp",
+                "ingredient": "mint"
+            },
+            {
+                "quantity": "handful",
+                "unit": null,
+                "ingredient": "coriander"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "cucumber"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "tomatoes"
+            },
+            {
+                "quantity": "120",
+                "unit": "g",
+                "ingredient": "pork"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "lemon"
+            }
+        ],
+        "method": [
+            "Cook the pork",
+            "Tip the bulgur into a small pan with the curry powder, cumin seeds (if using), bouillon, dates and spring onions. Pour over 300ml boiling water and cook, covered, for 5-8 mins or until the liquid has been absorbed and the bulgur is tender. Leave to cool completely.",
+            "Stir in the mint, coriander, cucumber, tomatoes and pork. Spoon into containers and top with lemon wedges to squeeze over and mix through just before eating. Will keep for two-three days in the fridge."
+        ]
+    },
+    {
+        "name": "Sesame chicken noodles",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "tahini"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "lime"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp",
+                "ingredient": "soy sauce"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "garlic cloves"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "sesame oil"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "chilli flakes plus extra to serve"
+            },
+            {
+                "quantity": "200",
+                "unit": "g",
+                "ingredient": "cooked rice noodles"
+            },
+            {
+                "quantity": "200",
+                "unit": "g",
+                "ingredient": "leftover roast chicken"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "aubergines"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "carrots"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "cucumber seeds removed and cut into half moons"
+            },
+            {
+                "quantity": "1",
+                "unit": "small pack",
+                "ingredient": "mint"
+            }
+        ],
+        "method": [
+            "Roast the Garlic cloves",
+            "Whisk together the tahini, lime juice, soy sauce, flesh from the roasted garlic, sesame oil and chilli flakes in a large bowl, adding enough water to make a creamy dressing.",
+            "Add the noodles, leftover roast chicken, aubergine and carrot and toss everything to combine, then gently fold through the cucumber and mint. Divide between two containers, then sprinkle over a few extra chilli flakes to serve."
+        ]
+    },
+    {
+        "name": "Coronation chicken salad",
+        "servings": "2",
+        "ingredients": [
+            {
+                "quantity": "3",
+                "unit": "tbsp",
+                "ingredient": "low-fat Greek yogurt"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "curry powder"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "mango chutney"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "lemon"
+            },
+            {
+                "quantity": "250",
+                "unit": "g",
+                "ingredient": "grain pouch"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "red onions"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "large courgette peeled into ribbons"
+            },
+            {
+                "quantity": "1",
+                "unit": "pack",
+                "ingredient": "coriander"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "flaked almonds"
+            }
+        ],
+        "method": [
+            "Mix together the yogurt, curry powder, mango chutney and lemon zest with some seasoning in a large bowl. Add the grains, breaking them up with your fingers as you go, then add the chicken, onions, courgette and most of the coriander. Give everything a good stir and divide between two containers. Sprinkle over the remaining coriander, flaked almonds and nestle a lemon wedge into each lunchbox."
+        ]
+    },
+    {
+        "name": "Keep it green sandwich",
+        "servings": "Unknown",
+        "ingredients": [
+            {
+                "quantity": "25",
+                "unit": "g",
+                "ingredient": "curly kale"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "sesame oil"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "tamari"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "small avocado"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "lime"
+            },
+            {
+                "quantity": "40",
+                "unit": "g",
+                "ingredient": "chickpeas"
+            },
+            {
+                "quantity": "2",
+                "unit": "slices",
+                "ingredient": "rye bread"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp",
+                "ingredient": "paprika"
+            }
+        ],
+        "method": [
+            "Massage the curly kale in the sesame oil and tamari for a few mins until softened, then set aside. Smash the avocado with a fork in a bowl with the lime juice, chickpeas and some seasoning. Spread across 1 slice of rye, lay the kale on top and sprinkle with the paprika. Top with another slice of rye and halve."
+        ]
+    },
+    {
+        "name": "Deli couscous",
+        "servings": "4 - 6",
+        "ingredients": [
+            {
+                "quantity": "400",
+                "unit": "g",
+                "ingredient": "couscous"
+            },
+            {
+                "quantity": "1",
+                "unit": "tbsp",
+                "ingredient": "vegetable stock powder"
+            },
+            {
+                "quantity": "5",
+                "unit": "tbsp",
+                "ingredient": "olive oil"
+            },
+            {
+                "quantity": "1",
+                "unit": "item",
+                "ingredient": "garlic clove"
+            },
+            {
+                "quantity": "2",
+                "unit": "item",
+                "ingredient": "lemons"
+            },
+            {
+                "quantity": "200",
+                "unit": "g",
+                "ingredient": "feta cheese"
+            },
+            {
+                "quantity": "400",
+                "unit": "g",
+                "ingredient": "aubergines"
+            },
+            {
+                "quantity": "1",
+                "unit": "pack",
+                "ingredient": "basil"
+            }
+        ],
+        "method": [
+            "Tip the couscous into a large bowl with the stock powder and mix well. Pour over boiling water to come 1cm above the level of the couscous, cover with a plate and leave for 5 mins. Fluff up with a fork, then add the oil, garlic and lemon zest and juice and fluff up again.",
+            "Cut the feta into small chunks and add to the couscous with the deli vegetables and basil, if using. Season and mix lightly."
+        ]
+    }
+]

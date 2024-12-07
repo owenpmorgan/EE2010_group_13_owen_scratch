@@ -125,7 +125,6 @@ using json = nlohmann::json;
     Interface interface;
 
 
-
 /*****************************************************************************************************************
  * The Following block is all just parsing the scraped json file and adding it to the various classes
  *****************************************************************************************************************/
