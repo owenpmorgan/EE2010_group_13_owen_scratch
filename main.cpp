@@ -113,6 +113,30 @@ BOOST_AUTO_TEST_CASE(F8_clear_meal_plan)
 }
 
 
+BOOST_AUTO_TEST_CASE(F9_clear_meal_plan)
+{
+    std::cout << "You are in test F9\n";
+
+    IngredientList ingredientList;
+    WeekPlan weekPlan;
+    RecipeList recipeList;
+
+
+    Ingredient ing1(1, "ing1", "ml");
+    Ingredient ing2(2, "ing2", "g");
+
+    ingredientList.add_ingredient(ing1);
+    ingredientList.add_ingredient(ing2);
+
+    Recipe current_recipe("A Meal", 2, "Cook It");
+    current_recipe.add_ingredient(1, 30);
+    current_recipe.add_ingredient(2, 20);
+
+    recipeList.add_recipe_to_list(current_recipe);
+    weekPlan.add_recipe(1, &recipeList.get_recipe_list());
+    BOOST_CHECK_NO_THROW(weekPlan.display_shopping_list(&ingredientList.get_ingredients_list()));
+}
+
 BOOST_AUTO_TEST_CASE(PARSER1_test_duplicate_ingredient_name)
 {
     std::cout << "You are in test PARSER1\n";
