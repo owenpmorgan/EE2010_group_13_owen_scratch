@@ -130,7 +130,7 @@ using json = nlohmann::json;
  * The Following block is all just parsing the scraped json file and adding it to the various classes
  *****************************************************************************************************************/
 // open the json and parse the data to a json object called data
-    std::ifstream myFile("recipes_.json");
+    std::ifstream myFile("recipes.json");
     if (!myFile.is_open()) {
         std::cerr << "Failed to open JSON file." << std::endl;
         return 1;
