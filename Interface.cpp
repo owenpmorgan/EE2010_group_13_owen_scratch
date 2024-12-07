@@ -35,10 +35,10 @@ int Interface::display_menu()
     std::cout << "______________________\n";
     std::cout << "1 - View MealPlan\n"
                  "2 - View Recipe Database\n"
-                 "3 - Add Recipe\n"
-                 "4 - Delete Recipe\n"
-                 "5 - View Shopping List\n"
-                 "6 - Get Recipe Method\n"
+                 "3 - Add Recipe to MealPlan\n"
+                 "4 - Delete Recipe from MealPlan\n"
+                 "5 - View the Weeks Shopping List\n"
+                 "6 - View a Recipe Method\n"
                  "7 - Clear MealPlan\n"
                  "8 - Quit\n";
     std::cout << "______________________\n\n";

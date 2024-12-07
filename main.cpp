@@ -13,8 +13,6 @@
 // uncomment to access the test main (must comment out program main)
 //#include <boost/test/included/unit_test.hpp>
 
-using json = nlohmann::json;
-
 /*
 
 BOOST_AUTO_TEST_CASE(F1_test_create_recipe_database)
@@ -111,6 +109,9 @@ BOOST_AUTO_TEST_CASE(F3_test_get_recipe_list)
 }
 */
 
+
+using json = nlohmann::json;
+
  int main() {
 
     // unordered_map<int uuid, Ingredient ingredient>
@@ -140,7 +141,7 @@ BOOST_AUTO_TEST_CASE(F3_test_get_recipe_list)
     int uuid = 0;
 
 /*****************************************************************************************************************
- * The following outer loop (using i) collects recipe data for each in the json and makes a recipe obejct
+ * The following outer loop (using i) collects recipe data for each in the json and makes a recipe object
  *****************************************************************************************************************/
 
     // loop through all recipes in the json, i is each recipe
@@ -341,6 +342,7 @@ int user_choice;
             {
                 // display a method for a recipe on the list
                 interface.clear_screen();
+                myWeek.display_weeks_recipes();
                 recipe_list.display_recipe_list();
                 int min = 1;
                 int max = recipe_list.get_recipe_list().size();
@@ -351,6 +353,7 @@ int user_choice;
 
             case 7:
             {
+                // clear the week plan
                 myWeek.clear_week_plan();
                 interface.clear_screen();
                 std::cout << "Your WeekPlan has been cleared\n\n";

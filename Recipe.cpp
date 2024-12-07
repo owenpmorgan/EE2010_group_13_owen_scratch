@@ -90,5 +90,3 @@ void Recipe::display_recipe_ingredients(std::unordered_map<int, Ingredient> ingr
         }
     }
 }
-
-int Recipe::get_portions() const {return portions;}

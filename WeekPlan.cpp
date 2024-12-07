@@ -261,7 +261,7 @@ void WeekPlan::display_weeks_recipes() const {
 // display the total_ingredients member variable
 void WeekPlan::display_shopping_list(std::unordered_map<int, Ingredient>* ingredients_list) {
     // Display the total ingredients
-    std::cout << "Your shopping list for this week plan:" << std::endl;
+    std::cout << "Your shopping list for this week plan:\n" << std::endl;
     // new temp variable ingredient loops over total ingredients, it's value will be a key value pair (uuid, amount)
     for (const auto ingredient: total_ingredients)
     {
@@ -276,9 +276,21 @@ void WeekPlan::display_shopping_list(std::unordered_map<int, Ingredient>* ingred
             // if that ingredients amount (.second) field is not the sentinel value
             if (ingredient.second != -1)
             {
-                // print it along with the amount
-                std::cout << "- " << it->second.get_name() << ": " << ingredient.second << " " << it->second.get_unit()
-                          << std::endl;
+                // just if we need 'items' to be plural
+                if(ingredient.second > 1 && it->second.get_unit() == "item" )
+                {
+                    // print it along with the amount
+                    std::cout << "- " << it->second.get_name() << ": " << ingredient.second << " " << it->second.get_unit()
+                              << "s" << std::endl;
+                }
+            // otherwise just print
+                else
+                {
+                    // print it along with the amount
+                    std::cout << "- " << it->second.get_name() << ": " << ingredient.second << " " << it->second.get_unit()
+                              << std::endl;
+                }
+
             }
             // if it DOESNT have a value associated just print the name
             else
