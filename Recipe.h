@@ -31,6 +31,7 @@ public:
     std::string get_title() const;
     std::unordered_map<int, int> get_recipe_ingredients() const;
     void display_recipe_method() const;
+    std::string get_recipe_method() const;
     void display_recipe_ingredients(std::unordered_map<int, Ingredient>) const;
 
 };

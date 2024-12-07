@@ -30,6 +30,8 @@ std::string Recipe::get_title() const{
     return title;
 }
 
+std::string Recipe::get_recipe_method() const {return method;}
+
 void Recipe::display_recipe_method() const
 {
     // max line length for display

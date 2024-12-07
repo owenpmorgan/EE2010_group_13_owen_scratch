@@ -13,8 +13,6 @@
 // uncomment to access the test main (must comment out program main)
 #include <boost/test/included/unit_test.hpp>
 
-
-
 ///*
 
 BOOST_AUTO_TEST_CASE(F1_test_create_recipe_database)
@@ -28,7 +26,15 @@ BOOST_AUTO_TEST_CASE(F1_test_create_recipe_database)
 
 }
 
-BOOST_AUTO_TEST_CASE(F2_test_view_list_of_recipes)
+BOOST_AUTO_TEST_CASE(F2_view_weekly_meal_plan)
+{
+    std::cout << "You are in test F3a\n";
+    WeekPlan week_plan;
+    // check if any exceptions were thrown
+    BOOST_CHECK_NO_THROW(week_plan.display_weeks_recipes());
+}
+
+BOOST_AUTO_TEST_CASE(F3a_test_view_list_of_recipes)
 {
     std::cout << "You are in test F2\n";
     RecipeList recipe_list;
@@ -39,13 +45,6 @@ BOOST_AUTO_TEST_CASE(F2_test_view_list_of_recipes)
     BOOST_CHECK_NO_THROW(recipe_list.display_recipe_list());
 }
 
-BOOST_AUTO_TEST_CASE(F3a_create_weekly_meal_plan)
-{
-    std::cout << "You are in test F3a\n";
-    WeekPlan week_plan;
-    // check if any exceptions were thrown
-    BOOST_CHECK_NO_THROW(week_plan.display_weeks_recipes());
-}
 
 BOOST_AUTO_TEST_CASE(F3b_test_get_recipe_list)
 {
@@ -54,8 +53,8 @@ BOOST_AUTO_TEST_CASE(F3b_test_get_recipe_list)
     BOOST_CHECK((std::is_same<decltype(recipeList.get_recipe_list()), std::map<int, Recipe>&>::value));
 }
 
-// this one rewuires a user input
-BOOST_AUTO_TEST_CASE(F4a_add_recipe_to_week_plan)
+// this one requires a user input
+BOOST_AUTO_TEST_CASE(F5a_add_recipe_to_week_plan)
 {
     std::cout << "You are in test F4a\n";
     WeekPlan week_plan;
@@ -65,7 +64,7 @@ BOOST_AUTO_TEST_CASE(F4a_add_recipe_to_week_plan)
     BOOST_CHECK_NO_THROW(week_plan.add_recipe(1, &recipe_list.get_recipe_list()));
 }
 
-BOOST_AUTO_TEST_CASE(F4b_test_recipe_to_add_not_found)
+BOOST_AUTO_TEST_CASE(F5b_test_recipe_to_add_not_found)
 {
     std::cout << "You are in test F4b\n";
     RecipeList recipeList;
@@ -73,7 +72,7 @@ BOOST_AUTO_TEST_CASE(F4b_test_recipe_to_add_not_found)
     BOOST_CHECK_THROW(weekplan.add_recipe(-1, &recipeList.get_recipe_list()), std::runtime_error);
 }
 
-BOOST_AUTO_TEST_CASE(F5_remove_meal_from_meal_plan)
+BOOST_AUTO_TEST_CASE(F6_remove_meal_from_meal_plan)
 {
     std::cout << "You are in test F5\n";
     WeekPlan week_plan;
@@ -81,7 +80,36 @@ BOOST_AUTO_TEST_CASE(F5_remove_meal_from_meal_plan)
     Recipe current_recipe("A Meal", 2, "Cook It");
     recipe_list.add_recipe_to_list(current_recipe);
     week_plan.add_recipe(1, &recipe_list.get_recipe_list());
-    week_plan.delete_meal_from_plan();
+    BOOST_CHECK_NO_THROW(week_plan.delete_meal_from_plan());
+}
+
+BOOST_AUTO_TEST_CASE(F7a_view_recipe_method)
+{
+    std::cout << "You are in test F7a\n";
+    WeekPlan week_plan;
+    RecipeList recipe_list;
+    Recipe current_recipe("A Meal", 2, "Cook It");
+    BOOST_CHECK_NO_THROW(current_recipe.display_recipe_method());
+}
+
+BOOST_AUTO_TEST_CASE(F7b_get_recipe_method)
+{
+    std::cout << "You are in test F7b\n";
+    WeekPlan week_plan;
+    RecipeList recipe_list;
+    Recipe current_recipe("A Meal", 2, "Cook It");
+    BOOST_CHECK(current_recipe.get_recipe_method() == "Cook It");
+}
+
+BOOST_AUTO_TEST_CASE(F8_clear_meal_plan)
+{
+    std::cout << "You are in test F8\n";
+    WeekPlan weekPlan;
+    RecipeList recipeList;
+    Recipe current_recipe("A Meal", 2, "Cook It");
+    recipeList.add_recipe_to_list(current_recipe);
+    weekPlan.add_recipe(1, &recipeList.get_recipe_list());
+    BOOST_CHECK_NO_THROW(weekPlan.clear_week_plan());
 }
 
 
