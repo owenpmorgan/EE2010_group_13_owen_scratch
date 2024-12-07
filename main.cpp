@@ -113,7 +113,7 @@ BOOST_AUTO_TEST_CASE(F8_clear_meal_plan)
 }
 
 
-BOOST_AUTO_TEST_CASE(F9_clear_meal_plan)
+BOOST_AUTO_TEST_CASE(F9_display_shopping_list)
 {
     std::cout << "You are in test F9\n";
 
