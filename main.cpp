@@ -16,6 +16,7 @@
 ///*
 
 BOOST_AUTO_TEST_CASE(F1_test_create_recipe_database)
+// Test F1
 {
     std::cout << "You are in test F1\n";
     RecipeList recipe_list;
