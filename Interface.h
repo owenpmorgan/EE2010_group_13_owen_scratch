@@ -7,13 +7,14 @@
 #ifndef EE2010_GROUP_MY_SCRATCH_INTERFACE_H
 #define EE2010_GROUP_MY_SCRATCH_INTERFACE_H
 
-
+// inherit from organiser (pure virtual) for get_int_input()
 class Interface : public Organiser
 {
 
 public:
 
     void clear_screen();
+    // redefine this inherited function
     virtual int get_int_input(int, int) override;
     void display_intro_screen();
     int display_menu();

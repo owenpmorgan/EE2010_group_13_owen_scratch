@@ -14,7 +14,6 @@ include_directories("/usr/local/boost_1_68_0")
 add_executable(EE2010_group_my_scratch main.cpp
         Ingredient.cpp
         Ingredient.h
-        MeasurementType.h
         Recipe.cpp
         Recipe.h
         IngredientList.cpp

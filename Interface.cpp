@@ -5,6 +5,7 @@
 
 #include "Interface.h"
 
+// ANSI escape codes do not work in clion output console, so use a scroll to simulate clear screen
 void Interface::clear_screen()
 {
     for (int i = 0; i < 20; i++) {
@@ -13,6 +14,7 @@ void Interface::clear_screen()
     std::cout.flush();
 }
 
+// One time title screen to be displayed at app start
 void Interface::display_intro_screen() {
     std::cout <<
     "___  ___           _______ _\n"
@@ -28,6 +30,7 @@ void Interface::display_intro_screen() {
     "Your recipes database has been succesfully built.\n\n";
 }
 
+// rolling main menu for app interaction
 int Interface::display_menu()
 {
     std::cout << "What would you like to do?\n";
@@ -43,6 +46,7 @@ int Interface::display_menu()
                  "8 - Quit\n";
     std::cout << "______________________\n\n";
 
+    // get_int_input takes max and min possible values to prevent out of bounds
     int userChoice = get_int_input(1, 8);
 
     return userChoice;

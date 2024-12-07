@@ -5,7 +5,6 @@
 #include "Ingredient.h"
 #include "IngredientList.h"
 #include "IngredientList.h"
-#include "MeasurementType.h"
 
 #ifndef EE2010_GROUP_MY_SCRATCH_RECIPE_H
 #define EE2010_GROUP_MY_SCRATCH_RECIPE_H

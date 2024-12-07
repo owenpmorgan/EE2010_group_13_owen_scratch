@@ -109,7 +109,7 @@ BOOST_AUTO_TEST_CASE(F3_test_get_recipe_list)
 }
 */
 
-
+// initialise json parser
 using json = nlohmann::json;
 
  int main() {
@@ -149,9 +149,6 @@ using json = nlohmann::json;
     {
         // grab the string 'name' from the current recipe, to be used in the constructor of a new recipe
         std::string recipe_name = data[i]["name"];
-
-//         cout recipe name for debugging the loop
-//         std::cout << recipe_name << std::endl;
 
         // grab the number of portions from the current recipe, this may not be an int, so the following checks if it is
         int recipe_portions;
@@ -195,30 +192,26 @@ using json = nlohmann::json;
             // populate the ingredient name variable from the current ingredient in the recipe
             std::string ingredient_name = data[i]["ingredients"][j]["ingredient"];
 
-            // check ingredient is cycling through correctly
-            // std::cout << "Processing ingredient: " << ingredient_name << "\n";
-
             // get ingredient amount, some ingredient amounts are null in the json,
             // set temporary amount to sentinel value and then update with real value if not null
             int ingredient_amount = -1;
 
+            // if the quantity field is not marked null
             if (!data[i]["ingredients"][j]["quantity"].is_null()) {
-                // similarily, some amounts are a string saying 'handfull' etc, ignore these,
-                // make sure the quantity of the current ingredient is an int.
                 std::string quantity_str = data[i]["ingredients"][j]["quantity"].get<std::string>();
-                // check if the whole thing is numeric
+                // and if the field can be converted to an integer
                 if (!quantity_str.empty() && std::all_of(quantity_str.begin(), quantity_str.end(), ::isdigit)) {
-                    // if so convert it to int and that thats the quantity
+                    // convert it to int, and store it as the ingredient quantity
                     ingredient_amount = std::stoi(quantity_str);
                 }
                 else
                 {
-                    // if not set the sentinel value, which we can parse later when the ingredient comes up
+                    // set all non-numericas to the sentinel value -1, which can be parsed later
                     ingredient_amount = -1;
                 }
             }
 
-            // Similarily some ingredient units are null, set to "" and then if it is not null update with the real value
+            // Similarily some ingredient units are also null, set to "" and then if it is not null update with the real value
             std::string ingredient_unit = "";
 
             if (!data[i]["ingredients"][j]["unit"].is_null())
@@ -226,9 +219,6 @@ using json = nlohmann::json;
                 // get the unit from the json if it is a valid string
                 ingredient_unit = data[i]["ingredients"][j]["unit"].get<std::string>();
             }
-
-            // check ingredient list is growing properly
-            // std::cout << "IngredientList size: " << ingredientList.get_ingredients_list().size() << "\n";
 
             // We need to notice if a uuid is a valid, new, uuid, this sentinel value helps this
             int default_uuid = -1;
@@ -284,6 +274,7 @@ int user_choice;
 
     interface.display_intro_screen();
 
+    // main program loop
     while (1)
     {
         user_choice = interface.display_menu();

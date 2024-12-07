@@ -4,24 +4,19 @@
 
 #include "Ingredient.h"
 
+// constructor
 Ingredient::Ingredient(int uuid,
                         std::string name,
-//                        MeasurementType type,
                         std::string unit)
                         : uuid(uuid),
                         name(name),
-//                        measurement_type(type),
-                        unit(unit)
-{}
-
+                        unit(unit){}
 
 int Ingredient::get_uuid() const {return uuid;}
 
 std::string Ingredient::get_name() const {return name;}
 
 std::string Ingredient::get_unit() const {return unit;}
-
-//MeasurementType Ingredient::get_measurement_type() const {return measurement_type;}
 
 void Ingredient::display() const
 {
